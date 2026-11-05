@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Intelligent Factory Stack | The Intelligent Factory | Envoy Development</title>
+  <meta name="description" content="The Intelligent Factory Stack: seven layers that turn existing plant assets and systems into better decisions, disciplined action, and adaptive learning. From the book Leading the Intelligent Factory." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── Intelligent Factory Stack page styles (shared pattern) ── */
+    .disc-header { max-width: 780px; margin: 0 auto 2.5rem; text-align: center; }
+    .disc-header h2 { margin-bottom: 1rem; }
+    .disc-keyline {
+      font-size: 1.25rem; line-height: 1.55; font-weight: 600; color: var(--green-800);
+      border-left: 4px solid var(--green-600); padding: 0.35rem 0 0.35rem 1.1rem;
+      margin: 1.25rem auto 0; text-align: left; max-width: 640px;
+    }
+    .disc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; max-width: 1020px; margin: 0 auto; }
+    .disc-col h4, .disc-framework h4 { margin-bottom: 0.6rem; color: var(--gray-900); }
+    .disc-col h4 { margin-top: 1.4rem; }
+    .disc-col h4:first-child { margin-top: 0; }
+    .disc-col p { color: var(--gray-600); line-height: 1.65; }
+    .disc-framework {
+      background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px;
+      padding: 1.75rem 1.75rem 1.5rem; box-shadow: var(--shadow-sm);
+    }
+    .disc-section-alt .disc-framework { background: var(--gray-50); }
+    .disc-framework .fw-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--green-700); margin-bottom: 0.35rem;
+    }
+    .disc-framework ol, .disc-framework ul.fw-list { margin: 0.75rem 0 0; padding-left: 1.25rem; }
+    .disc-framework ol li, .disc-framework ul.fw-list li { margin-bottom: 0.55rem; color: var(--gray-600); line-height: 1.5; }
+    .disc-framework ol li strong { color: var(--gray-900); }
+    .steps-list .step-item h4 a { text-decoration: none; color: inherit; }
+    .steps-list .step-item h4 a:hover { color: var(--green-700); }
+    .stack-maturity-table { width: 100%; max-width: 780px; margin: 2rem auto 0; border-collapse: collapse; font-size: 0.95rem; }
+    .stack-maturity-table th, .stack-maturity-table td { text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid var(--gray-200); vertical-align: top; }
+    .stack-maturity-table th { color: var(--gray-900); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .stack-maturity-table td:first-child { font-weight: 600; color: var(--green-800); white-space: nowrap; }
+    .stack-maturity-table td { color: var(--gray-600); line-height: 1.5; }
+    @media (max-width: 860px) {
+      .disc-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .stack-maturity-table td:first-child { white-space: normal; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="product-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="product-hero-inner container">
+      <div class="product-hero-content">
+        <p class="eyebrow">The Intelligent Factory:&nbsp;&nbsp;&nbsp;The Intelligent Factory Stack</p>
+        <h1>From existing assets to adaptive performance.</h1>
+        <p class="hero-sub">The Intelligent Factory Stack is not an IT architecture checklist: it's a leadership framework. Seven layers show how a brownfield process plant turns the assets and systems it already has into better decisions, disciplined action, and adaptive learning.</p>
+        <div class="btn-group">
+          <a class='btn btn-outline' href='intelligent-factory.html'>← Intelligent Factory: Start Here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ OVERVIEW ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">The Framework</p>
+        <h2>Seven layers, one direction of flow.</h2>
+        <p>The intelligent factory is not created by replacing everything underneath it. It is created by connecting existing systems, adding context, applying intelligence, embedding that intelligence into workflows, and closing the loop through performance and learning. The stack does not replace the factory: it makes the existing factory readable, actionable, and adaptive. Each layer is explored below, drawn from <a href='book.html'>Leading the Intelligent Factory</a>.</p>
+      </div>
+      <div class="steps-list fade-in">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div>
+            <h4><a href="#layer-1">Existing Assets &amp; Process Equipment</a></h4>
+            <p>The physical operation where value is created or lost, the mill you already own, not the one in a capital plan. The intelligent factory starts with the factory that already exists.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div>
+            <h4><a href="#layer-2">Existing Source Systems</a></h4>
+            <p>DCS, historians, MES, CMMS, lab systems, shift notes, spreadsheets, tribal knowledge. Data and knowledge are not sitting in one clean place. Treat them as source systems, not obstacles to discard.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div>
+            <h4><a href="#layer-3">Integration Layer</a></h4>
+            <p>Connects existing source systems so they can work together, without replacing the DCS, the historian, or anything else as a precondition for progress.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div>
+            <h4><a href="#layer-4">Operational Context Layer</a></h4>
+            <p>The layer that turns data into meaning: connecting raw signals to assets, operating states, grades, maintenance events, quality results, human actions, and outcomes.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div>
+            <h4><a href="#layer-5">Intelligence Layer</a></h4>
+            <p>Broader than analytics and AI: models, rules, statistical methods, repeatable code, diagnostic logic, and process knowledge that interpret patterns and support recommendations.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div>
+            <h4><a href="#layer-6">Workflow &amp; Decision Layer</a></h4>
+            <p>Where intelligence enters the work: runbooks, troubleshooting workflows, shift handoffs, exception management, and the five decisions that run every factory.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">7</div>
+          <div>
+            <h4><a href="#layer-7">Performance &amp; Learning Loop</a></h4>
+            <p>Measurable outcomes: throughput, yield, reliability, energy, profit per hour, and the loop that feeds what was learned back into the system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 1 ═══ -->
+  <section class="section disc-section-alt" id="layer-1">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 1</p>
+        <h2>Existing Assets &amp; Process Equipment</h2>
+        <p class="disc-keyline">The intelligent factory starts with the factory that already exists.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>This is the physical operation where value is created or lost: the actual equipment, process units, lines, and machines that make the product, along with the instrumentation and control systems that run them.</p>
+          <h4>Why it matters</h4>
+          <p>This layer reinforces the brownfield truth. The intelligent factory does not start with a greenfield fantasy. It starts with real assets, real constraints, real maintenance history, real control systems, real operators, and real economic pressure. Everything above this layer exists to make these assets perform better, not to replace them.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What It Includes</p>
+          <h4>The mill you already own</h4>
+          <ul class="fw-list">
+            <li>Process units, lines, and machines</li>
+            <li>Pumps, valves, drives, and tanks</li>
+            <li>Reactors, dryers, and boilers</li>
+            <li>Utilities and packaging lines</li>
+            <li>Instrumentation</li>
+            <li>Control systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 2 ═══ -->
+  <section class="section" id="layer-2" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 2</p>
+        <h2>Existing Source Systems</h2>
+        <p class="disc-keyline">Treat existing systems as source systems, not obstacles to discard.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>This layer makes the brownfield reality explicit: data and knowledge are not sitting in one clean place. They're spread across control systems, historians, maintenance systems, lab systems, operator logs, engineering spreadsheets, and the heads of experienced people.</p>
+          <h4>Why it matters</h4>
+          <p>Mills do not need a new factory, a new historian, or a new DCS as the starting point. They need to connect and activate what they already have. Every system on this list, including the informal ones like shift notes and tribal knowledge, holds a piece of how the mill actually runs. The stack treats them as assets to draw from, not legacy debt to write off.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What It Includes</p>
+          <h4>Where the data and knowledge live</h4>
+          <ul class="fw-list">
+            <li>DCS and PLC systems</li>
+            <li>Historians</li>
+            <li>Sensors and edge devices</li>
+            <li>MES and production systems</li>
+            <li>CMMS and maintenance systems</li>
+            <li>Lab, quality, and LIMS systems</li>
+            <li>ERP, scheduling, and planning systems</li>
+            <li>Operator logs and shift notes</li>
+            <li>Alarm and event records</li>
+            <li>Engineering spreadsheets and calculations</li>
+            <li>Manual reports, tribal knowledge, informal records</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 3 ═══ -->
+  <section class="section disc-section-alt" id="layer-3">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 3</p>
+        <h2>Integration Layer</h2>
+        <p class="disc-keyline">The brownfield path is not rip-and-replace. It is connect-and-contextualize.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>The integration layer connects existing source systems so they can work together. It does not replace the DCS. It does not replace the historian. It does not require the plant to rebuild everything before progress can begin.</p>
+          <h4>Why it matters</h4>
+          <p>This is the layer most transformation plans get backwards: treating integration as something that comes after modernization, when it's actually the alternative to it. The category need is clear: the mill needs an integrated layer that connects existing systems and makes them usable together for decisions, workflows, and learning. This is the practical starting point of <a href='seven-disciplines.html#discipline-3'>Discipline 3: Retrofit the Information Layer</a>.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What It Does and Doesn't</p>
+          <h4>Connect, don't replace</h4>
+          <ul class="fw-list">
+            <li>Connects historians, DCS/PLC, MES, CMMS, lab systems, and logs into one usable whole</li>
+            <li>Makes source systems work together for decisions, workflows, and learning</li>
+            <li>Adds targeted sensors or edge capture only where a decision needs missing information</li>
+            <li>Does <strong>not</strong> replace the DCS or the historian</li>
+            <li>Does <strong>not</strong> require a rebuild before progress can begin</li>
+            <li>Does <strong>not</strong> hold intelligence hostage to a modernization program</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 4 ═══ -->
+  <section class="section" id="layer-4" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 4</p>
+        <h2>Operational Context Layer</h2>
+        <p class="disc-keyline">Connectivity tells you what happened. Context tells you what it means.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>This is the layer that turns data into meaning, connecting raw signals and events to how the mill actually runs. It's the layer most mills are missing, and the reason a wall of historian tags stays a wall of tags.</p>
+          <h4>Why it matters</h4>
+          <p>This layer is <a href='seven-disciplines.html#discipline-2'>Discipline 2: Context Beats Connectivity</a> made concrete. It also creates the foundation for repeatable intelligence: without context, every use case becomes custom; with context, patterns can repeat across assets, grades, lines, and mills. Two identical readings mean different things depending on grade, speed, operating state, and recent maintenance. This layer is what knows the difference.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What It Connects Signals To</p>
+          <h4>The meaning behind the data</h4>
+          <ul class="fw-list">
+            <li>Asset hierarchy and process relationships</li>
+            <li>Operating states</li>
+            <li>Products, grades, recipes, and batches</li>
+            <li>Constraints and bottlenecks</li>
+            <li>Maintenance events</li>
+            <li>Quality events and lab results</li>
+            <li>Alarm conditions</li>
+            <li>Human actions and shift conditions</li>
+            <li>Market and production context</li>
+            <li>Decisions and outcomes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 5 ═══ -->
+  <section class="section disc-section-alt" id="layer-5">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 5</p>
+        <h2>Intelligence Layer</h2>
+        <p class="disc-keyline">AI is one ingredient in the intelligence layer, not the whole layer.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>This layer is deliberately broader than &ldquo;analytics &amp; AI.&rdquo; AI belongs here, but so do rules, heuristics, statistical methods, engineering calculations, repeatable code, diagnostic logic, and the process knowledge of experienced people: everything that interprets patterns and supports recommendations.</p>
+          <h4>Why it matters</h4>
+          <p>The intelligence layer is not the magic layer. It is useful only when the layers below it provide enough context and the layers above it convert outputs into action. Not every use case needs advanced machine learning: often a well-built calculation, a rule grounded in process knowledge, or a consistent diagnostic check creates more value than a model no one trusts.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What It Includes</p>
+          <h4>More than models</h4>
+          <ul class="fw-list">
+            <li>AI models and machine learning</li>
+            <li>Rules and heuristics</li>
+            <li>Statistical methods and calculations</li>
+            <li>Repeatable code and diagnostic logic</li>
+            <li>Process knowledge and pattern recognition</li>
+            <li>Natural-language summaries</li>
+            <li>Recommendations and knowledge retrieval</li>
+            <li>Forecasts and risk scoring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 6 ═══ -->
+  <section class="section" id="layer-6" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 6</p>
+        <h2>Workflow &amp; Decision Layer</h2>
+        <p class="disc-keyline">Intelligence creates value when it enters the work.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>Decision support is part of this layer, but the name is deliberately bigger: it includes the runbooks, routines, reviews, and action paths where intelligence actually gets used, and where the <a href='five-decisions.html'>Five Decisions That Run Every Factory</a> get made.</p>
+          <h4>Why it matters</h4>
+          <p>This layer keeps the stack from becoming a data-platform diagram. The purpose of the stack is not to move data upward, it is to improve decisions and workflows. This is <a href='seven-disciplines.html#discipline-4'>Discipline 4</a>, Put Intelligence in the Workflow, in structural form: an insight that doesn't enter the workflow is just information.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What It Includes</p>
+          <h4>Where intelligence enters the work</h4>
+          <ul class="fw-list">
+            <li>Intelligent runbooks</li>
+            <li>Engineering troubleshooting workflows</li>
+            <li>Operator response workflows</li>
+            <li>Maintenance triage and reliability workflows</li>
+            <li>Quality investigation workflows</li>
+            <li>Shift handoff and production meeting summaries</li>
+            <li>Leadership review workflows</li>
+            <li>Exception management and escalation paths</li>
+            <li>The Five Decisions That Run Every Factory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LAYER 7 ═══ -->
+  <section class="section disc-section-alt" id="layer-7">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Layer 7</p>
+        <h2>Performance &amp; Learning Loop</h2>
+        <p class="disc-keyline">Improvement is not complete until the factory learns from it.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The layer</h4>
+          <p>This is the point of the whole stack: measurable outcomes such as throughput, yield, quality, downtime, energy, reliability, safety, cost, margin, and profit per hour, plus the harder-to-measure ones like decision quality, faster troubleshooting, better prioritization, and better knowledge retention.</p>
+          <h4>Why it matters</h4>
+          <p>But outcomes alone aren't the end of the layer. It also includes the loop back into the system: what action was taken, did it work, was the issue closed, and what did we learn? Should the runbook change? The threshold? The model? The maintenance plan? The operating standard? This loop is what makes the whole stack adaptive rather than just instrumented. It is <a href='seven-disciplines.html#discipline-7'>Discipline 7</a>, Build the Adaptive Factory, closing the system.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">The Loop Back</p>
+          <h4>Questions every outcome should answer</h4>
+          <ol>
+            <li><strong>Act:</strong> what action was taken?</li>
+            <li><strong>Verify:</strong> did it work?</li>
+            <li><strong>Close:</strong> was the issue resolved or intentionally deferred?</li>
+            <li><strong>Learn:</strong> what did we learn?</li>
+            <li><strong>Update:</strong> should the runbook, threshold, report, model, maintenance plan, or operating standard change?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ NOT JUST A STACK ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">The Full Picture</p>
+        <h2>Not just a stack, a management system around it.</h2>
+        <p>Two things wrap the seven layers. An <strong>outer learning loop</strong> feeds outcomes back down into updated context, intelligence, workflows, standards, and operating practice. And <strong>industrial discipline</strong> runs alongside the upper layers as a management band: ownership, triage, action, verification, closure, and learning, so signals become performance instead of noise. The stack moves data upward; the discipline and the loop are what turn it into results.</p>
+      </div>
+      <div class="section-intro fade-in" style="margin-top:2.5rem;">
+        <h2 style="font-size:1.35rem;">How the stack behaves at each maturity level</h2>
+      </div>
+      <table class="stack-maturity-table fade-in">
+        <thead>
+          <tr><th>Maturity Level</th><th>Stack Behavior</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Reactive</td><td>Physical assets and source systems exist, but data is fragmented and learning is weak.</td></tr>
+          <tr><td>Connected</td><td>Source systems are connected, but context and workflow fit are limited.</td></tr>
+          <tr><td>Contextualized</td><td>Data is tied to assets, states, products, events, decisions, and outcomes.</td></tr>
+          <tr><td>Guided</td><td>Intelligence enters workflows and guides recurring decisions.</td></tr>
+          <tr><td>Adaptive</td><td>Performance outcomes feed back into updated workflows, models, standards, and learning loops.</td></tr>
+        </tbody>
+      </table>
+      <div class="section-intro fade-in" style="margin-top:1.5rem;">
+        <p>See where your mill stands on <a href='maturity-model.html'>The Maturity Model</a>.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ GO DEEPER ═══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Go Deeper</p>
+        <h2>The stack, the disciplines, and the decisions fit together.</h2>
+        <p>The stack shows <em>what</em> to build; <a href='seven-disciplines.html'>The Seven Disciplines</a> show <em>how</em> to lead it; and <a href='five-decisions.html'>The Five Decisions</a> show <em>where</em> the value shows up every shift. All three come from <a href='book.html'>Leading the Intelligent Factory</a>.</p>
+        <div class="btn-group" style="justify-content:center; margin-top:1.5rem;">
+          <a class='btn btn-primary' href='book.html'>About the Book</a>
+          <a class='btn btn-outline' href='assessment.html'>Take the Assessment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  </main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

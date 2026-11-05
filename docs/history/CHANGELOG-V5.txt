@@ -1,0 +1,18 @@
+ENVOY WEBSITE — VERSION 5 WORKING DRAFT
+Updated October 31, 2026
+
+Baseline: The latest downloaded website package is Version 4, as named by Gordon.
+
+Changes in this working draft:
+- Confirmed the approved industry hero images on Overview, Food, Specialty Chemicals, and Pulp & Paper; the pulp image is the final HD chest revision.
+- Rebuilt About Envoy around the real team, using all 32 portraits currently published at https://envoydevelopment.com/about.
+- Added a six-person hero mosaic, a full team gallery, published roles and specialties, group jump links, and responsive portrait framing.
+- Shortened the company story and connected the pulp-and-paper foundation to the broader process-industry direction.
+- Retained current published experience statements: founded in 2003, 20 engineers, more than 500 combined years of paper mill experience.
+- Updated the start page and version marker to Version 5.
+
+Photo-source note:
+The employee-photo subfolder was not visible through the files available in this session. Portraits are unmodified copies of the current live About page images (200 pixels wide). The complete public source mapping is in 02-version-3/assets/team/team-manifest.json. Uploaded higher-resolution originals can replace these images later without changing the layout. The current live page includes Todd Miller and Sandip Neupane and does not list Jeffrey Milner; the gallery follows that current page.
+
+Preservation:
+The prior About page and start page are preserved in 04-version-5-draft/. The earlier downloaded ZIP is unchanged. No new ZIP has been created and neither public website has been changed.

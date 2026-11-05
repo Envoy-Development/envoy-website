@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Seven Disciplines | The Intelligent Factory | Envoy Development</title>
+  <meta name="description" content="The seven leadership disciplines for building an intelligent operation on brownfield assets, from economics to the adaptive factory. From the book Leading the Intelligent Factory." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── Seven Disciplines page styles ── */
+    .disc-header { max-width: 780px; margin: 0 auto 2.5rem; text-align: center; }
+    .disc-header h2 { margin-bottom: 1rem; }
+    .disc-keyline {
+      font-size: 1.25rem; line-height: 1.55; font-weight: 600; color: var(--green-800);
+      border-left: 4px solid var(--green-600); padding: 0.35rem 0 0.35rem 1.1rem;
+      margin: 1.25rem auto 0; text-align: left; max-width: 640px;
+    }
+    .disc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; max-width: 1020px; margin: 0 auto; }
+    .disc-col h4, .disc-framework h4 { margin-bottom: 0.6rem; color: var(--gray-900); }
+    .disc-col h4 { margin-top: 1.4rem; }
+    .disc-col h4:first-child { margin-top: 0; }
+    .disc-col p { color: var(--gray-600); line-height: 1.65; }
+    .disc-framework {
+      background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px;
+      padding: 1.75rem 1.75rem 1.5rem; box-shadow: var(--shadow-sm);
+    }
+    .disc-section-alt .disc-framework { background: var(--gray-50); }
+    .disc-framework .fw-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--green-700); margin-bottom: 0.35rem;
+    }
+    .disc-framework ol { margin: 0.75rem 0 0; padding-left: 1.25rem; }
+    .disc-framework ol li { margin-bottom: 0.65rem; color: var(--gray-600); line-height: 1.5; }
+    .disc-framework ol li strong { color: var(--gray-900); }
+    .disc-actions { max-width: 1020px; margin: 2.25rem auto 0; }
+    .disc-actions h4 { margin-bottom: 0.85rem; }
+    .disc-actions ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 2rem; }
+    .disc-actions ul li { position: relative; padding-left: 1.6rem; color: var(--gray-600); line-height: 1.5; }
+    .disc-actions ul li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green-600); font-weight: 700; }
+    .steps-list .step-item a.step-link { text-decoration: none; color: inherit; }
+    .steps-list .step-item h4 a { text-decoration: none; color: inherit; }
+    .steps-list .step-item h4 a:hover { color: var(--green-700); }
+    @media (max-width: 860px) {
+      .disc-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .disc-actions ul { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="product-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="product-hero-inner container">
+      <div class="product-hero-content">
+        <p class="eyebrow">The Intelligent Factory:&nbsp;&nbsp;&nbsp;The Seven Disciplines</p>
+        <h1>Seven disciplines. One intelligent operation.</h1>
+        <p class="hero-sub">Applying AI in a brownfield process plant isn't a technology project: it's a leadership practice. Seven disciplines, from economics to the adaptive factory, define how intelligent operations actually get built.</p>
+        <div class="btn-group">
+          <a class='btn btn-outline' href='intelligent-factory.html'>← Intelligent Factory: Start Here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ OVERVIEW ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">The Framework</p>
+        <h2>Seven disciplines for applying AI in brownfield process plants.</h2>
+        <p>The factory of the future will not be defined by brand-new equipment. It will be defined by how well leaders connect, contextualize, govern, and improve the assets they already have. These seven disciplines are the backbone of <a href='book.html'>Leading the Intelligent Factory</a>, each one explored in depth below.</p>
+      </div>
+      <div class="steps-list fade-in">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div>
+            <h4><a href="#discipline-1">Economics Before Algorithms</a></h4>
+            <p>Start with the economics of the operation before selecting tools, models, or vendors. Identify where the mill loses value, which recurring decisions drive those losses, and what a better decision would be worth.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div>
+            <h4><a href="#discipline-2">Context Beats Connectivity</a></h4>
+            <p>Connectivity is necessary, but it is not enough. Operational context (assets, process relationships, states, grades, maintenance history, quality events, and outcomes) turns connected data into usable intelligence.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div>
+            <h4><a href="#discipline-3">Retrofit the Information Layer</a></h4>
+            <p>Integrate a modern information layer around the historians, DCS/PLC systems, maintenance systems, quality systems, logs, and spreadsheets the mill already has. Not rip-and-replace: connect, contextualize, and activate.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div>
+            <h4><a href="#discipline-4">Put Intelligence in the Workflow</a></h4>
+            <p>Embed data, context, AI assistance, process knowledge, and decision logic into the workflows where operators, engineers, maintenance teams, and mill leaders actually do the work.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div>
+            <h4><a href="#discipline-5">Govern with Industrial Discipline</a></h4>
+            <p>Convert reports, alerts, recommendations, and AI-enabled insights into disciplined action. Define how signals are reviewed, owned, acted on, verified, and learned from, so intelligence becomes performance, not noise.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div>
+            <h4><a href="#discipline-6">Make Intelligence Repeatable</a></h4>
+            <p>Turn useful AI applications, analyses, runbooks, and decision workflows into repeatable operating capabilities that can be sustained, improved, and reused across assets, shifts, lines, and mills.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">7</div>
+          <div>
+            <h4><a href="#discipline-7">Build the Adaptive Factory</a></h4>
+            <p>Move toward a factory that continuously learns: detecting issues earlier, improving recurring decisions, and converting tacit knowledge into operational memory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 1 ═══ -->
+  <section class="section disc-section-alt" id="discipline-1">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 1</p>
+        <h2>Economics Before Algorithms</h2>
+        <p class="disc-keyline">The first AI question is not, &ldquo;What model can we build?&rdquo; It is, &ldquo;Which decision, if improved, would materially improve mill performance?&rdquo;</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>Many AI initiatives start with tools, models, available data, or vendor demos rather than the recurring operational decisions that shape performance. The result is projects that are interesting but disconnected from mill economics.</p>
+          <h4>The discipline</h4>
+          <p>The purpose of industrial AI is to improve the recurring decisions that shape throughput, yield, downtime, energy, reliability, quality, safety, and profit per hour. Leaders should begin where the mill loses money, time, production, quality, or energy. Identify the decisions behind those losses, and ask what a better decision would be worth. Build a value map before building an AI roadmap, and assign an operational owner to every use case.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Operational Value Filter</h4>
+          <p style="color:var(--gray-600);">A use case should pass five tests before it earns investment:</p>
+          <ol>
+            <li><strong>Value:</strong> Does this problem matter economically?</li>
+            <li><strong>Decision:</strong> Is there a recurring decision we can improve?</li>
+            <li><strong>Variability:</strong> Is the decision currently delayed, inconsistent, subjective, or reactive?</li>
+            <li><strong>Actionability:</strong> Can someone act on the recommendation?</li>
+            <li><strong>Scalability:</strong> Could this pattern be reused elsewhere?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 2 ═══ -->
+  <section class="section" id="discipline-2" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 2</p>
+        <h2>Context Beats Connectivity</h2>
+        <p class="disc-keyline">Connectivity tells you what happened. Context tells you what it means.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>Plants already have historians, sensors, logs, lab systems, maintenance systems, and dashboards, but the information is fragmented and hard to interpret. It's easy to mistake connectivity for intelligence.</p>
+          <h4>The discipline</h4>
+          <p>Data becomes operationally useful only when it is connected to the context of how the mill actually runs: asset hierarchy, process relationships, operating states, grades and recipes, maintenance history, quality events, operator actions, constraints, and what happened afterward. Two identical temperature readings mean entirely different things depending on grade, line speed, startup state, and recent maintenance. Treat context as infrastructure, and define context requirements from your highest-value decisions rather than trying to contextualize everything at once.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Context Ladder</h4>
+          <p style="color:var(--gray-600);">Each rung adds meaning to the one below it:</p>
+          <ol>
+            <li><strong>Signals:</strong> raw readings, alarms, events, values</li>
+            <li><strong>Tags:</strong> named data points</li>
+            <li><strong>Assets:</strong> where the signals belong</li>
+            <li><strong>Process relationships:</strong> how assets and areas affect one another</li>
+            <li><strong>Operating states:</strong> startup, shutdown, grade change, steady state, upset</li>
+            <li><strong>Events:</strong> what changed</li>
+            <li><strong>Decisions:</strong> what people did</li>
+            <li><strong>Outcomes:</strong> what happened afterward</li>
+            <li><strong>Learning:</strong> what should be done differently next time</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 3 ═══ -->
+  <section class="section disc-section-alt" id="discipline-3">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 3</p>
+        <h2>Retrofit the Information Layer</h2>
+        <p class="disc-keyline">Do not rip and replace the mill. Make the existing mill readable, connected, contextualized, and actionable.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>Leaders often assume AI requires a new factory, new control systems, a new historian, or perfect data. That assumption delays progress, inflates cost, and turns intelligence into a capital modernization project instead of an operational performance system.</p>
+          <h4>The discipline</h4>
+          <p>The practical brownfield path is to integrate one more layer around what the mill already has. Historians, DCS/PLC systems, sensors, MES, CMMS, lab systems, operator logs, and engineering spreadsheets are source systems: assets to connect, not obstacles to discard. The information layer connects them, contextualizes them, and puts them to work in decisions and workflows. Some upgrades will still be needed for safety, reliability, or lifecycle reasons, but intelligence should never be held hostage to a full replacement program. Add targeted sensors only where a high-value decision requires missing information, and build enough data quality for the decision, not theoretical perfection.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Brownfield Intelligence Stack</h4>
+          <p style="color:var(--gray-600);">Seven layers, built on the assets you already own:</p>
+          <ol>
+            <li><strong>Existing physical equipment</strong></li>
+            <li><strong>Existing instrumentation</strong>, DCS/PLC, historians, and legacy systems</li>
+            <li><strong>Integration layer</strong> that connects the source systems</li>
+            <li><strong>Operational context layer:</strong> asset, process, state, grade, event, maintenance, quality, and human-action meaning</li>
+            <li><strong>Intelligence layer:</strong> analytics, AI, rules, repeatable code, and diagnostic logic</li>
+            <li><strong>Workflow &amp; decision layer</strong> that delivers intelligence into daily work</li>
+            <li><strong>Performance &amp; learning loop</strong> that captures actions, decisions, outcomes, and new knowledge</li>
+          </ol>
+          <p style="color:var(--gray-600); margin-top:0.75rem;">Explore the full stack on <a href='technology-stack.html'>The Technology Stack</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 4 ═══ -->
+  <section class="section" id="discipline-4" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 4</p>
+        <h2>Put Intelligence in the Workflow</h2>
+        <p class="disc-keyline">A one-off analysis answers a question once. A workflow improves how the organization answers that kind of question every time.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>Many AI and analytics efforts arrive as dashboards, reports, notebooks, or vendor tools that sit outside the natural rhythm of the plant. They produce information, but they don't change how work gets done, producing scattered insight instead of repeatable decision improvement.</p>
+          <h4>The discipline</h4>
+          <p>The intelligent factory is not built by giving people more data. It is built by putting the right knowledge, context, logic, AI assistance, repeatable code, checkpoints, and escalation paths into the workflows where people diagnose problems, make decisions, act, and learn. The highest-value use cases include operator response workflows, engineering troubleshooting runbooks, shift summaries and handoffs, root-cause assistance, maintenance triage, grade-change and startup runbooks, production meeting intelligence, and leadership reviews. An insight that does not enter the workflow is just information. An insight that changes the workflow becomes operational intelligence.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Intelligent Runbook</h4>
+          <p style="color:var(--gray-600);">A structured workflow that combines context, process knowledge, analytics, AI assistance, and human judgment:</p>
+          <ol>
+            <li><strong>Recognize the condition:</strong> what triggered the workflow?</li>
+            <li><strong>Frame the problem:</strong> which asset, grade, state, or constraint is involved?</li>
+            <li><strong>Pull the context:</strong> what changed recently in setpoints, alarms, maintenance, lab results, shift notes?</li>
+            <li><strong>Test likely causes:</strong> which hypotheses should be checked first?</li>
+            <li><strong>Execute repeatable checks:</strong> the same diagnostics, every time</li>
+            <li><strong>Validate checkpoints:</strong> what must be confirmed before action?</li>
+            <li><strong>Guide the next action:</strong> what should the operator, engineer, or leader do?</li>
+            <li><strong>Escalate when needed:</strong> when is the issue beyond the workflow's authority?</li>
+            <li><strong>Capture the learning:</strong> what happened, and what should improve next time?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 5 ═══ -->
+  <section class="section disc-section-alt" id="discipline-5">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 5</p>
+        <h2>Govern with Industrial Discipline</h2>
+        <p class="disc-keyline">A signal without ownership is noise. An insight without follow-through is waste.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>Mills are already overloaded with alarms, dashboards, reports, meetings, and firefighting. Adding more alerts, recommendations, and AI-enabled insights doesn't automatically improve performance. In an undisciplined operating environment, better signals simply create more noise.</p>
+          <h4>The discipline</h4>
+          <p>The intelligent factory requires more than better detection. It requires a management system that converts signals into action and action into learning: signal ownership, triage rules, review cadence, action tracking, verification, closure discipline, and learning capture. AI governance (validation against real mill behavior, monitoring for drift and false positives, cybersecurity, and human accountability) belongs inside this same operating discipline, proportional to the risk and importance of the decision each application supports. The point is not simply to govern AI. The point is to govern the work that intelligence creates.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Signal-to-Action Discipline</h4>
+          <p style="color:var(--gray-600);">Seven steps that turn detection into performance:</p>
+          <ol>
+            <li><strong>Flag:</strong> what was detected?</li>
+            <li><strong>Triage:</strong> does it matter enough to act on now?</li>
+            <li><strong>Own:</strong> who is accountable for follow-up?</li>
+            <li><strong>Act:</strong> what action, investigation, or escalation is required?</li>
+            <li><strong>Verify:</strong> did the action work?</li>
+            <li><strong>Close:</strong> was the issue resolved or intentionally deferred?</li>
+            <li><strong>Learn:</strong> what should change in the workflow, runbook, model, or practice?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 6 ═══ -->
+  <section class="section" id="discipline-6" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 6</p>
+        <h2>Make Intelligence Repeatable</h2>
+        <p class="disc-keyline">If this works once, what would it take to make it work again?</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>In many mills, useful intelligence stays isolated. A good analysis lives in one engineer's notebook. A useful script depends on one person. A vendor tool works for one asset but not another. A dashboard gets built but no one owns the workflow. Useful intelligence never becomes standard, repeatable work.</p>
+          <h4>The discipline</h4>
+          <p>Intelligence scales when leaders stop treating every use case as a custom project and start building repeatable capabilities: an intelligence portfolio instead of a pile of isolated tools, standardized intake and prioritization, reusable data and context models, a library of workflow and runbook patterns, and funded adoption, training, and support, not just development. The lesson from stalled pilots is not &ldquo;run fewer pilots.&rdquo; It's &ldquo;design for repeatability from the beginning.&rdquo;</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Repeatability System</h4>
+          <p style="color:var(--gray-600);">A use case is ready to scale when it has eight repeatable elements:</p>
+          <ol>
+            <li><strong>Value pattern:</strong> tied to recurring losses or decisions</li>
+            <li><strong>Decision pattern:</strong> the decision, diagnosis, and escalation path are defined</li>
+            <li><strong>Context pattern:</strong> the required asset, process, and event context can be reused</li>
+            <li><strong>Workflow pattern:</strong> explicit enough to be repeated by different people</li>
+            <li><strong>Technical pattern:</strong> code, integrations, and templates can be maintained and reused</li>
+            <li><strong>Operating discipline pattern:</strong> ownership, triage, validation, and accountability are defined</li>
+            <li><strong>Adoption pattern:</strong> training, support, and daily routines are built into the rollout</li>
+            <li><strong>Learning pattern:</strong> outcomes, overrides, and lessons improve the workflow</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DISCIPLINE 7 ═══ -->
+  <section class="section disc-section-alt" id="discipline-7">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Discipline 7</p>
+        <h2>Build the Adaptive Factory</h2>
+        <p class="disc-keyline">The intelligent factory is not the newest factory. It is the factory that learns fastest.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The problem</h4>
+          <p>Leaders are often told the future is autonomous manufacturing. That framing misleads. For brownfield process manufacturers, the practical and valuable goal is not removing people from the factory: it is building an operation that learns faster, detects issues earlier, improves decision quality, and captures operational knowledge over time.</p>
+          <h4>The discipline</h4>
+          <p>The adaptive factory is not the factory with the most automation; it is the factory with the strongest learning loops. Most factory knowledge is tacit: it lives in the heads of operators, engineers, maintenance teams, and supervisors, and it walks out the door when shifts change or experts retire. The adaptive factory captures what was learned, verifies what worked, and bakes it back into centerlines, runbooks, models, thresholds, training, and operating practices. Tacit knowledge becomes operational memory when learning is baked back into the systems people use to run the factory, and future teams never have to rediscover the same lesson from scratch.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Framework</p>
+          <h4>The Adaptive Operations Loop</h4>
+          <p style="color:var(--gray-600);">Seven stages that turn yesterday's events into tomorrow's better practices:</p>
+          <ol>
+            <li><strong>Sense:</strong> capture signals, events, observations, and exceptions</li>
+            <li><strong>Contextualize:</strong> connect them to assets, states, products, quality, and outcomes</li>
+            <li><strong>Interpret:</strong> identify patterns, causes, risks, and opportunities</li>
+            <li><strong>Recommend:</strong> support better human decisions through workflows and runbooks</li>
+            <li><strong>Act:</strong> intervene through the right operational workflow</li>
+            <li><strong>Verify:</strong> determine whether the action worked</li>
+            <li><strong>Learn:</strong> capture the outcome and improve the workflow, model, or practice</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FROM THE BOOK ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Go Deeper</p>
+        <h2>The disciplines, in long form.</h2>
+        <p>Each discipline is a full chapter in <a href='book.html'>Leading the Intelligent Factory</a>, with opening stories from real mills, the leadership problems behind each practice, and the actions leaders can take. To see how the disciplines map to your operation, take the <a href='assessment.html'>Intelligent Factory Assessment</a> or explore <a href='maturity-model.html'>The Maturity Model</a>.</p>
+        <div class="btn-group" style="justify-content:center; margin-top:1.5rem;">
+          <a class='btn btn-primary' href='book.html'>About the Book</a>
+          <a class='btn btn-outline' href='assessment.html'>Take the Assessment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  </main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

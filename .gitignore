@@ -1,0 +1,15 @@
+# Local credentials and provider state
+.env
+.env.*
+!.env.example
+.netlify/
+
+# Downloads, generated packages, and editor/runtime files
+*.zip
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp

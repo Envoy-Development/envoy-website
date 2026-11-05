@@ -1,0 +1,92 @@
+ENVOY INDUSTRY HERO IMAGES — VERSION 3
+Created October 31, 2026
+
+Four companion assets generated using the built-in image generation tool.
+Style inputs: the existing eprr-hero.png and ei-hero.png product-page artwork.
+Required mix: two women and two men, with varied racial backgrounds.
+These are illustrative generated portraits, not depictions of actual Envoy staff or customer facilities.
+
+PAGE: Industries overview
+FILENAME: industry-overview-hero.png
+
+Use case: style-transfer. Asset type: a transparent portrait hero PNG for the right-hand image column of Envoy Development's website.
+Transform the supplied existing Envoy hero artwork into a NEW companion hero asset. The supplied images are visual templates for the art direction, not identities to copy. Replace the person AND industrial equipment as described below while preserving the family resemblance to these references.
+MATCH THIS STYLE: premium photorealistic double-exposure composite; one credible experienced process engineer in a white hard hat and clear safety glasses, natural realistic skin and facial detail, subtly desaturated sage, mint and teal industrial machinery blended inside and through the helmet, the far side of the head, right shoulder and lower torso. Face remains legible and is the emotional focus. Equipment should be recognizable and carefully rendered. Soft, luminous studio lighting. Restrained deep-green details, no vivid orange accents. The subject looks slightly upward and toward the LEFT, toward the page text, in a calm confident three-quarter view.
+COMPOSITION AND FILE: one consistent portrait 4:5 composition, 1024 by 1280 pixels if possible. Chest-up portrait; helmet fully inside the canvas; engineer and equipment together occupy almost the entire available width, with 5% breathing room at top and sides. No wide blank area for text: page copy is outside this image. A single integrated person/equipment silhouette, isolated on TRUE TRANSPARENCY, with softly feathered perimeter and a gradual fade to fully transparent along the lower torso. Preserve fully transparent exterior corners; absolutely no opaque rectangle, checkerboard drawn into the art, surrounding room, frame, vignette background or cast shadow. Photographic detail within the silhouette, not flat illustration. No text, labels, logos, branding, watermark, chart, UI or border. Exactly one person.
+
+PORTRAIT: a Black woman process engineer in her early forties, medium-dark brown skin, short natural curls neatly contained under the white hard hat, no jewelry, clear safety glasses, slate-gray work shirt. Distinct identity from either reference. EQUIPMENT: a balanced general process-manufacturing installation with stainless process vessels, a compact shell-and-tube heat exchanger, centrifugal pump skids and interconnected clean pipework with valves and instrumentation. Blend these into her far/right shoulder and torso and subtly into helmet. This should communicate interconnected process industries and engineering, not an oil refinery or a futuristic control room.
+
+--------------------------------------------------
+
+PAGE: Pulp & Paper
+FILENAME: industry-pulp-paper-hero.png
+
+Use case: style-transfer. Asset type: a transparent portrait hero PNG for the right-hand image column of Envoy Development's website.
+Transform the supplied existing Envoy hero artwork into a NEW companion hero asset. The supplied images are visual templates for the art direction, not identities to copy. Replace the person AND industrial equipment as described below while preserving the family resemblance to these references.
+MATCH THIS STYLE: premium photorealistic double-exposure composite; one credible experienced process engineer in a white hard hat and clear safety glasses, natural realistic skin and facial detail, subtly desaturated sage, mint and teal industrial machinery blended inside and through the helmet, the far side of the head, right shoulder and lower torso. Face remains legible and is the emotional focus. Equipment should be recognizable and carefully rendered. Soft, luminous studio lighting. Restrained deep-green details, no vivid orange accents. The subject looks slightly upward and toward the LEFT, toward the page text, in a calm confident three-quarter view.
+COMPOSITION AND FILE: one consistent portrait 4:5 composition, 1024 by 1280 pixels if possible. Chest-up portrait; helmet fully inside the canvas; engineer and equipment together occupy almost the entire available width, with 5% breathing room at top and sides. No wide blank area for text: page copy is outside this image. A single integrated person/equipment silhouette, isolated on TRUE TRANSPARENCY, with softly feathered perimeter and a gradual fade to fully transparent along the lower torso. Preserve fully transparent exterior corners; absolutely no opaque rectangle, checkerboard drawn into the art, surrounding room, frame, vignette background or cast shadow. Photographic detail within the silhouette, not flat illustration. No text, labels, logos, branding, watermark, chart, UI or border. Exactly one person.
+
+PORTRAIT: a white man process engineer around fifty, light skin, subtle salt-and-pepper stubble, white hard hat, clear safety glasses and slate-gray work shirt. Distinct identity from either reference. EQUIPMENT: recognizable paper-manufacturing machinery: a wide continuous pale paper web passing over large horizontal steel dryer cylinders, a bank of industrial paper-machine rolls with bearing housings and a mill catwalk/drive side. Compose coherent repeated horizontal cylinders and the paper web within his far/right shoulder and lower torso, with subtle pipework in the helmet. The paper web and dryer rolls should make the pulp-and-paper sector unmistakable; avoid office printers, logs, generic refinery towers or a tiny paper roll held in a hand.
+
+--------------------------------------------------
+
+PAGE: Food
+FILENAME: industry-food-hero.png
+
+Use case: style-transfer. Asset type: a transparent portrait hero PNG for the right-hand image column of Envoy Development's website.
+Transform the supplied existing Envoy hero artwork into a NEW companion hero asset. The supplied images are visual templates for the art direction, not identities to copy. Replace the person AND industrial equipment as described below while preserving the family resemblance to these references.
+MATCH THIS STYLE: premium photorealistic double-exposure composite; one credible experienced process engineer in a white hard hat and clear safety glasses, natural realistic skin and facial detail, subtly desaturated sage, mint and teal industrial machinery blended inside and through the helmet, the far side of the head, right shoulder and lower torso. Face remains legible and is the emotional focus. Equipment should be recognizable and carefully rendered. Soft, luminous studio lighting. Restrained deep-green details, no vivid orange accents. The subject looks slightly upward and toward the LEFT, toward the page text, in a calm confident three-quarter view.
+COMPOSITION AND FILE: one consistent portrait 4:5 composition, 1024 by 1280 pixels if possible. Chest-up portrait; helmet fully inside the canvas; engineer and equipment together occupy almost the entire available width, with 5% breathing room at top and sides. No wide blank area for text: page copy is outside this image. A single integrated person/equipment silhouette, isolated on TRUE TRANSPARENCY, with softly feathered perimeter and a gradual fade to fully transparent along the lower torso. Preserve fully transparent exterior corners; absolutely no opaque rectangle, checkerboard drawn into the art, surrounding room, frame, vignette background or cast shadow. Photographic detail within the silhouette, not flat illustration. No text, labels, logos, branding, watermark, chart, UI or border. Exactly one person.
+
+PORTRAIT: an East Asian woman process engineer in her late thirties or early forties, light-to-medium skin, clear safety glasses, a white hard hat with a discreet hygienic hair covering underneath and all hair contained, clean white food-production coat, no jewelry. Distinct identity from either reference. EQUIPMENT: hygienic food processing with polished stainless-steel enclosed mixing/pasteurization tanks, a recognizable compact plate heat exchanger, sanitary curved pipes and valve manifolds, and a short enclosed bottle-filling conveyor in the lower torso. Convey a clean dairy/beverage/food process line, not a restaurant kitchen, agriculture, laboratory, chemical refinery or exposed raw food. Keep the face natural; tint only the equipment and clothing subtly mint/teal to match the series.
+
+--------------------------------------------------
+
+PAGE: Specialty Chemicals
+FILENAME: industry-specialty-chemicals-hero.png
+
+Use case: style-transfer. Asset type: a transparent portrait hero PNG for the right-hand image column of Envoy Development's website.
+Transform the supplied existing Envoy hero artwork into a NEW companion hero asset. The supplied images are visual templates for the art direction, not identities to copy. Replace the person AND industrial equipment as described below while preserving the family resemblance to these references.
+MATCH THIS STYLE: premium photorealistic double-exposure composite; one credible experienced process engineer in a white hard hat and clear safety glasses, natural realistic skin and facial detail, subtly desaturated sage, mint and teal industrial machinery blended inside and through the helmet, the far side of the head, right shoulder and lower torso. Face remains legible and is the emotional focus. Equipment should be recognizable and carefully rendered. Soft, luminous studio lighting. Restrained deep-green details, no vivid orange accents. The subject looks slightly upward and toward the LEFT, toward the page text, in a calm confident three-quarter view.
+COMPOSITION AND FILE: one consistent portrait 4:5 composition, 1024 by 1280 pixels if possible. Chest-up portrait; helmet fully inside the canvas; engineer and equipment together occupy almost the entire available width, with 5% breathing room at top and sides. No wide blank area for text: page copy is outside this image. A single integrated person/equipment silhouette, isolated on TRUE TRANSPARENCY, with softly feathered perimeter and a gradual fade to fully transparent along the lower torso. Preserve fully transparent exterior corners; absolutely no opaque rectangle, checkerboard drawn into the art, surrounding room, frame, vignette background or cast shadow. Photographic detail within the silhouette, not flat illustration. No text, labels, logos, branding, watermark, chart, UI or border. Exactly one person.
+
+PORTRAIT: a South Asian man process engineer in his early-to-mid forties, medium brown skin, dark eyebrows, clean-shaven face, white hard hat, clear safety glasses and slate-gray work shirt. Distinct identity from either reference. EQUIPMENT: specialty-chemical production at plant scale: a jacketed stirred-tank reactor with a top-mounted agitator motor, adjacent smaller mixing vessel, condenser/heat-exchanger section, and orderly process pipework with valves and instruments. Clear industrial vessel proportions with external jackets and motor drives, softly blended through his far/right shoulder and lower torso. Focus on chemical manufacturing equipment, not laboratory test tubes, oil-refinery cracking towers, cooling towers or gas flares.
+
+
+PULP & PAPER REVISION — OCTOBER 31, 2026
+Method: Built-in image generation, precise-object edit of the first pulp-and-paper hero.
+The prompt below supersedes the initial pulp-and-paper equipment direction.
+
+Use case: precise-object-edit.
+Asset type: Pulp & Paper website hero, transparent PNG.
+Input image 1 is the EDIT TARGET, an existing approved portrait/composition. Preserve the same white male engineer, his face, beard, white hardhat, safety glasses, pose, expression, clothing, portrait proportions, lighting, natural skin tones, overall green/teal double-exposure aesthetic, and softly fading transparent edges.
+CHANGE ONLY THE INDUSTRIAL EQUIPMENT BACKGROUND/DOUBLE EXPOSURE. Remove the entire unrealistic stack of paper rolls, all paper webs, and the generic tower/refinery equipment currently layered over his right shoulder, torso and helmet. Replace those equipment regions with one coherent enormous high-density (HD) pulp storage chest of the traditional ceramic/masonry construction found in a pulp mill.
+Chest geometry: a very large tall cylindrical upper chamber, with clearly visible horizontal courses of pale warm-gray/beige clay-brick or ceramic-block masonry on its curved outer surface. The broad cylindrical body transitions through a substantial sloping, conical neck-down lower section: the two sides slope inward visibly to form a V profile, ending in a narrower short cylindrical bottom dilution/discharge chamber, NOT a pointed tip. Show the taper clearly, not hidden behind the man. Authentic huge industrial proportions, simple believable support/foundation and a few modest process pipes, access ladder and safety-railed maintenance platform to establish scale. It should read as a massive masonry high-density pulp chest rather than a grain silo, metal refinery tower, square hopper, brick house, or pile of rolls.
+Composition: chest dominates the equipment area along the right side of the portrait and torso, with its wide upper cylinder above the shoulder and its narrowing V-shaped bottom clearly visible lower down. Integrate it naturally through the existing double exposure without changing the man or covering his eyes, nose or beard. Use realistic brick joints and restrained material detail; muted green and teal grading harmonizes with the other Envoy hero images while preserving readable masonry texture. Keep portrait orientation, same approximate 4:5 canvas aspect and framing as input, generous transparent margin and soft white-to-transparent fade at the base.
+No words, logos, watermarks, labels, diagrams, cutaways, paper rolls, paper web, or extra people. Actual transparent alpha background, not a checkerboard painted into image. Preserve all approved portrait details and change only the industrial background as requested.
+
+Equipment form checked against primary manufacturer reference:
+https://www.stebbinseng.com/services/specialty-construction-general/
+https://www.stebbinseng.com/projects/pulp-paper/
+
+
+PHOTO-REFERENCED PULP & PAPER REVISION — OCTOBER 31, 2026
+This prompt supersedes both earlier Pulp & Paper equipment versions.
+Built-in image-generation edit. Real photographs supplied as supporting
+shape references, while the prior hero supplied the portrait/style.
+
+Use case: precise-object-edit / identity-preserve.
+Asset: Envoy Development Pulp & Paper hero, transparent PNG.
+INPUT ROLES: Image 1 is the hero EDIT TARGET. Preserve this exact engineer's face, identity, beard, expression, hardhat, clear safety glasses, clothing, natural skin, pose, lighting and framing. Images 2–4 are REAL INDUSTRIAL HD PULP CHEST geometry references. Image 2 is a completed ceramic/masonry chest; image 3 shows the broad main cylinder and centered lower transition; image 4 shows the broad lower chamber and shallow truncated-conical transition in detail. Copy the actual proportions and physical alignment from these real chest photographs, not the inaccurate tank geometry in image 1.
+REQUESTED CORRECTION: Replace only the HD chest equipment double exposure on the man's right side and shoulder. The present cone in image 1 is much too long, narrow and laterally offset. Rebuild that equipment as one geometrically coherent, enormous, masonry high-density pulp storage chest based closely on references 2–4.
+CRITICAL GEOMETRY: A broad cylindrical upper tank; a SHORT taper near the bottom; a WIDE cylindrical lower chamber. Main upper cylinder and lower base must be perfectly CONCENTRIC ON THE SAME STRAIGHT VERTICAL CENTERLINE. Both edges taper inward symmetrically, with no lateral kink or offset. Lower chamber diameter about 60 percent of the upper cylinder diameter, never a small pipe neck. The taper is a shallow, short truncated cone, its vertical height approximately one-quarter of the upper diameter, much less pronounced than the long funnel in image 1. Broad main body comprises most of the chest's height. In particular, follow the broad base and gentle transition in reference 4. The lower chamber reaches a substantial foundation and has a few realistic side access or process connections, as in the real photos. No narrow stem, pinch point, oversized flanged pipe neck, pointed cone, or tall funnel.
+MATERIAL: Closely spaced ceramic/masonry tile courses on a truly huge tank; pale gray/beige brick-like surface, realistic mortar joints scaled to immense industrial size. Finished-service chest with simple capped top as in reference 2, modest real-scale ladder and maintenance railing. The construction photos supply shape only: do not reproduce unfinished open top, construction scaffolding, cranes, temporary work platforms, workers, signage or logos.
+COMPOSITION AND STYLE: Same 4:5 portrait canvas and double-exposure placement. Let the chest be broad enough that its main cylinder and wide lower chamber read immediately; don't make a slender tower. Preserve the entire tank's central axis through the blend. Its upper body blends into the right of the hardhat and far shoulder, and the short taper plus wide base are visible against the lower-right torso. Keep face and beard prominent and unchanged, no equipment through eyes or nose. Retain the original subdued green/teal grade, natural skin tones and white-to-transparent base fade. Photo-realistic industrial equipment blended into photo-realistic portrait. Real alpha transparency, softly feathered outer boundary. No background rectangle, no text, no diagrams or cutaways.
+Only correct the tank shape/material/proportions and necessary equipment placement; preserve the portrait and overall approved visual treatment.
+
+Photo reference sources:
+https://www.stebbinseng.com/projects/pulp-paper/
+https://www.stebbinseng.com/wp-content/uploads/2021/03/PROJECTS-PP-3-C.jpg
+https://www.fraco.com/en/sectors/pulp-and-papers?languageset=en
+https://www.fraco.com/images/etude-de-cas/papier_international/Reservoir-Papier-International-Paper-Tank%20(1).jpg
+https://www.fraco.com/images/etude-de-cas/papier_international/Reservoir-Papier-International-Paper-Tank%20(3).jpg

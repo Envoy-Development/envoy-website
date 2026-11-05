@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Five Decisions | The Intelligent Factory | Envoy Development</title>
+  <meta name="description" content="How fast should we run? Where should everything else be set? When should we intervene? What should we fix first? What can we learn from yesterday? The five decisions that run every factory." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── Five Decisions page styles (shared pattern with Seven Disciplines) ── */
+    .disc-header { max-width: 780px; margin: 0 auto 2.5rem; text-align: center; }
+    .disc-header h2 { margin-bottom: 1rem; }
+    .disc-keyline {
+      font-size: 1.25rem; line-height: 1.55; font-weight: 600; color: var(--green-800);
+      border-left: 4px solid var(--green-600); padding: 0.35rem 0 0.35rem 1.1rem;
+      margin: 1.25rem auto 0; text-align: left; max-width: 640px;
+    }
+    .disc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; max-width: 1020px; margin: 0 auto; }
+    .disc-col h4, .disc-framework h4 { margin-bottom: 0.6rem; color: var(--gray-900); }
+    .disc-col h4 { margin-top: 1.4rem; }
+    .disc-col h4:first-child { margin-top: 0; }
+    .disc-col p { color: var(--gray-600); line-height: 1.65; }
+    .disc-col p + p { margin-top: 0.85rem; }
+    .disc-framework {
+      background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px;
+      padding: 1.75rem 1.75rem 1.5rem; box-shadow: var(--shadow-sm);
+    }
+    .disc-section-alt .disc-framework { background: var(--gray-50); }
+    .disc-framework .fw-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--green-700); margin-bottom: 0.35rem;
+    }
+    .disc-framework ol, .disc-framework ul.fw-questions { margin: 0.75rem 0 0; padding-left: 1.25rem; }
+    .disc-framework ol li, .disc-framework ul.fw-questions li { margin-bottom: 0.65rem; color: var(--gray-600); line-height: 1.5; }
+    .disc-framework ol li strong { color: var(--gray-900); }
+    .steps-list .step-item h4 a { text-decoration: none; color: inherit; }
+    .steps-list .step-item h4 a:hover { color: var(--green-700); }
+    .disc-inpractice {
+      max-width: 1020px; margin: 1.75rem auto 0; padding: 0.9rem 1.1rem;
+      background: var(--green-50); border-left: 3px solid var(--green-600);
+      border-radius: 0 8px 8px 0; font-size: 0.9rem; color: var(--gray-700);
+    }
+    .disc-inpractice strong { color: var(--green-800); }
+    .arc-line {
+      max-width: 780px; margin: 2.25rem auto 0; text-align: center;
+      font-size: 1.05rem; color: var(--gray-700); line-height: 1.6;
+    }
+    .arc-line b { color: var(--navy); }
+    @media (max-width: 860px) {
+      .disc-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item" aria-current="page"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html" aria-current="page">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="product-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="product-hero-inner container">
+      <div class="product-hero-content">
+        <p class="eyebrow">The Intelligent Factory:&nbsp;&nbsp;&nbsp;The Five Decisions</p>
+        <h1>Five decisions that run every factory.</h1>
+        <p class="hero-sub">Strip away the org charts and the technology, and running a process plant comes down to five decisions, made over and over, every shift, by people working with incomplete information. Intelligence doesn't replace these decisions. It improves their quality and consistency.</p>
+        <div class="btn-group">
+          <a class='btn btn-outline' href='intelligent-factory.html'>← Intelligent Factory: Start Here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ OVERVIEW ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">The Framework</p>
+        <h2>The decisions that shape every shift.</h2>
+        <p>The framework works across mills, plants, and other process operations. A paper mill may call the first decision machine speed; a specialty chemicals plant may call it feed rate or batch cycle time. The decision logic is the same: leaders must decide how to run the operation under real operating and market conditions. Each decision is explored in depth below, and each returns throughout <a href='book.html'>Leading the Intelligent Factory</a>.</p>
+      </div>
+      <div class="steps-list fade-in">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div>
+            <h4><a href="#decision-1">How fast should we run?</a></h4>
+            <p>The rate decision. At the front door it is an economics question set by the market. Everywhere upstream it is a coordination question, derived from the machine rate and the inventories in between. The intelligent factory doesn't simply run faster; it learns when to push, when to hold, and when to back off.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div>
+            <h4><a href="#decision-2">Where should everything else be set?</a></h4>
+            <p>The rate is settled. Now where do the other hundred variables go? There are many ways to hit the same number, and they are not equally good. This is the decision operators argue about, and the one most mills have never had the evidence to settle.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div>
+            <h4><a href="#decision-3">When should we intervene?</a></h4>
+            <p>Act too early and you chase noise; too late and a drift becomes a break. The intelligent factory improves the timing, proportionality, and credibility of intervention, across every shift.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div>
+            <h4><a href="#decision-4">What should we fix first?</a></h4>
+            <p>Maintenance hours and capital are always scarcer than the list of things that need them. Prioritizing by risk, value, and constraint impact, not squeaky wheels, changes what a mill achieves with the same budget.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div>
+            <h4><a href="#decision-5">What can we learn from yesterday?</a></h4>
+            <p>Every shift generates lessons; few mills capture them. Turning yesterday's upsets, saves, and successes into workflows, runbooks, and standards is how good operations become great ones.</p>
+          </div>
+        </div>
+      </div>
+      <p class="arc-line fade-in"><b>One and two set the run. Three and four handle what goes wrong. Five makes it stick.</b><br>Run it, react to it, learn from it.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ DECISION 1 ═══ -->
+  <section class="section disc-section-alt" id="decision-1">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Decision 1</p>
+        <h2>How fast should we run?</h2>
+        <p class="disc-keyline">At the front door it's an economics question. Everywhere upstream it's a coordination question. Same decision, different driver.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The decision</h4>
+          <p>Every factory has to decide how hard to push the operation. This is not simply a speed question: it is a rate-setting decision that balances throughput, yield, quality, reliability, energy, safety, equipment health, constraints, customer demand, margin, inventory position, and profit per hour. In a paper mill, it's deciding how fast to run the machine on a given grade based on moisture profile, sheet break risk, dryer limitations, recent instability, and order demand.</p>
+          <h4>Two questions, not one</h4>
+          <p>Where you stand in the mill changes what this decision even is. At the paper machine it is an economics question, and the market sets it. When everything you make can be sold at attractive margins, tons beat efficiency. When the market is soft, the same machine should be dialled back and run cleaner, because cost per ton is now the measure. Same machine, same crew, opposite right answer.</p>
+          <p>Everywhere upstream, nothing sets its own rate. The digester's rate comes from the machine, from the tank levels in between, from white liquor availability, from how fast the evaporators keep up. Rate propagates backward from the front door.</p>
+          <h4>What makes it hard</h4>
+          <p>The trap is treating <em>how fast can we run</em> as though it were <em>how fast should we run</em>. Capability is a constraint question; rate is an economics question, and most mills only ever answer the first. Operating rate is a commercial decision as much as a production decision. When the market will absorb everything the mill can make at attractive margins, the right move may be to push toward demonstrated capability while managing quality and reliability risk. When the market is constrained, running flat out creates excess inventory, wastes energy, and stresses equipment. The intelligent decision may be to optimize yield, energy, quality, grade mix, or cash contribution instead of maximum throughput. Intelligence improves the decision by connecting current operating conditions with historical performance, known constraints, quality risk, maintenance risk, and economic impact.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Key Questions</p>
+          <h4>Before you push the rate</h4>
+          <ul class="fw-questions">
+            <li>Is the market asking us to maximize output, or are we under demand, margin, or inventory constraints?</li>
+            <li>What is the current constraint: process, equipment, utilities, materials, downstream capacity, or market demand?</li>
+            <li>What happens to quality, yield, energy, and downtime risk as rate increases?</li>
+            <li>Is the operation stable enough to push? Are we carrying unresolved maintenance or reliability risk?</li>
+            <li>Would running slightly slower produce more good output, better yield, or better profit per hour?</li>
+            <li>Are different shifts, grades, or lines running at different rates for good reasons?</li>
+          </ul>
+        </div>
+      </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> Engineering Intelligence computes the rate against live constraints and inventories; Operational Intelligence keeps it in view as conditions move. See <a href='envoy-intelligence.html'>Envoy Intelligence</a>.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ DECISION 2 ═══ -->
+  <section class="section" id="decision-2" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Decision 2</p>
+        <h2>Where should everything else be set?</h2>
+        <p class="disc-keyline">There are many ways to hit the same number. They are not equally good, and most mills settle that question by argument rather than by evidence.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The decision</h4>
+          <p>The rate is settled. Now where do the other hundred variables go? On a recovery boiler, solids multiplied by flow gives the firing rate, but many combinations of flow, solids, and air distribution produce that same firing rate, with different steam generation, different reduction efficiency, and different plugging risk. In a digester, many combinations of temperature and time reach the same H-factor, with different yield, different rejects, and different steam. On a paper machine, many combinations of refining, steam, and speed hold the same quality spec at very different cost.</p>
+          <h4>Why operators argue</h4>
+          <p>Not because one recipe works and another doesn't. Because they all work. Each one hits the number. The argument is about which path costs least, and most mills have never had the evidence to settle it, so it gets settled by seniority, by habit, or by whoever is most stubborn on that crew. Everyone in the control room is right, and the mill still pays for the difference.</p>
+          <h4>What makes it hardest</h4>
+          <p>Turndown. Back-end processes are tuned, centerlined, and remembered at full rate. Every operator knows how the digester runs flat out. Ask the same area to run at eighty percent, which is precisely what Decision 1 does when the market softens, and there is no recipe. The operating point that was optimal at full rate is not optimal at reduced rate, and almost no mill has worked out what replaces it.</p>
+          <h4>The trap</h4>
+          <p>Local optimization is not mill optimization. The best operating point for the evaporators alone is not the best operating point for the recovery island. One area can look better while the total operation gets worse.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Key Questions</p>
+          <h4>Finding the operating point</h4>
+          <ul class="fw-questions">
+            <li>For this target, how many combinations of settings would reach it?</li>
+            <li>Which of those combinations costs least, and how do we know?</li>
+            <li>Do all crews run this the same way? If not, which one is right?</li>
+            <li>What changes about the answer when we are not at full rate?</li>
+            <li>Are we optimizing one asset, line, or department at the expense of the total process?</li>
+            <li>What does this operating point cost us per ton, and what would the best one cost?</li>
+          </ul>
+        </div>
+      </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> this is the decision <a href='smart-centerlines.html'>Envoy Smart Centerlines</a> answers, with cost-optimal targets and limits for every grade, rate, and run condition.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ DECISION 3 ═══ -->
+  <section class="section disc-section-alt" id="decision-3">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Decision 3</p>
+        <h2>When should we intervene?</h2>
+        <p class="disc-keyline">Intervene at the right time, for the right reason, with the right level of response.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The decision</h4>
+          <p>Every factory has to decide when a signal, trend, or abnormal condition has crossed the threshold from watch to action. This is not only a control-room decision: it can be an operator adjustment, an engineering investigation, a maintenance inspection, a quality hold, a rate change, or a leadership escalation. In a mill, it's deciding when moisture variation, vibration, sheet instability, or a steam imbalance deserves action before it becomes a break or a quality issue.</p>
+          <h4>What makes it hard</h4>
+          <p>The timing tradeoff cuts both ways. Late intervention lets small abnormal conditions become downtime, quality loss, equipment damage, or customer impact. Over-intervention creates alarm fatigue, unnecessary work, operator frustration, and loss of trust. Intelligence improves this decision by distinguishing normal variation from meaningful change and guiding the right level of response. Early warning is only valuable when it leads to timely, proportional, and trusted action.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">Levels of Response</p>
+          <h4>From watching to learning</h4>
+          <p style="color:var(--gray-600);">Intervention is not one thing. It has degrees:</p>
+          <ol>
+            <li><strong>Monitor:</strong> the signal is visible, but no action is required yet</li>
+            <li><strong>Investigate:</strong> the pattern is unusual enough to check context and likely causes</li>
+            <li><strong>Adjust:</strong> a controlled operating change is appropriate</li>
+            <li><strong>Escalate:</strong> the issue requires engineering, maintenance, quality, or leadership involvement</li>
+            <li><strong>Contain:</strong> the risk is high enough to protect safety, quality, equipment, or production continuity</li>
+            <li><strong>Verify:</strong> confirm whether the intervention worked</li>
+            <li><strong>Learn:</strong> update the workflow, threshold, runbook, or operating practice</li>
+          </ol>
+        </div>
+      </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> Smart Centerlines defines what out-of-limits means; <a href='envoy-intelligence.html'>Operational Intelligence</a> groups deviations into events and makes the call.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ DECISION 4 ═══ -->
+  <section class="section" id="decision-4" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Decision 4</p>
+        <h2>What should we fix first?</h2>
+        <p class="disc-keyline">The loudest problem is not always the most important problem.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The decision</h4>
+          <p>Every factory has more problems, risks, and opportunities than resources to address them. And &ldquo;fix&rdquo; means more than repairing equipment. It can mean fixing an asset, a process condition, a quality driver, a reliability pattern, a workflow, an information gap, or a management-system gap: the signal no one owns, the alert no one closes, or the recurring issue that never becomes standard work. In a mill, it's choosing between a dryer limitation, a recurring sheet break pattern, a critical pump vibration, a bad actor valve, and a quality variation on a high-margin grade.</p>
+          <h4>What makes it hard</h4>
+          <p>Priority is not the same as urgency. Something can feel urgent because it is recent, visible, loud, or politically important, but the right priority depends on risk, value, constraint impact, customer impact, recurrence, and actionability. Safety, regulatory, and environmental obligations are never just another economic tradeoff; existing compliance systems remain authoritative. Once those are respected, intelligence helps leaders focus scarce resources on the problems that matter most. A signal without prioritization becomes backlog.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What to Weigh</p>
+          <h4>Before it goes on the list</h4>
+          <p style="color:var(--gray-600);">Seven tests for what deserves attention now:</p>
+          <ol>
+            <li><strong>Risk:</strong> what could happen if we do nothing?</li>
+            <li><strong>Value:</strong> how much performance, margin, quality, energy, or production is at stake?</li>
+            <li><strong>Constraint:</strong> does this affect the current or future bottleneck?</li>
+            <li><strong>Customer:</strong> could this affect quality, delivery, or customer commitments?</li>
+            <li><strong>Urgency:</strong> how soon does action need to happen?</li>
+            <li><strong>Actionability:</strong> can we do something useful with the people, parts, and window we have?</li>
+            <li><strong>Recurrence:</strong> will fixing this remove a repeating loss, or only treat today's symptom?</li>
+          </ol>
+        </div>
+      </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> <a href='process-reliability-reporting.html'>Process Reliability Reporting</a> delivers findings ranked by impact before the shift starts.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ DECISION 5 ═══ -->
+  <section class="section disc-section-alt" id="decision-5">
+    <div class="container">
+      <div class="disc-header fade-in">
+        <p class="eyebrow">Decision 5</p>
+        <h2>What can we learn from yesterday?</h2>
+        <p class="disc-keyline">Reporting tells you what happened. Learning changes what happens next.</p>
+      </div>
+      <div class="disc-grid fade-in">
+        <div class="disc-col">
+          <h4>The decision</h4>
+          <p>Every factory has to decide what to remember, change, standardize, or improve based on recent events, and &ldquo;yesterday&rdquo; means the last shift, the last grade change, the last upset, the last maintenance job, or the last month of recurring losses. In a mill, it's learning from a sheet break, a moisture variation, or a steam imbalance so the next similar event is diagnosed faster and handled more consistently.</p>
+          <h4>What makes it hard</h4>
+          <p>Looking backward is not the same as learning. Mills already have production reports, downtime reports, shift logs, maintenance histories, and dashboards, but those artifacts only become learning when they change what people do next. Too much knowledge stays trapped in shift notes, maintenance comments, engineering spreadsheets, and individual memory, and recurring problems get solved from scratch again and again. A factory has not learned from an event until the learning changes a workflow, runbook, threshold, standard, model, or training material.</p>
+        </div>
+        <div class="disc-framework">
+          <p class="fw-label">What Learning Takes</p>
+          <h4>From event to standard</h4>
+          <p style="color:var(--gray-600);">Seven steps that turn experience into advantage:</p>
+          <ol>
+            <li><strong>Capture:</strong> what happened?</li>
+            <li><strong>Contextualize:</strong> what was the operating situation?</li>
+            <li><strong>Explain:</strong> why did it happen, or what are the likely causes?</li>
+            <li><strong>Decide:</strong> what should we do differently?</li>
+            <li><strong>Update:</strong> which workflow, runbook, threshold, standard, or training material should change?</li>
+            <li><strong>Share:</strong> who needs to know before the issue repeats?</li>
+            <li><strong>Verify:</strong> did the change improve future performance?</li>
+          </ol>
+        </div>
+      </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> <a href='envoy-intelligence.html'>Engineering Intelligence runbooks</a> turn the investigation into something repeatable, so the second time costs less than the first.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══ GO DEEPER ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Go Deeper</p>
+        <h2>How well does your mill make these five decisions?</h2>
+        <p>The five decisions look different at every stage of operational maturity, from unstable firefighting to a mill that learns. Score each decision against the five levels of <a href='maturity-model.html'>The Maturity Model</a> and the answer isn't a number, it's a sentence: repeatable on quality, unstable on reliability, so start there. The full story is in <a href='book.html'>Leading the Intelligent Factory</a>.</p>
+        <div class="btn-group" style="justify-content:center; margin-top:1.5rem;">
+          <a class='btn btn-primary' href='assessment.html'>Take the Assessment</a>
+          <a class='btn btn-outline' href='book.html'>About the Book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  </main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

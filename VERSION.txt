@@ -1,0 +1,14 @@
+7
+
+Version 7 — GitHub and Netlify repository starter
+Prepared November 5, 2026
+
+This revision organizes the website from the Version 6 review package for repository-based
+collaboration. Website page content and visual assets are unchanged.
+The nine SVG diagrams remain proposals under design/diagram-proposals/.
+
+No remote GitHub repository, branch, tag, release, or Netlify deployment
+has been created by preparing this starter.
+
+Suggested first release tag after import: v7.0
+Next enhancement: Version 8, unless Gordon specifies another version.

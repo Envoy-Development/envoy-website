@@ -1,0 +1,52 @@
+{
+  "created": "2026-10-31",
+  "method": "Built-in image generation; original output PNGs copied without modification",
+  "illustrative": true,
+  "assets": [
+    {
+      "page": "industries.html",
+      "file": "assets/industry-heroes/industry-overview-hero.png",
+      "description": "Black woman; general process equipment",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG RGBA",
+      "bytes": 2329746,
+      "sha256": "c1282d1552ee5902b6ef081b0d57ac62c3262b8c1266edc1575651f21ba9bd83",
+      "source_image": "exec-e4800936-56ae-42ca-97a9-467ae5b352d9.png"
+    },
+    {
+      "page": "pulp-and-paper.html",
+      "file": "assets/industry-heroes/industry-pulp-paper-hero.png",
+      "description": "White man; photo-referenced masonry HD pulp chest with short centered taper and broad lower chamber",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG RGBA",
+      "bytes": 2428025,
+      "sha256": "6aab32f98b8f4ad838bc50b74666984b65389c5e66c7856a2eddfac35bbece60",
+      "source_image": "exec-80113d09-dbf7-4a5c-b726-3ab2611f4b27.png",
+      "revision": "Reference construction photographs of comparable equipment supplied as image references to correct taper, base diameter and concentric alignment."
+    },
+    {
+      "page": "food.html",
+      "file": "assets/industry-heroes/industry-food-hero.png",
+      "description": "East Asian woman; hygienic food processing",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG RGBA",
+      "bytes": 2194983,
+      "sha256": "73cf76d744d85f9708e334eb3286dd7b1bb51e11c10d4189fa53aae3fceff021",
+      "source_image": "exec-a654cea5-804e-4841-ba24-2d77b8ed708d.png"
+    },
+    {
+      "page": "specialty-chemicals.html",
+      "file": "assets/industry-heroes/industry-specialty-chemicals-hero.png",
+      "description": "South Asian man; specialty-chemical reactors",
+      "width": 1122,
+      "height": 1402,
+      "format": "PNG RGBA",
+      "bytes": 2255991,
+      "sha256": "825a9c17a46300b711137544c777e5a35309d6953bddf1561f41f201a312de77",
+      "source_image": "exec-0c56905a-3016-4159-be16-d8492fa72f26.png"
+    }
+  ]
+}

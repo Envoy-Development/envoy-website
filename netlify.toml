@@ -1,0 +1,4 @@
+# Static HTML/CSS/JavaScript site; no build command is required.
+# Select main as the production branch in the Netlify project settings.
+[build]
+  publish = "site"

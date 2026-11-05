@@ -1,0 +1,640 @@
+ENVOY WEBSITE MESSAGING PROPOSAL
+October 31, 2026
+
+Complete main-page wording from the proposed Version 3 draft.
+See MESSAGING-REVIEW.html for the rationale and source notes.
+
+
+
+PAGE: index.html
+
+Run reliably. Make better operating decisions.
+
+Operational Intelligence
+for Process Industries.
+
+A software platform built by process engineers with decades of plant experience. Envoy combines physics-based analytics, artificial intelligence, and ongoing engineering guidance to help your team identify developing problems, improve operating targets, and solve difficult process issues.
+
+Request a DemoExplore the Platform
+
+Built for the plant you already have. See how Envoy fits.
+
+Your Team’s Priorities
+
+Spend less time searching.
+More time improving your plant.
+
+Production demands keep coming. Data sits in different systems, operating conditions change, and experienced people are stretched. Envoy helps your team focus on the issues and opportunities that deserve attention.
+
+See your process more clearly
+
+Bring available process data into a shared view. Use your existing historian or add historian capability where you need it.
+
+Protect reliable operation
+
+Identify meaningful changes in equipment, sensors and control loops so your team can investigate before production losses grow.
+
+Improve operating performance
+
+Give operators clear targets for current conditions, helping them balance consistent quality, production rate, energy and material use.
+
+Build a more capable team
+
+Extend your engineering capacity and help new engineers and operators understand the process, find relevant knowledge and learn from experience.
+
+The Envoy Platform
+
+One platform. Three connected modules.
+
+Choose a starting point around your plant’s priorities. Each module brings software and process knowledge to a different operating question, with experienced engineers supporting your team.
+
+Reliability
+
+Process Reliability Reporting
+
+What needs attention, and why?
+
+Start the day with a short, engineer-reviewed set of priorities. Investigate meaningful changes and get experienced help with the problems that need a closer look.
+
+• Concise morning reports with supporting evidence
+
+• Process, sensor and control-loop monitoring
+
+• Root-cause investigations and engineering support
+
+Explore ReportingOptimization
+
+Envoy Smart Centerlines
+
+Where should this process be operating?
+
+Give your team operating targets that reflect the product, grade, speed and conditions at hand. Keep attention on the settings that support quality, throughput and efficient resource use.
+
+• Targets for comparable operating conditions
+
+• Live comparisons with reviewed operating ranges
+
+• Engineering help to develop and maintain targets
+
+Explore CenterlinesKnowledge & Guidance
+
+Envoy Intelligence
+
+How do we understand the problem and respond?
+
+Connect AI to process data, equipment context and plant knowledge. Help experienced staff investigate problems and help new engineers and operators learn how the process works.
+
+• Guidance grounded in the plant’s context
+
+• Onboarding and knowledge transfer
+
+• Access to procedures and reviewed findings
+
+Explore Intelligence
+
+See how the platform fits together →
+
+Built for Established Plants
+
+Work with the systems you already have.
+
+A plant can contain decades of equipment, different control systems, and uneven access to process history. Envoy is designed for that reality.
+
+Our vendor-agnostic approach works across mixed equipment and data environments. We connect to available sources, use an existing historian where one is in place, and can provide historian capability where it is needed.
+
+Start with a priority process area. We work with your team to understand the data, equipment and operating questions that matter there.
+
+Explore the data foundation →
+
+A practical fit for your operation
+
+• A mix of equipment generations and control-system vendors.
+
+• An existing historian, gaps in coverage, or a need to establish process history.
+
+• Limited engineering bandwidth and recurring problems that need deeper investigation.
+
+• New hires and experienced employees who need to share process knowledge.
+
+An Extension of Your Team
+
+Experienced engineers who stay involved.
+
+The value of a finding depends on understanding the process behind it. Envoy’s engineers help interpret what changed, why it matters, and what your team should investigate next.
+
+That support starts with clear daily priorities and extends to difficult troubleshooting, operating-target development and knowledge transfer. When specialist experience is hard to hire or retain locally, your team has people to call on.
+
+A focused morning report. A deeper investigation when you need it. Engineering support as your plant changes.
+
+See the Reliability Module
+
+Example reporting format from Envoy’s pulp-and-paper work.
+
+Industries
+
+Deep roots. A broader future.
+
+Proven in pulp and paper. Extending our approach to food and specialty chemicals, with applications grounded in each operation’s processes and priorities.
+
+Explore our industries →
+
+Our foundation
+
+Pulp & Paper
+
+Practical engineering insight across paper machines, pulp production, chemical recovery, and utilities.
+
+Explore pulp & paper →
+
+Expanding our focus
+
+Food
+
+Applications to explore around process consistency, yield, production interruptions, and energy performance.
+
+Explore food →
+
+Expanding our focus
+
+Specialty Chemicals
+
+Applications to explore around operating consistency, material use, process variability, and engineering investigations.
+
+Explore specialty chemicals →
+
+A Practical Starting Point
+
+Begin with the problem your team needs to solve.
+
+Whether the priority is downtime, operating consistency or engineering capacity, the first step is understanding your plant.
+
+01 / UNDERSTANDDiscuss your process and priorities
+
+Walk through the recurring issue, current systems and information your team needs.
+
+02 / CONNECTDefine the first application
+
+Agree the process area, data connections, module scope and practical measures of progress.
+
+03 / IMPROVEWork with your team over time
+
+Review findings, investigate problems and refine the operating knowledge your team uses.
+
+Start With Your Plant
+
+What would a clearer operating picture change for your plant?
+
+Tell us what is consuming your team’s time. We’ll show how Envoy’s platform and engineers could help with that specific challenge.
+
+Request a DemoExplore the Platform
+
+
+PAGE: solutions.html
+
+The Envoy Operational Intelligence Platform
+
+One platform for
+better plant performance.
+
+Connect your plant’s data, process knowledge and engineering experience. Envoy combines physics-based analytics, AI and ongoing engineering guidance in a software platform that helps your team improve reliability, operating performance and access to practical knowledge.
+
+Request a DemoExplore the Modules
+
+The Shared Data Foundation
+
+A clearer view of the plant you already have.
+
+Established plants rarely have one generation of equipment or one control-system vendor. Process history may be complete in one area and missing in another.
+
+Envoy takes a vendor-agnostic approach. Connect available process-data sources and use the historian you already have. Where coverage is missing, Envoy can provide historian capability to collect and retain time-stamped process data, giving your team an operating history to review and analyze.
+
+We work with your team to confirm the interfaces, access and data quality needed for the first application. The starting point is your operating priority and the systems available to support it.
+
+YOUR PLANT
+
+Existing
+historiansMixed controls
+and equipmentHistorian capability
+where needed
+
+A shared view of your processOperating data · Equipment context · Plant knowledge
+
+Physics-based analyticsArtificial intelligenceExperienced engineers
+
+SUPPORTING YOUR PLATFORM MODULES
+
+Platform Modules
+
+Start with the operating question that matters most.
+
+Reliability, optimization and practical intelligence share the same foundation. We define the initial module scope around your plant’s priorities and develop the application with your team.
+
+Reliability
+
+Process Reliability Reporting
+
+What needs attention, and why?
+
+Start the day with a short, engineer-reviewed set of priorities. Investigate meaningful changes and get experienced help with the problems that need a closer look.
+
+• Concise morning reports with supporting evidence
+
+• Process, sensor and control-loop monitoring
+
+• Root-cause investigations and engineering support
+
+Explore ReportingOptimization
+
+Envoy Smart Centerlines
+
+Where should this process be operating?
+
+Give your team operating targets that reflect the product, grade, speed and conditions at hand. Keep attention on the settings that support quality, throughput and efficient resource use.
+
+• Targets for comparable operating conditions
+
+• Live comparisons with reviewed operating ranges
+
+• Engineering help to develop and maintain targets
+
+Explore CenterlinesKnowledge & Guidance
+
+Envoy Intelligence
+
+How do we understand the problem and respond?
+
+Connect AI to process data, equipment context and plant knowledge. Help experienced staff investigate problems and help new engineers and operators learn how the process works.
+
+• Guidance grounded in the plant’s context
+
+• Onboarding and knowledge transfer
+
+• Access to procedures and reviewed findings
+
+Explore Intelligence
+
+What Your Team Receives
+
+Clear roles within one platform.
+
+Each module supports a different part of the work, while retaining the process context and engineering involvement that make the result useful.
+
+Your priority | Process Reliability Reporting | Smart Centerlines | Envoy Intelligence | 
+
+Operating goal | Reduce avoidable production losses and focus engineering attention. | Improve consistency and operate closer to effective targets. | Help people understand the process, investigate problems and share knowledge. | 
+
+Practical output | Concise morning findings, supporting trends and deeper investigations. | Reviewed targets and operating ranges for current conditions. | Process-specific answers and investigation guidance grounded in available plant knowledge. | 
+
+Engineering partnership | Interpretation, prioritization, root-cause investigation and follow-through. | Target selection, validation and maintenance as conditions change. | Application definition, relevant process context and review of knowledge used by the team. | 
+
+Learn more | Explore Reporting | Explore Centerlines | Explore Intelligence | 
+
+How the Platform Becomes Useful
+
+Intelligence grounded in the physical process.
+
+Useful guidance has to account for the equipment, the operating conditions and the decision your team is making.
+
+PROCESS KNOWLEDGEPhysics-based analytics
+
+Apply engineering relationships, operating constraints and analytical methods to interpret how the process is behaving.
+
+KNOWLEDGE ACCESSAI in the plant’s context
+
+Connect AI to relevant data, equipment information and approved process knowledge so it can help your team ask better questions and investigate.
+
+ONGOING SUPPORTExperienced engineering judgment
+
+Keep people who understand the process involved in interpreting findings, developing targets and helping your team solve difficult problems.
+
+Support Beyond the Screen
+
+Give your team more experience to draw on.
+
+Recruiting a specialist for every process area is difficult, especially at remote plants. Envoy’s engineers extend your team’s capacity for daily review, deeper investigation and operating improvement.
+
+We also help make process knowledge easier to use and pass on. New engineers and operators can learn the equipment, understand why operating targets matter, and find relevant procedures and prior findings.
+
+Explore onboarding and knowledge transfer →
+
+Start with a defined application
+
+• Choose a priority process area and a clear operating objective.
+
+• Confirm available data, historian needs and the people involved.
+
+• Agree the modules, engineering support and reporting arrangements.
+
+• Review results together and refine the application as your needs change.
+
+Industry Experience
+
+Built in pulp and paper. Expanding across process industries.
+
+Our engineering foundation comes from complex pulp-and-paper operations. We are extending that approach to food and specialty chemicals, with each application grounded in its own equipment, operating conditions and priorities.
+
+Pulp & PaperFoodSpecialty Chemicals
+
+Start With Your Plant
+
+Where does your team need a clearer answer?
+
+Bring a recurring reliability issue, an operating target or a knowledge gap. We’ll show how the platform can support your team around that priority.
+
+Request a DemoExplore Industries
+
+
+PAGE: process-reliability-reporting.html
+
+Reliability Module · Process Reliability Reporting
+
+Catch developing problems.
+Protect reliable production.
+
+Help reduce unplanned downtime by giving your team an earlier view of developing problems and a clear place to focus. Envoy combines process analysis with experienced engineers who review operating changes, monitor sensors and control loops, and help investigate the issues affecting reliable production.
+
+Request a DemoPlatform Overview
+
+Your Morning Priorities
+
+A clear starting point for your day.
+
+Your team should be able to start with the findings that deserve attention. Envoy engineers review the operating data, consider what your process is doing, and deliver a concise morning report with supporting trends and practical questions to pursue.
+
+The report reflects the judgment of someone who knows your equipment and operating history. Your feedback helps us distinguish an expected change from an issue worth investigating, keeping the findings relevant as the plant changes.
+
+• Prioritized findings with an explanation of why they matter.
+
+• Supporting trends and operating context.
+
+• Questions and next checks for your team to consider.
+
+• Direct access to the engineers behind the findings.
+
+An example of the concise findings and supporting trends in an Envoy morning report.
+
+Reliability Across the Process
+
+See the changes that can affect production.
+
+A useful warning depends on the equipment, its operating state, and the signals around it. Our review connects those details so your team can assess what needs attention.
+
+Equipment and process performance
+
+Investigate changes in pressure, temperature, flow, and other operating signals that may indicate fouling, degradation, or emerging production constraints. Earlier attention gives your team more opportunity to plan an intervention.
+
+Modes and setpoints
+
+Understand when equipment is running in a different mode or at different setpoints than expected. Review those changes against the product, production rate, and recent operating history.
+
+Control loop health
+
+Identify control loops that are hunting, spending time at their limits, or performing differently. Help engineers and operators focus their investigation on control behavior that may be affecting stability.
+
+Sensor health
+
+Review suspect measurements, unusual signal behavior, and inconsistencies between related readings. Give your team evidence to check whether a developing issue belongs to the process or the measurement.
+
+Energy and material use
+
+Examine unexpected changes in steam, power, water, and material use alongside production conditions. Find operating losses that warrant investigation before they become accepted as normal.
+
+Quality and stability
+
+Look at changes in variability and operating conditions associated with production or quality problems. Bring useful evidence to recurring issues that are difficult to see in an individual trend.
+
+Root Cause Investigations
+
+Keep working until the problem is better understood.
+
+Some questions need more than a morning report. When a problem persists, Envoy engineers can compare operating periods, examine related variables, and work with your team to investigate likely causes.
+
+In a paper mill, that may mean tracing conditions around recurring sheet breaks. In another process, the question may be a quality change or unexplained energy use. The investigation follows the equipment, the evidence, and the decision your team needs to make.
+
+An extension of your engineering team
+
+• Experienced people to discuss findings and challenge assumptions.
+
+• Deeper studies when a recurring issue needs more attention.
+
+• Practical explanations that help your team build process knowledge.
+
+Getting Started
+
+Start with the process area that matters most.
+
+01 · CONNECTWork with the data you have.
+
+Use an existing historian, connect uncovered areas, or discuss historian capability where it is needed. We agree the connections, reporting scope, and delivery schedule with your team.
+
+02 · UNDERSTANDBring the operating context.
+
+Your Envoy engineer learns the equipment, typical operating conditions, and current priorities. Your team’s experience helps establish what a meaningful finding looks like.
+
+03 · FOLLOW THROUGHTurn findings into useful conversations.
+
+Review the reports, investigate the important questions, and share what changed. Ongoing collaboration keeps the service aligned with the work your plant needs to do.
+
+Protect Reliable Production
+
+What is your team trying to catch earlier?
+
+Tell us about a recurring problem, a process area, or a gap in engineering capacity. We’ll show how the reporting service could support your team.
+
+Request a DemoExplore Smart Centerlines
+
+
+PAGE: smart-centerlines.html
+
+Optimization Module · Smart Centerlines
+
+Know where your process
+should run.
+
+Help operators maintain the conditions that support quality, production, and cost goals. Envoy Smart Centerlines combines operating history, process knowledge, and engineering review to establish targets for the product, rate, and conditions you are running today.
+
+Request a DemoPlatform Overview
+
+A Shared Operating Reference
+
+Make good operating conditions easier to repeat.
+
+A centerline is an agreed target or operating range for a process variable in a defined context. That context matters: a useful setting for one product or production rate may be wrong for another.
+
+Smart Centerlines gives engineers and operators a common reference. Live comparisons make deviations visible, while engineering review helps establish whether the targets make sense for the equipment, product requirements, and operating constraints.
+
+Your team can spend more time improving performance when the starting point is clear. Shared targets also help new operators understand what good operation looks like and give experienced crews a basis for explaining their decisions.
+
+Targets that reflect how you are running
+
+• The product, grade, or recipe being made.
+
+• Production speed or operating rate.
+
+• Relevant material and equipment conditions.
+
+• Quality requirements and process constraints.
+
+Engineering Behind the Targets
+
+Use the evidence. Apply process judgment.
+
+Historical performance is a useful starting point for optimization. Our engineers work with your team to turn that history into operating guidance that reflects the physical process and your priorities.
+
+01 · COMPAREFind relevant operating history.
+
+Examine comparable runs with the quality and performance outcomes you want to repeat. Separate meaningful operating conditions so unlike products, grades, or rates do not get combined into one misleading target.
+
+02 · REVIEWEstablish practical targets.
+
+Use statistical analysis alongside process knowledge to review candidate ranges. Engineers consider equipment limits, quality needs, and interactions between variables before agreeing targets with your team.
+
+03 · MAINTAINKeep the reference useful.
+
+Compare live conditions with approved ranges and review deviations. Revisit targets as materials, equipment, products, and operating requirements change, so the reference continues to fit the plant.
+
+How It Looks
+
+See the target in its operating context.
+
+In this illustrative pulp-and-paper example, each grade has its own operating range. The target changes with what the machine is making, so the operator can compare current conditions with the relevant reference.
+
+What Your Team Can Improve
+
+Build consistency into daily operation.
+
+Quality across shifts
+
+Give different crews the same reference for operating conditions. Make it easier to discuss deviations, compare decisions, and work toward more consistent quality.
+
+Product changes and restarts
+
+Use reviewed targets as a starting point when moving to a new product or recovering from a disruption. Compare current conditions with a relevant successful run.
+
+Cost and production tradeoffs
+
+Evaluate quality, throughput, energy, and material use together. Better operating conditions depend on your objectives and constraints; a historical range is the beginning of that discussion.
+
+Knowledge transfer
+
+Make experienced operators’ knowledge easier to discuss and share. Documented targets and their operating context help new team members understand both the setting and its purpose.
+
+Part of the Envoy Platform
+
+A reference your team can keep improving.
+
+Smart Centerlines fits alongside reliability reporting and Envoy Intelligence on the same operational intelligence platform. Reliability findings can identify questions for target review, while process knowledge helps the team understand what the targets mean.
+
+Start with an operating objective and a process area. We’ll review the available history, relevant operating conditions, and engineering work needed to establish and maintain useful targets.
+
+Supported by process engineers
+
+Your plant retains the operating decisions. Envoy engineers bring analysis and practical process experience to target selection, review, and ongoing improvement.
+
+Explore the platform →
+
+Improve Operating Consistency
+
+Which operating target would make the biggest difference?
+
+Bring a quality challenge, a production objective, or a process area where targets vary across shifts. We’ll explore a practical starting point with your team.
+
+Request a DemoExplore Envoy Intelligence
+
+
+PAGE: envoy-intelligence.html
+
+Knowledge and Guidance Module · Envoy Intelligence
+
+Put your plant’s knowledge
+to work.
+
+Help engineers and operators find relevant answers, understand the process, and approach problems with better context. Envoy Intelligence connects AI with equipment knowledge, approved procedures, and engineering experience to support everyday decisions and help new people get up to speed.
+
+Request a DemoPlatform Overview
+
+Make Experience Easier to Access
+
+Give your team a better place to start.
+
+The answer a new engineer needs may be in a procedure, a past investigation, or the experience of someone who is unavailable. Finding that knowledge takes time, especially when a plant is hiring, changing shifts, or operating with a lean engineering team.
+
+Envoy Intelligence brings relevant process knowledge into the work of learning and troubleshooting. Start with your equipment, operating context, and approved information so the guidance relates to the plant your people actually run.
+
+Questions your team asks
+
+• What does this equipment do, and what affects it?
+
+• Why does this operating target change with the product?
+
+• Which procedure applies to this condition?
+
+• What should we investigate, and what have we learned before?
+
+Practical Applications
+
+Support the people making the decisions.
+
+Help experienced teams apply what they know and make that knowledge easier for new colleagues to use.
+
+Onboarding and training
+
+Give new engineers and operators a way to explore equipment, terminology, procedures, and operating targets. Support their training with explanations they can revisit as they gain experience in the plant.
+
+Understanding the process
+
+Connect a measurement or setting with its purpose and the equipment around it. Help people understand how changes in one area can affect performance elsewhere.
+
+Guided troubleshooting
+
+Bring a reliability finding or a centerline deviation into the investigation, alongside relevant equipment information, operating conditions, and approved procedures. Help teams frame useful questions, examine the available evidence, and decide what to check next.
+
+Knowledge transfer
+
+Make approved procedures and reviewed findings easier to find and discuss. Give the next shift or new hire access to useful knowledge beyond the people who first developed it.
+
+Grounded in Your Operation
+
+Useful guidance starts with the right context.
+
+A response is useful only when it relates to the actual process. Envoy works with your team to establish the information and engineering context behind each application.
+
+The equipment you have
+
+Understand the process area, the equipment, and how the systems connect. Keep the discussion relevant to your plant’s configuration and operating constraints.
+
+The information you trust
+
+Use approved site procedures, equipment information, operating targets, and reviewed engineering findings. Give teams a common basis for learning and investigating.
+
+The conditions you are running
+
+Consider the product, production rate, operating state, and relevant process data. A meaningful answer depends on what is happening now and what the team is trying to achieve.
+
+Engineering Support That Stays Involved
+
+Build understanding as you solve problems.
+
+Envoy’s process engineers help define the application, interpret difficult findings, and connect the analysis with practical operating experience. For plants with limited engineering capacity, that gives the local team additional people to turn to.
+
+When an investigation produces a useful answer, your team and Envoy engineers can review the finding and document what was learned. That reviewed knowledge can support future training and investigations. The plant’s people retain responsibility for operating decisions and approved procedures.
+
+Envoy Intelligence works alongside Process Reliability Reporting and Smart Centerlines. Together, the modules connect the issues that deserve attention, the conditions the team is working toward, and the knowledge needed to respond.
+
+Start with a useful question
+
+• An onboarding topic that repeatedly takes expert time.
+
+• A procedure or equipment area people struggle to understand.
+
+• A recurring problem that needs better troubleshooting context.
+
+Explore the platform →
+
+Strengthen Your Team
+
+What knowledge would help your people most?
+
+Tell us where onboarding, finding answers, or recurring investigations take too much time. We’ll explore an application grounded in your equipment, information, and team’s needs.
+
+Request a DemoExplore Reliability Reporting

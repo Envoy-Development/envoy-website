@@ -1,0 +1,58 @@
+ENVOY WEBSITE — VERSION 6 CHANGE LOG
+Prepared November 1, 2026
+
+BASELINE
+The prior download was labeled Version 4 by Gordon. Its legacy filename was
+Envoy-Website-V3-Workspace.zip. That archive has not been changed.
+
+IMPLEMENTED SINCE VERSION 4 — ABOUT ENVOY (VERSION 5)
+- Rebuilt the company page around the people and experience behind Envoy.
+- Added a six-person hero mosaic and the full gallery of 32 team portraits.
+- Included published roles and specialties, group jump links, and responsive
+  portrait framing.
+- Shortened the company story and connected the pulp-and-paper foundation
+  with the broader process-industry direction.
+- Added page-specific styling, local portrait files, and a source manifest.
+- Preserved the preceding About page and created a standalone About review.
+
+NEW REVIEW WORK — DIAGRAM PROPOSAL (VERSION 6)
+- Created nine editable SVG concepts for the homepage, platform overview,
+  Process Reliability Reporting, Smart Centerlines, Envoy Intelligence,
+  industries overview, pulp and paper, food, and specialty chemicals.
+- Included PNG previews and a self-contained HTML review board.
+- Specified each diagram's purpose, placement, text/card replacement,
+  optional supporting visual, mobile treatment, and scope.
+- Kept the concepts separate from the implemented website for review.
+
+CARRIED FORWARD FROM VERSION 4
+- Operational Intelligence for Process Industries positioning and the revised
+  homepage/platform/module copy.
+- Platform and industry navigation, four industry pages, and local assets.
+- Four approved industry hero PNGs, including the final HD-chest revision.
+  All four are byte-identical to the images in the Version 4 baseline.
+- Original Netlify reference copy, messaging review, artwork prompts,
+  previous page snapshots, and source notes.
+
+PACKAGING IN VERSION 6
+- Created one complete Envoy-Website-V6.zip with the website and all review
+  material; no earlier archive or file overlay is needed.
+- Added a Version 6 start page, review guide, this change log, exact file
+  comparison, and a content inventory.
+- Retained the internal 02-version-3 directory name so existing local links
+  continue to work. The package/review version is 6.
+- No public site was changed, and the existing Version 4/5/6 source material
+  remains preserved separately.
+
+EXACT WEBSITE COMPARISON
+Compared with the Version 4 archive:
+  1 existing website file changed: about.html
+  34 website files added: about.css, 32 portraits, team-manifest.json
+  65 existing website files unchanged
+  0 website files removed
+  21 total HTML pages in the current website
+
+Preview-server configuration and temporary review files are excluded.
+The diagram files are additional review assets outside the website folder.
+See V4-TO-V6-FILE-CHANGES.txt for the complete added-file list.
+
+Next enhancement: Version 7 or the next higher version.

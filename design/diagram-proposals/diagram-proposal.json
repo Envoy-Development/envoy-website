@@ -1,0 +1,153 @@
+{
+  "version": 6,
+  "status": "proposal_only",
+  "based_on": "Version 5 working draft",
+  "site_modified": false,
+  "pages": [
+    {
+      "id": "home",
+      "no": "01",
+      "page": "Homepage",
+      "file": "01-homepage.svg",
+      "target": "index.html",
+      "title": "A clearer operating picture. A more capable team.",
+      "idea": "An annotated plant landscape connects equipment, useful signals, an operating window, and the people making decisions. Four short callouts tell the benefit story at a glance.",
+      "takeaway": "Envoy helps the plant see what is happening, notice meaningful changes, improve operating targets, and share experience.",
+      "replace": "Replace the four benefit cards under “Spend less time searching. More time improving your plant.” Let the illustration carry the four benefits, with one short supporting paragraph.",
+      "keep": "Keep the approved hero photograph, headline, and primary call to action. Reduce the later module introductions to three concise links, so the same story is not repeated.",
+      "next": "If a second visual is needed, use a small mixed-systems connection sketch beside the brownfield message. The detailed platform diagram belongs on the platform page.",
+      "boundary": "The signal and operating window are illustrative. The diagram shows information reaching people, with decisions remaining with the plant team.",
+      "mobile": "Recompose into a plant scene followed by two pairs of callouts. Keep the operator and engineer visible."
+    },
+    {
+      "id": "platform",
+      "no": "02",
+      "page": "Platform overview",
+      "file": "02-platform.svg",
+      "target": "solutions.html",
+      "title": "One foundation, three ways to use it.",
+      "idea": "An open platform cutaway shows a report, an operating-window chart, and a question-and-guidance view resting on shared plant data and process context. Engineering support spans the whole picture.",
+      "takeaway": "The modules work from a common foundation; customers can begin with the operating question that matters to them.",
+      "replace": "Replace the boxed foundation explanation under “A clearer view of the plant you already have.” Consolidate some of the repeated module cards under “Start with the operating question that matters most.”",
+      "keep": "Retain “Clear roles within one platform” as optional detail farther down the page. Keep the existing historian and historian-where-needed paths visible.",
+      "next": "A small connection map could show mixed control systems and historians feeding shared context. Use it only if integration remains a frequent sales question.",
+      "boundary": "The three objects are explanatory symbols, not commercial tiers, separate product screenshots, or a required purchase sequence. Existing historian paths do not imply mandatory replacement.",
+      "mobile": "Stack the three work objects above a narrow common foundation, with two clearly labeled historian paths below."
+    },
+    {
+      "id": "reliability",
+      "no": "03",
+      "page": "Process Reliability Reporting",
+      "file": "03-reliability.svg",
+      "target": "process-reliability-reporting.html",
+      "title": "From operating change to a useful morning finding.",
+      "idea": "Time-aligned traces show an expected run change and a separate pattern worth investigating. The evidence passes through engineer review into three useful report questions: What changed? Why does it matter? What should we check?",
+      "takeaway": "The value is a practical priority for the plant team, supported by process context and experienced interpretation.",
+      "replace": "Replace the six cards under “See the changes that can affect production.” Use the diagram to explain the workflow, then summarize the monitoring scope in one short line.",
+      "keep": "Keep the real report example under “A clear starting point for your day.” The concept explains the reasoning; the actual report demonstrates the deliverable.",
+      "next": "An optional evidence tree could support “Keep working until the problem is better understood,” showing how a working hypothesis is checked against several signals.",
+      "boundary": "The traces are synthetic. A pattern is a reason to investigate, not proof of a root cause or a guaranteed failure prediction. The review step reflects the intended engineering-led service.",
+      "mobile": "Use three vertical stages: evidence, review, and morning priorities. Show the run context directly above the related signals."
+    },
+    {
+      "id": "centerlines",
+      "no": "04",
+      "page": "Smart Centerlines",
+      "file": "04-smart-centerlines.svg",
+      "target": "smart-centerlines.html",
+      "title": "The right operating range depends on the run.",
+      "idea": "Enlarge and simplify the operating-window graphic already on the page. Two product/rate contexts have different reviewed ranges; a transition is interpreted separately, and one deviation is highlighted for review.",
+      "takeaway": "A useful target reflects the way the plant is running, rather than applying one fixed range to every condition.",
+      "replace": "Move the improved diagram up into “Make good operating conditions easier to repeat,” replacing the “Targets that reflect how you are running” sidebar. Remove the duplicate placement farther down.",
+      "keep": "Keep the established operating-window idea. It is already one of the strongest explanatory elements on the website.",
+      "next": "If needed, replace “Use the evidence. Apply process judgment.” cards with a small selection sketch: comparable periods, reviewed conditions, practical operating targets.",
+      "boundary": "These are illustrative reviewed operating ranges, not customer results, guaranteed economic optima, or commands sent automatically to control systems.",
+      "mobile": "Use two stacked context panels with the same visual scale and a shared legend. Keep the transition and review marker readable."
+    },
+    {
+      "id": "intelligence",
+      "no": "05",
+      "page": "Envoy Intelligence",
+      "file": "05-envoy-intelligence.svg",
+      "target": "envoy-intelligence.html",
+      "title": "Ask a plant question. See the context behind the guidance.",
+      "idea": "A real operating question is connected to plant context, reviewed knowledge, and operating history. These meet in guided next steps, with an operator and engineer making the decision.",
+      "takeaway": "The experience helps people investigate, learn, and carry knowledge forward in the context of their own plant.",
+      "replace": "Combine the question sidebar under “Give your team a better place to start” and the three cards under “Useful guidance starts with the right context” into this single explanatory visual.",
+      "keep": "Keep a few plain-language example questions. Tie the onboarding and knowledge-transfer message to the people in the diagram.",
+      "next": "A small reviewed-knowledge loop could support “Build understanding as you solve problems”: question, investigation, documented learning, future use.",
+      "boundary": "This is a guidance concept, not a fabricated chat interface. It does not imply that every answer is automatically verified, every source is connected, or the system learns from every interaction without review.",
+      "mobile": "Place the question first, then the three kinds of context, then the suggested checks and people. Avoid a tiny hub-and-spoke diagram."
+    },
+    {
+      "id": "industries",
+      "no": "06",
+      "page": "Industries overview",
+      "file": "06-industries.svg",
+      "target": "industries.html",
+      "title": "Different processes. One engineering approach.",
+      "idea": "Three recognizable equipment scenes sit above a shared engineering, analytics, and AI foundation. Dotted data paths connect them without implying that materials flow from one industry into another.",
+      "takeaway": "Envoy brings a common approach to different plants while interpreting each process on its own terms.",
+      "replace": "Replace the three industry cards and consolidate the nearby explanation under “Built around the realities of your plant.” Reduce “The platform travels. The process context comes first.” to a short caption.",
+      "keep": "Keep direct links to all three industry pages. Clearly identify pulp and paper as the foundation and food and specialty chemicals as new industry focuses.",
+      "next": "No second major visual is needed here. Let this page provide a quick choice of industry and send visitors to the specific process story.",
+      "boundary": "The food and chemicals scenes describe direction and potential application. They do not establish an installed customer base or repeatable results in those sectors.",
+      "mobile": "Stack the three industry scenes, each with its link. Use a shared vertical data path and one engineering/analytics/AI caption."
+    },
+    {
+      "id": "paper",
+      "no": "07",
+      "page": "Pulp & paper",
+      "file": "07-pulp-paper.svg",
+      "target": "pulp-and-paper.html",
+      "title": "Follow the relationship across the process.",
+      "idea": "A continuous paper-machine illustration follows stock and furnish through forming, press dewatering, and drying. One amber investigation path connects press conditions with downstream drying demand.",
+      "takeaway": "A change in one area can matter somewhere else. Envoy helps the team investigate the relationship in the context of grade, furnish, rate, and operating history.",
+      "replace": "Replace the text and “Across the mill” box under “A mill is a connected process.” Absorb relevant material from “Focus the team’s attention where it helps” into the illustrated example.",
+      "keep": "Keep the approved HD-chest hero image and the company’s pulp-and-paper experience. Use a separate short line to acknowledge broader mill applications beyond this example.",
+      "next": "A small comparable-run view could show why two periods should be compared only after grade, rate, and other relevant context are considered.",
+      "boundary": "The sequence is a simplified paper-machine example, not a complete mill map or a customer case study. The highlighted relationship is an investigation prompt, not a diagnosed cause.",
+      "mobile": "Use a vertical or two-part machine drawing: stock/forming, then pressing/drying. Keep the press-to-drying relationship intact.",
+      "sources": [
+        "TAPPI paper manufacturing curriculum",
+        "Valmet press sections"
+      ]
+    },
+    {
+      "id": "food",
+      "no": "08",
+      "page": "Food",
+      "file": "08-food.svg",
+      "target": "food.html",
+      "title": "Connect run conditions with production outcomes.",
+      "idea": "Use a named liquid-food example: blend, heat-treat, and fill, with a buffer connected as a branch. Two qualitative operating traces invite comparison of similar products and run conditions.",
+      "takeaway": "Begin with one process and a useful operating question. Compare like conditions before deciding what a change means.",
+      "replace": "Replace the four cards under “Connect operating conditions with production outcomes.” Use the line illustration and one concise caption to introduce the application.",
+      "keep": "Keep the invitation to begin with “One process. One useful objective.” The approved food hero remains the human introduction.",
+      "next": "A simple run timeline could distinguish production, changeover, and cleaning periods if these become central to the proposed application.",
+      "boundary": "The drawing is an illustrative liquid-food line, not a universal food process, food-safety workflow, automatic release decision, or existing customer result. The traces have no measured units or performance claims.",
+      "mobile": "Stack the line in two segments, with the buffer clearly branching from the main flow. Place the run comparison below with readable labels.",
+      "sources": [
+        "Tetra Pak Orange Book — Processing at the juice packer"
+      ]
+    },
+    {
+      "id": "chemicals",
+      "no": "09",
+      "page": "Specialty chemicals",
+      "file": "09-specialty-chemicals.svg",
+      "target": "specialty-chemicals.html",
+      "title": "Interpret the signal in its operating stage.",
+      "idea": "Pair a jacketed, agitated reactor with qualitative temperature trajectories aligned to example charge, heat, hold, and cool phases. Highlight a departure from comparable reference runs during the hold phase.",
+      "takeaway": "The stage of the process matters. A useful investigation compares equivalent conditions and asks why one run differs.",
+      "replace": "Replace the four cards under “Make a specific operating problem the starting point.” Use this concrete example to explain the broader approach.",
+      "keep": "Keep the approved specialty-chemicals hero. Acknowledge that batch, campaign, and continuous operations need different process context.",
+      "next": "A close-up of jacket heating/cooling and related measurements could support a later discussion of heat-transfer or cycle-consistency applications.",
+      "boundary": "The phase sequence is one proposed batch example, not a universal recipe or a shipped Envoy interface. The amber trajectory is synthetic and remains a prompt for human investigation.",
+      "mobile": "Place the vessel above a wide phase comparison, with a full-size view available for the plotted detail.",
+      "sources": [
+        "De Dietrich — Studies & Simulations"
+      ]
+    }
+  ]
+}

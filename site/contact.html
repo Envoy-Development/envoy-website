@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Envoy Development</title>
+  <meta name="description" content="Request a demo, ask a sales question, or open a support request. Someone from the Envoy team gets back to you within two business days." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── Contact page ── */
+    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .contact-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-top: 3px solid var(--green-600); border-radius: var(--radius);
+      padding: 1.75rem 1.5rem; display: flex; flex-direction: column;
+    }
+    .contact-card h4 { color: var(--navy); margin-bottom: 0.4rem; }
+    .contact-card p { font-size: 0.9rem; flex-grow: 1; margin-bottom: 1.1rem; }
+    .form-wrap { max-width: 720px; margin: 0 auto; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-field { margin-bottom: 1rem; }
+    .form-field label {
+      display: block; font-size: 0.82rem; font-weight: 600; color: var(--gray-700);
+      margin-bottom: 0.35rem;
+    }
+    .form-field input, .form-field select, .form-field textarea {
+      width: 100%; font-family: inherit; font-size: 0.95rem; color: var(--navy);
+      background: var(--white); border: 1px solid var(--gray-300);
+      border-radius: var(--radius-sm); padding: 0.7rem 0.85rem;
+    }
+    .form-field textarea { min-height: 150px; resize: vertical; }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+      outline: none; border-color: var(--green-600);
+      box-shadow: 0 0 0 3px var(--green-100);
+    }
+    .form-hp { position: absolute; left: -9999px; }
+    .form-note { font-size: 0.82rem; color: var(--gray-500); margin-top: 0.9rem; }
+    .form-sent {
+      display: none; background: var(--green-100); border: 1px solid var(--green-200);
+      border-left: 4px solid var(--green-600); border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem; margin-bottom: 2rem; color: var(--green-800); font-weight: 600;
+    }
+    .form-sent.show { display: block; }
+    .contact-direct { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
+    .contact-direct div { text-align: center; }
+    .contact-direct h5 {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--green-700); margin-bottom: 0.4rem;
+    }
+    .contact-direct a { color: var(--gray-700); font-size: 0.95rem; }
+    .contact-direct a:hover { color: var(--green-700); }
+    @media (max-width: 860px) {
+      .contact-grid, .contact-direct { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item" aria-current="page"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html" aria-current="page">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="product-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="product-hero-inner container">
+      <div class="product-hero-content">
+        <p class="eyebrow">Company:&nbsp;&nbsp;&nbsp;Contact Us</p>
+        <h1>Let's talk about your operation.</h1>
+        <p class="hero-sub">Whether you are ready to see a demo, have a question about scope or fit, or need support on something running today, send us a note. Someone from our team gets back to you within two business days.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ THREE ROUTES ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">How Can We Help?</p>
+        <h2>Three ways to reach us.</h2>
+      </div>
+      <div class="contact-grid fade-in">
+        <div class="contact-card">
+          <h4>Request a demo</h4>
+          <p>See how daily reporting, operating targets, and process intelligence fit together. Talk with our team about your process and the questions you want to answer.</p>
+          <a href="#message" class="btn btn-primary">Book a Time</a>
+        </div>
+        <div class="contact-card">
+          <h4>Sales inquiry</h4>
+          <p>Questions about scope, fit, or pricing? Send us a message and we will connect you with the right person on our team.</p>
+          <a href="#message" class="btn btn-outline">Contact Sales</a>
+        </div>
+        <div class="contact-card">
+          <h4>Customer support</h4>
+          <p>Already an Envoy client? Submit a support request and we will get back to you within two business days.</p>
+          <a href="#message" class="btn btn-outline">Support Request</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ MESSAGE FORM ═══ -->
+  <section class="section" id="message" style="background:var(--white);">
+    <div class="container">
+      <div class="section-intro fade-in" style="text-align:center; max-width:680px; margin-left:auto; margin-right:auto;">
+        <p class="eyebrow">Send a Message</p>
+        <h2>Tell us what you need.</h2>
+        <p style="margin-left:auto; margin-right:auto;">Have a question about your operation, or want to see Envoy in action? Send us a message and someone from our team will get back to you within two business days.</p>
+      </div>
+
+      <div class="form-wrap fade-in">
+        <div class="form-preview-notice">This contact form is a design preview. To reach Envoy today, use the <a href="https://envoydevelopment.com/contact" target="_blank" rel="noopener">current contact page</a>.</div><p class="form-preview-notice" id="preview-form-status" role="status" tabindex="-1" hidden></p>
+
+        <form name="contact-preview" data-preview-form onsubmit="return false;">
+          
+          <p class="form-hp"><label>Leave this field empty: <input name="company-website" /></label></p>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="company">Company and site</label>
+              <input type="text" id="company" name="company" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry"><option>Pulp &amp; Paper</option><option>Food</option><option>Specialty Chemicals</option><option>Other process industry</option></select>
+          </div>
+          <div class="form-field">
+            <label for="reason">What is this about?</label>
+            <select id="reason" name="reason">
+              <option>Request a demo</option>
+              <option>Sales inquiry: scope, fit or pricing</option>
+              <option>Customer support</option>
+              <option>Careers</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message-body">Message</label>
+            <textarea id="message-body" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Preview Message</button>
+          <p class="form-note">Preview only. This form does not send or store your details.</p>
+        </form>
+      </div>
+
+      <div class="contact-direct fade-in">
+        <div>
+          <h5>Sales</h5>
+          <a href="mailto:sales@envoydevelopment.com">sales@envoydevelopment.com</a>
+        </div>
+        <div>
+          <h5>Accounting</h5>
+          <a href="mailto:accounting@envoydevelopment.com">accounting@envoydevelopment.com</a>
+        </div>
+        <div>
+          <h5>Careers</h5>
+          <a href='careers.html'>See open roles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- FOOTER -->
+  </main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

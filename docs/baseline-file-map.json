@@ -1,0 +1,508 @@
+{
+  "source_package": "Envoy-Website-V6.zip",
+  "source_package_sha256": "3eb25f1537384e1743803072a0a8dccaf10c65341c5b75416c0e919e428b6989",
+  "revision": 7,
+  "website_visual_changes": false,
+  "files": [
+    {
+      "v6_path": "02-version-3/about.html",
+      "v7_path": "site/about.html",
+      "sha256": "06395e3510d44f9b5f32fd9410401098f6cfc490084e3ff6fe381efd61219119"
+    },
+    {
+      "v6_path": "02-version-3/android-chrome-192x192.png",
+      "v7_path": "site/android-chrome-192x192.png",
+      "sha256": "550d0837179d1cc5365bc54a36c488a05065323e06b5ed3bd11701ff332c7868"
+    },
+    {
+      "v6_path": "02-version-3/android-chrome-512x512.png",
+      "v7_path": "site/android-chrome-512x512.png",
+      "sha256": "9023830d44ddccfb075cc3baaf2fb26f8d7329c892e97cc926060ea468a4b5e2"
+    },
+    {
+      "v6_path": "02-version-3/apple-touch-icon.png",
+      "v7_path": "site/apple-touch-icon.png",
+      "sha256": "143af05fb0ee0655ac6676c97914eadac3b9bee29f5ecafeed45953a0240bcee"
+    },
+    {
+      "v6_path": "02-version-3/articles.html",
+      "v7_path": "site/articles.html",
+      "sha256": "e32b8a41bad989281b6c7a08ee4aa643a5caf78c84f0fd665491334276d70884"
+    },
+    {
+      "v6_path": "02-version-3/assessment.html",
+      "v7_path": "site/assessment.html",
+      "sha256": "6243f5009ad6f94068c566653161f14c8003a949609af491f0071b1c8763ceca"
+    },
+    {
+      "v6_path": "02-version-3/assets/industry-heroes/IMAGE-PROMPTS.txt",
+      "v7_path": "docs/asset-records/industry-hero-prompts.txt",
+      "sha256": "946f42364e167ced239440202983538266c91737928e3d51391bd6b738aed1e6"
+    },
+    {
+      "v6_path": "02-version-3/assets/industry-heroes/asset-manifest.json",
+      "v7_path": "docs/asset-records/industry-hero-manifest.json",
+      "sha256": "e0da1be0b7b5c42708afe9b1280d579e872393d86460eb8b5c901fbcc2b02296"
+    },
+    {
+      "v6_path": "02-version-3/assets/industry-heroes/industry-food-hero.png",
+      "v7_path": "site/assets/industry-heroes/industry-food-hero.png",
+      "sha256": "73cf76d744d85f9708e334eb3286dd7b1bb51e11c10d4189fa53aae3fceff021"
+    },
+    {
+      "v6_path": "02-version-3/assets/industry-heroes/industry-overview-hero.png",
+      "v7_path": "site/assets/industry-heroes/industry-overview-hero.png",
+      "sha256": "c1282d1552ee5902b6ef081b0d57ac62c3262b8c1266edc1575651f21ba9bd83"
+    },
+    {
+      "v6_path": "02-version-3/assets/industry-heroes/industry-pulp-paper-hero.png",
+      "v7_path": "site/assets/industry-heroes/industry-pulp-paper-hero.png",
+      "sha256": "6aab32f98b8f4ad838bc50b74666984b65389c5e66c7856a2eddfac35bbece60"
+    },
+    {
+      "v6_path": "02-version-3/assets/industry-heroes/industry-specialty-chemicals-hero.png",
+      "v7_path": "site/assets/industry-heroes/industry-specialty-chemicals-hero.png",
+      "sha256": "825a9c17a46300b711137544c777e5a35309d6953bddf1561f41f201a312de77"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/alyssa-burkard.jpg",
+      "v7_path": "site/assets/team/alyssa-burkard.jpg",
+      "sha256": "e8503ffc9b2d423d63751bfbd7e02c93699688d1c9833b8cb363faaab594e7a7"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/april-barnhart.jpg",
+      "v7_path": "site/assets/team/april-barnhart.jpg",
+      "sha256": "4afa7fe3d9d94c6fe9c34a3a74588ea51dd18b9e6a77a961317258868e095555"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/bett-antes.jpg",
+      "v7_path": "site/assets/team/bett-antes.jpg",
+      "sha256": "7bd0e1d781a9b310007b91306cb08159fa9e0948a9c3c6d7baf8d85b98678d7d"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/bill-rogers.png",
+      "v7_path": "site/assets/team/bill-rogers.png",
+      "sha256": "20635b39b2597bdcdef6653ea1f9fde1439068afcee8ffd739a742409b1bcf1d"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/brad-madison.jpg",
+      "v7_path": "site/assets/team/brad-madison.jpg",
+      "sha256": "3b751fc31f13d6bfdad095b91b0f7ceb1db66c01363430c3a1104c7c67a759e5"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/brooke-raleigh.jpg",
+      "v7_path": "site/assets/team/brooke-raleigh.jpg",
+      "sha256": "38fb0e67a5399ff3823becb4bb2b9285c35c32ed98153ac5a928089425eaab35"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/darlene-szablewski.jpg",
+      "v7_path": "site/assets/team/darlene-szablewski.jpg",
+      "sha256": "ff1ad0adeee5cd2ca591976f856628bd579595a414b36fc2af609a74818c1ed8"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/david-brewer.jpg",
+      "v7_path": "site/assets/team/david-brewer.jpg",
+      "sha256": "f254f5997c75a67dbbf518d54d9b67c0d8c97cd9e702b67b586cfe98b7185697"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/david-glasbrenner.png",
+      "v7_path": "site/assets/team/david-glasbrenner.png",
+      "sha256": "588b03447cfe3d2f17568e11ce7483f3398be684ea9175a2c8135b0010e27eb6"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/david-kammerdeiner.png",
+      "v7_path": "site/assets/team/david-kammerdeiner.png",
+      "sha256": "c64edad700e293a353bf1d40eba52d6127824f4b3489ce87bc486e9353c11013"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/derek-hyyppa.jpg",
+      "v7_path": "site/assets/team/derek-hyyppa.jpg",
+      "sha256": "2e32f5cadb1629d20625a609c20c0cb046f5b3d9454e894928147bf8db0f273e"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/didi-schubach.jpg",
+      "v7_path": "site/assets/team/didi-schubach.jpg",
+      "sha256": "6e6f6ea8fab41f2876cf3252cb2da39a628f53ae0a26b8da12e2dbaf1ed83f9d"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/eldon-voigt.jpg",
+      "v7_path": "site/assets/team/eldon-voigt.jpg",
+      "sha256": "051fe18139ca03f297986b28eec48cad022c9291c0c01ccc155ff2acb40b5814"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/gordon-jones.jpg",
+      "v7_path": "site/assets/team/gordon-jones.jpg",
+      "sha256": "156aa204bc8c0b7253a42ca4847e0399dc9ca44d9cca1cbbe464022f576bbe00"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/harley-eftink.png",
+      "v7_path": "site/assets/team/harley-eftink.png",
+      "sha256": "8797a27ee4bd3f1742b40bc355ae103a16b9685062fe2f1eeeb00b2093c1d657"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/herb-jordan.jpg",
+      "v7_path": "site/assets/team/herb-jordan.jpg",
+      "sha256": "0b1843395c35c3fcf8c7231d736933fb94e31d11c53384ac49b7abfe9753b291"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/ian-journeaux.jpg",
+      "v7_path": "site/assets/team/ian-journeaux.jpg",
+      "sha256": "0f7b752e2f651daa2e948fb3c4f0b5d6522284d6b86698879990ca3ccb02350d"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/jessica-rankin.jpg",
+      "v7_path": "site/assets/team/jessica-rankin.jpg",
+      "sha256": "7f2d3354ac168046aaceccced7371f53c9ef3e8aca9a97113d0116231a2b9306"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/joe-fajerski.jpg",
+      "v7_path": "site/assets/team/joe-fajerski.jpg",
+      "sha256": "fe137cf35d9e2c500c01a55b710920bfb1d86678a3a670ebf7b79032870356a6"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/john-antanies.png",
+      "v7_path": "site/assets/team/john-antanies.png",
+      "sha256": "06385528c1607f26439d3e50bd2ca65d1477b2df348f5182dc08f6af2f591aaa"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/josh-shepard.jpg",
+      "v7_path": "site/assets/team/josh-shepard.jpg",
+      "sha256": "3c70f916b481bf71a6ded80d79653ffb7c15626f86f01d91ec1de8c06d1ff9c8"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/maggie-lewis.jpg",
+      "v7_path": "site/assets/team/maggie-lewis.jpg",
+      "sha256": "88b6ba96107755ccba2c6795a4c8ebdd2a22713812468812ea9931ccbede4002"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/mitchell-schreiner.jpg",
+      "v7_path": "site/assets/team/mitchell-schreiner.jpg",
+      "sha256": "093eae4438785a20160e7abb3f8d1ecbc2325cbbb0b84fd18c01df077c62f9fb"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/monica-bastola.png",
+      "v7_path": "site/assets/team/monica-bastola.png",
+      "sha256": "1ca9fd0a684a82f49eca4f32820c84792d47b09b26518c5159634e2b8a96787e"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/pablo-lee.jpg",
+      "v7_path": "site/assets/team/pablo-lee.jpg",
+      "sha256": "8e323865d62d48a22a54b4ff0f0f9d8f18a4f9a2ce8fded993eaba4edc67716c"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/phillippe-avila.jpg",
+      "v7_path": "site/assets/team/phillippe-avila.jpg",
+      "sha256": "30c2ad2cf040ce5d5fcacd5a5eaf84ab875b2f00c1f8d178678e6fd1b0550085"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/sandip-neupane.png",
+      "v7_path": "site/assets/team/sandip-neupane.png",
+      "sha256": "c5af6012386fb642d3d94acbce474991a58f4f06f1911ca59234dcc90c581835"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/sarah-oray.jpg",
+      "v7_path": "site/assets/team/sarah-oray.jpg",
+      "sha256": "9f9f659d76001a1081b34e0f4afe8adfdb1a9149fe188d8609736a5e12f1063f"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/sarah-weisbrod.jpg",
+      "v7_path": "site/assets/team/sarah-weisbrod.jpg",
+      "sha256": "d57faec00576929ee9fe15eb25262db276ee81329b587e5f73491960c85d1919"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/steve-ross.jpg",
+      "v7_path": "site/assets/team/steve-ross.jpg",
+      "sha256": "fe39f55468b3da249c763c4f36ce4fa70f6f1d2325014541f6f16a7b437c935f"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/team-manifest.json",
+      "v7_path": "docs/asset-records/team-manifest.json",
+      "sha256": "95b86a3883ca8f9b637e12dc16f8df8e54e2a2670d83c90526ecc4748ee23272"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/todd-miller.jpg",
+      "v7_path": "site/assets/team/todd-miller.jpg",
+      "sha256": "84bf7833947b255a4d5808b35fcbd131c35c790225e22dbef2e2c56cbe0c54d9"
+    },
+    {
+      "v6_path": "02-version-3/assets/team/tom-conte.jpg",
+      "v7_path": "site/assets/team/tom-conte.jpg",
+      "sha256": "7ffbf17e6f495b95316b24fd818e1c5f09f494f6fb61d2b52989bfd14560cf65"
+    },
+    {
+      "v6_path": "02-version-3/book.html",
+      "v7_path": "site/book.html",
+      "sha256": "d4ae949117d04b759358c459c06a5d91951a68231d177602af5eac6cd9d45afd"
+    },
+    {
+      "v6_path": "02-version-3/card-eprr.png",
+      "v7_path": "site/card-eprr.png",
+      "sha256": "219b3c7aa92a44538126f7359143b84321197c28c5bf7000035a4255cb54eb5b"
+    },
+    {
+      "v6_path": "02-version-3/careers.html",
+      "v7_path": "site/careers.html",
+      "sha256": "165d6f02252138a122454a49d594f01a7e6b8c64a6ab1e64256e267d81fff92c"
+    },
+    {
+      "v6_path": "02-version-3/contact.html",
+      "v7_path": "site/contact.html",
+      "sha256": "887598d8a1ab5e6084e38c2d81eb4905ab9be03b70cf0b98f66f9cb78cfea7e4"
+    },
+    {
+      "v6_path": "02-version-3/css/about.css",
+      "v7_path": "site/css/about.css",
+      "sha256": "7c782819ed3d1a4bfc156613e44755ae0729fff3ec9eef17bf139ac889d120ab"
+    },
+    {
+      "v6_path": "02-version-3/css/industries.css",
+      "v7_path": "site/css/industries.css",
+      "sha256": "9d715ea60b366fbafc33cce4e0fd8c79f4696b87bb9f8a5d5960631c0be5f14c"
+    },
+    {
+      "v6_path": "02-version-3/css/main.css",
+      "v7_path": "site/css/main.css",
+      "sha256": "6ee5225823a8b191e0eb2362735aac672dc4b7c2198eb144cfce638ed35410b6"
+    },
+    {
+      "v6_path": "02-version-3/css/messaging.css",
+      "v7_path": "site/css/messaging.css",
+      "sha256": "ed662020136342d9ed6c1bff3687aeebdc29121559e3ce7b294cdfd70d907f59"
+    },
+    {
+      "v6_path": "02-version-3/css/v3.css",
+      "v7_path": "site/css/v3.css",
+      "sha256": "e9f059c62b4c97da1c164bbd5fd38d5259d475dba5bdec4a32a28deef5359b78"
+    },
+    {
+      "v6_path": "02-version-3/digester-bg.png",
+      "v7_path": "site/digester-bg.png",
+      "sha256": "9679aafcaadb629b193c96ffb71547f68a37461d4d6f04b7ba34711d45a61f57"
+    },
+    {
+      "v6_path": "02-version-3/ei-hero.png",
+      "v7_path": "site/ei-hero.png",
+      "sha256": "cf8a28d6f3d764ea94c581d2442b7da9bf47ad2231fc3b1b7368dd9ac48a36c6"
+    },
+    {
+      "v6_path": "02-version-3/envoy-intelligence.html",
+      "v7_path": "site/envoy-intelligence.html",
+      "sha256": "345f95d46ee95fc87ba7f8677571cba9ba7a62ed083d2d8cf10801de64bbfd8b"
+    },
+    {
+      "v6_path": "02-version-3/eprr-daily-report.png",
+      "v7_path": "site/eprr-daily-report.png",
+      "sha256": "d20d8ade58830f4b69479c72dc85776bdef788f45cb70b7278ba98d717f0b005"
+    },
+    {
+      "v6_path": "02-version-3/eprr-hero.png",
+      "v7_path": "site/eprr-hero.png",
+      "sha256": "710c333056d815d9d9b54c0031c75e79aa2defe49fdbc7e35279c31b2a4b19f1"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.googleapis.com/60499deb3a-css2.css",
+      "v7_path": "site/external-assets/fonts.googleapis.com/60499deb3a-css2.css",
+      "sha256": "5517b6bf2d045596dcee2f3a0901b38ed3283452eaba18940e445eab8f01e476"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/2f6c206f7c-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/2f6c206f7c-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf",
+      "sha256": "eec66af7f2337bd34fe6e801cf92ededcb57a20c0d7bc40a61d4eefcbe3dd40c"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/6f49e1b28b-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/6f49e1b28b-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf",
+      "sha256": "b37284b5701b6b168dfc770aa1a4ac492106422fd3ba76bc7641e37434e8019c"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/861da2b425-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/861da2b425-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf",
+      "sha256": "5b717029a2c4cfca2167e97be1157edb24151591e5ec96eb484745c392817a7a"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/87e867b526-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/87e867b526-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf",
+      "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/a699af1dea-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/a699af1dea-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf",
+      "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/e45972c7e9-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/e45972c7e9-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf",
+      "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/fonts.gstatic.com/ee9558be9f-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf",
+      "v7_path": "site/external-assets/fonts.gstatic.com/ee9558be9f-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf",
+      "sha256": "d0f4bc7faca468376e3db9b5e57afcdc2192134c9ac82a9511f32767b56853a4"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/07dfe8c7cb-time_series_chart_blurred.png",
+      "v7_path": "site/external-assets/static.showit.co/07dfe8c7cb-time_series_chart_blurred.png",
+      "sha256": "aa45eb911953767e5642c0740459a6298faac41598f7269f09b7f07262c161b0"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/1d5ea8a86a-cusum_chart_1_blurred.png",
+      "v7_path": "site/external-assets/static.showit.co/1d5ea8a86a-cusum_chart_1_blurred.png",
+      "sha256": "ee9d4d2dfc954066f0ce155b7d12f73c9f8366f1dcf7708972eb61c3291f70bc"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/2588ea688b-envoy_homepage_man.png",
+      "v7_path": "site/external-assets/static.showit.co/2588ea688b-envoy_homepage_man.png",
+      "sha256": "22d13afce2bf3225c21779e3ed8018373307983f6299518da9e80b0040a6a98d"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/2f64f90efc-green_gradient_blur_background_-_section_4_147.png",
+      "v7_path": "site/external-assets/static.showit.co/2f64f90efc-green_gradient_blur_background_-_section_4_147.png",
+      "sha256": "87b12312a9d4c4ce0c7ef54d38748f3ad5743178f5185677b6cc1b0b96018951"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/47bdb7d226-envoy_header_background_swoosh_95.png",
+      "v7_path": "site/external-assets/static.showit.co/47bdb7d226-envoy_header_background_swoosh_95.png",
+      "sha256": "54cc5d0fb2a661e2ae94eb34bd938052a89bbaa38b826ee85c19c5633e3f7ad5"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/4c5f23051b-quartile_chart_blurred.png",
+      "v7_path": "site/external-assets/static.showit.co/4c5f23051b-quartile_chart_blurred.png",
+      "sha256": "a0ccc8ddfa9ef56f381f79f570cfacf80349f6ed89619b0a42e0e8ad259225c5"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png",
+      "v7_path": "site/external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png",
+      "sha256": "16dc8a3014c85ef80936d1998e379e1c7298bc80abac749d0036ff53e87ae4e8"
+    },
+    {
+      "v6_path": "02-version-3/external-assets/static.showit.co/97449c88b3-cusum_chart_2_blurred.png",
+      "v7_path": "site/external-assets/static.showit.co/97449c88b3-cusum_chart_2_blurred.png",
+      "sha256": "6903ece6134a6ccc4a08a4d2cd5cc09a67308b83f6ad99a6d224f63760958de0"
+    },
+    {
+      "v6_path": "02-version-3/favicon-16x16.png",
+      "v7_path": "site/favicon-16x16.png",
+      "sha256": "d93aca24b9bd908f747047fe57f6ecf77c67b90a55387a9e57d9cdb3deda72e4"
+    },
+    {
+      "v6_path": "02-version-3/favicon-32x32.png",
+      "v7_path": "site/favicon-32x32.png",
+      "sha256": "fd5d506ea1be4c69c943852b77c428626b5be43abc89dbc52f59c8c96972a010"
+    },
+    {
+      "v6_path": "02-version-3/favicon.ico",
+      "v7_path": "site/favicon.ico",
+      "sha256": "44cd4a8dc35da002300c829c6fcd6f25c9a7f6468eb34861bcf13700484a0e53"
+    },
+    {
+      "v6_path": "02-version-3/five-decisions.html",
+      "v7_path": "site/five-decisions.html",
+      "sha256": "18fa57538138edd78115317bf2f31e23ec75ebc438dcdc3c17e352215287e531"
+    },
+    {
+      "v6_path": "02-version-3/food.html",
+      "v7_path": "site/food.html",
+      "sha256": "9c10d9a987f167e382c52a0516faf79d013b4e7e072b64e34965c1a9c06a112d"
+    },
+    {
+      "v6_path": "02-version-3/index.html",
+      "v7_path": "site/index.html",
+      "sha256": "e437528655750cb431f0dd5e8ef2bc4d4ae5ed9fa0b612d5e0ce89840f085052"
+    },
+    {
+      "v6_path": "02-version-3/industries.html",
+      "v7_path": "site/industries.html",
+      "sha256": "be753cfff1b10afd3148fbc74bbd6d9a231799daf3f7dccb58a9d6421534d7ad"
+    },
+    {
+      "v6_path": "02-version-3/intelligent-factory.html",
+      "v7_path": "site/intelligent-factory.html",
+      "sha256": "0a857884e219f5b6def799b9e343f537be3cf922fc39df41f467f8d18c89030c"
+    },
+    {
+      "v6_path": "02-version-3/js/main.js",
+      "v7_path": "site/js/main.js",
+      "sha256": "9aafd115d039aae662185d724966ff610341db015a114e1b1c80a8bd5e76f553"
+    },
+    {
+      "v6_path": "02-version-3/js/v3.js",
+      "v7_path": "site/js/v3.js",
+      "sha256": "746c3d96f03bc0e9e8f325c049941801ded68b865698f55b0c887539d026e9b7"
+    },
+    {
+      "v6_path": "02-version-3/maturity-model.html",
+      "v7_path": "site/maturity-model.html",
+      "sha256": "fa7b635a09fb28835d2657ad05128594248fd575e035f01259d8c018a53f7582"
+    },
+    {
+      "v6_path": "02-version-3/paper-machine-bg.png",
+      "v7_path": "site/paper-machine-bg.png",
+      "sha256": "4caeb3aa1f3d4992be21cf3b7fba3b99edd091b150c736736c36859a33faa5f0"
+    },
+    {
+      "v6_path": "02-version-3/process-reliability-reporting.html",
+      "v7_path": "site/process-reliability-reporting.html",
+      "sha256": "d86e52b7830684e1c1be01d18175780fd21e13c5b7a37f826ae2c870f98e613c"
+    },
+    {
+      "v6_path": "02-version-3/pulp-and-paper.html",
+      "v7_path": "site/pulp-and-paper.html",
+      "sha256": "cedc16042d06a23f6b21732b6f70ee595a68881385ce7e2535e112acdcbf3821"
+    },
+    {
+      "v6_path": "02-version-3/recovery-boiler-bg.png",
+      "v7_path": "site/recovery-boiler-bg.png",
+      "sha256": "0e773203f3ce8a34e803df4313f5001d17db7c8acd042dc2bb564c0ff988db1f"
+    },
+    {
+      "v6_path": "02-version-3/research.html",
+      "v7_path": "site/research.html",
+      "sha256": "96825820a4e75fe3ccbc72247173b8b2569d666d982044b6e4b70a61d539f82c"
+    },
+    {
+      "v6_path": "02-version-3/sc-centerline-limits.png",
+      "v7_path": "site/sc-centerline-limits.png",
+      "sha256": "0cc07e167418e3702a2a8610919b9d71e939b904263949f83e34124a7b65d4d2"
+    },
+    {
+      "v6_path": "02-version-3/sc-hero.png",
+      "v7_path": "site/sc-hero.png",
+      "sha256": "31092e65aa3dde4753db021ddf79f9adff8721d94d48eaadcf5e9cae43d72609"
+    },
+    {
+      "v6_path": "02-version-3/seven-disciplines.html",
+      "v7_path": "site/seven-disciplines.html",
+      "sha256": "bb9b9fc3f87b12af76d2df924f486f9c924c222319d8d08f9ae3e4008a4f8e1e"
+    },
+    {
+      "v6_path": "02-version-3/site.webmanifest",
+      "v7_path": "site/site.webmanifest",
+      "sha256": "05591d112c1fe2f58bde0804da7c3a356de9ff540f4eb387e2149955c232f8cc"
+    },
+    {
+      "v6_path": "02-version-3/smart-centerlines.html",
+      "v7_path": "site/smart-centerlines.html",
+      "sha256": "05e82be7e0a8731c94bcbc53ec22c8316d6129aac40831e443981d54546b66d5"
+    },
+    {
+      "v6_path": "02-version-3/solutions.html",
+      "v7_path": "site/solutions.html",
+      "sha256": "91bca111797d751d495ea57964cbe18ebb273e21252b48cd82f2344585c5770b"
+    },
+    {
+      "v6_path": "02-version-3/specialty-chemicals.html",
+      "v7_path": "site/specialty-chemicals.html",
+      "sha256": "14b1dfa3d6ff9ec4fe6e4fcfe0b63d8c40d6367145949611675c64513ce0b76f"
+    },
+    {
+      "v6_path": "02-version-3/technology-stack.html",
+      "v7_path": "site/technology-stack.html",
+      "sha256": "e321056044d56796ed5cfea9d9566c16ece622462f12c1266ff4b607e5791fa0"
+    },
+    {
+      "v6_path": "02-version-3/yankee-dryer-bg.png",
+      "v7_path": "site/yankee-dryer-bg.png",
+      "sha256": "9ef365ea4cc3844f0dc7346d5428ba1c7573ce43417be63a8cb0f817d6c8091d"
+    }
+  ]
+}

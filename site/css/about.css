@@ -1,0 +1,91 @@
+/* Version 5 — About Envoy. Uses the shared Envoy design system. */
+.about-page .about-hero-inner {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 4.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.about-page .about-hero h1 { font-size: clamp(2.15rem, 4.2vw, 3.5rem); max-width: 620px; }
+.about-page .about-hero h1 span { color: var(--green-700); }
+.about-page .about-hero .hero-sub { max-width: 570px; }
+.about-portrait-mosaic { margin: 0; }
+.about-portrait-mosaic .mosaic-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; }
+.about-portrait-mosaic img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.12; object-fit: cover; object-position: 50% 25%; border-radius: 10px; background: #dcebe2; }
+.about-portrait-mosaic figcaption { margin-top: 1.1rem; color: var(--green-800); font-size: .82rem; line-height: 1.6; }
+.about-proof { background: var(--green-900); padding: 2.1rem 0; }
+.about-proof dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.about-proof dl > div { display: flex; flex-direction: column; padding-left: 1.5rem; border-left: 1px solid rgba(167,232,200,.35); }
+.about-proof dt { order: 2; color: #cce6d7; font-size: .86rem; line-height: 1.6; }
+.about-proof dd { order: 1; color: white; font-size: clamp(1.8rem, 3vw, 2.55rem); line-height: 1.15; font-weight: 750; margin: 0 0 .35rem; }
+.about-story { background: white; padding: 4.5rem 0; }
+.about-story-inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.25fr); gap: 4.5rem; align-items: start; }
+.about-story h2 { max-width: 440px; }
+.about-story-copy p + p { margin-top: 1rem; }
+.about-story-copy .text-link { margin-top: 1.4rem; }
+.about-team { background: var(--gray-50); }
+.about-team .section-intro { margin-bottom: 1.5rem; }
+.about-team .section-intro p { max-width: 780px; }
+.team-jump-links { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1.5rem 0 3rem; }
+.team-jump-links a { font-size: .84rem; font-weight: 600; color: var(--green-800); border: 1px solid #cadccf; border-radius: 6px; padding: .55rem .85rem; background: white; }
+.team-jump-links a:hover { background: var(--green-100); border-color: var(--green-600); }
+.team-group { margin-top: 3rem; scroll-margin-top: 100px; }
+.team-group:first-of-type { margin-top: 0; }
+.team-group-heading { font-size: 1.25rem; color: var(--green-900); padding-bottom: 1rem; margin-bottom: 1.75rem; border-bottom: 1px solid #d6e3da; }
+.team-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2rem 1.5rem; }
+.team-card { min-width: 0; }
+.team-portrait { aspect-ratio: 4 / 5; background: #e2eae4; border-radius: 9px; overflow: hidden; margin-bottom: .9rem; }
+.team-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--portrait-position, 50% 25%); }
+.team-card h4 { font-size: 1rem; line-height: 1.35; color: var(--navy); margin-bottom: .3rem; overflow-wrap: break-word; }
+.team-role, .team-specialty { font-size: .81rem; line-height: 1.55; }
+.team-role { color: var(--green-800); font-weight: 550; }
+.team-specialty { color: var(--gray-600); }
+.team-grid--leadership { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.team-grid--leadership .team-card { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 1.1rem; align-items: center; }
+.team-grid--leadership .team-portrait { margin: 0; }
+.team-grid--leadership .team-card h4 { font-size: 1.05rem; }
+.about-beliefs { background: white; }
+.about-beliefs .section-intro { max-width: 720px; }
+.about-belief-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.25rem 3.5rem; }
+.about-belief { padding-top: 1.25rem; border-top: 2px solid var(--green-200); }
+.about-belief h3 { margin-bottom: .65rem; color: var(--green-900); font-size: 1.25rem; }
+.about-belief p { font-size: .95rem; }
+.about-page #meet-the-team { scroll-margin-top: 90px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 1000px) {
+  .about-page .about-hero-inner { gap: 2rem; }
+  .about-story-inner { gap: 2.5rem; }
+  .team-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.75rem 1.25rem; }
+  .team-grid--leadership { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .team-grid--leadership .team-card { grid-template-columns: 80px minmax(0, 1fr); gap: .8rem; }
+}
+@media (max-width: 760px) {
+  .about-page .about-hero-inner { grid-template-columns: 1fr; gap: 2.25rem; padding-top: 3rem; padding-bottom: 3rem; }
+  .about-page .about-hero h1 { max-width: 580px; }
+  .about-portrait-mosaic { max-width: 450px; }
+  .about-story-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .about-story { padding: 3.5rem 0; }
+  .about-proof dl { gap: 1.25rem; }
+  .about-proof dl > div { padding-left: .9rem; }
+  .about-proof dd { font-size: 1.65rem; }
+  .about-proof dt { font-size: .77rem; }
+  .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem 1.1rem; }
+  .team-grid--leadership { grid-template-columns: 1fr; gap: 1.2rem; }
+  .team-grid--leadership .team-card { grid-template-columns: 88px minmax(0, 1fr); gap: 1.25rem; }
+  .about-belief-grid { gap: 1.75rem 2rem; }
+}
+@media (max-width: 520px) {
+  .about-page .about-hero h1 { font-size: 2.15rem; }
+  .about-page .about-hero .hero-sub { font-size: 1rem; }
+  .about-portrait-mosaic .mosaic-grid { gap: .5rem; }
+  .about-proof dl { grid-template-columns: 1fr; gap: 1.15rem; }
+  .about-proof dl > div { flex-direction: row; gap: 1rem; align-items: center; padding-left: 1rem; }
+  .about-proof dd { flex: 0 0 92px; margin-bottom: 0; }
+  .about-proof dt { font-size: .83rem; }
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1rem; }
+  .team-grid--leadership { grid-template-columns: 1fr; gap: 1.1rem; }
+  .team-card h4 { font-size: .93rem; }
+  .team-role, .team-specialty { font-size: .78rem; }
+  .team-jump-links { gap: .5rem; }
+  .team-jump-links a { font-size: .8rem; padding: .5rem .7rem; }
+  .about-belief-grid { grid-template-columns: 1fr; }
+}

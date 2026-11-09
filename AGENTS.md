@@ -4,7 +4,7 @@
 
 Read `README.md`, `docs/PROJECT-STATE.md`, `VERSION.txt`, and the latest `CHANGELOG.md` entries. Inspect the selected branch, recent changes, and any uncommitted work before editing. When remote access is available, check the current repository state rather than assuming a previous chat or downloaded ZIP is still current. Preserve changes made by Gordon or his colleague.
 
-Version 7 is the repository setup based on the website from the Version 6 review package. The next requested enhancement is Version 8 unless Gordon specifies otherwise. For later work, read the version record and increment from there. Update the version, change log, and relevant project-state notes together. Several commits may belong to one requested revision; do not create duplicate numbered website folders.
+Version 8 (November 9, 2026) is the current revision. The next requested enhancement is Version 9 unless Gordon specifies otherwise. For later work, read the version record and increment from there. Update the version, change log, and relevant project-state notes together. Several commits may belong to one requested revision; do not create duplicate numbered website folders.
 
 ## Preserve the approved direction
 
@@ -14,7 +14,7 @@ Retain the established green/teal styling, typography, approved photographs, and
 
 Pulp and paper is Envoy's established foundation. Food and specialty chemicals are new industry focuses. Do not invent customer results, testimonials, performance figures, or released capabilities. Distinguish illustrative examples from operating data and possible applications from established deployments.
 
-The About page uses the 32 public portraits recorded in `docs/asset-records/team-manifest.json`. Preserve names and image mappings unless the task provides a correction. Higher-resolution originals may replace the corresponding images when supplied.
+The About page uses the 32 portraits recorded in `docs/asset-records/team-manifest.json`. Preserve names and image mappings unless the task provides a correction. Higher-resolution originals may replace the corresponding images when supplied.
 
 ## Edit the right files
 

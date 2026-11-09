@@ -1,14 +1,13 @@
-7
+8
 
-Version 7 — GitHub and Netlify repository starter
-Prepared November 5, 2026
+Version 8 - Interactive pages and home page refresh
+Updated November 9, 2026
 
-This revision organizes the website from the Version 6 review package for repository-based
-collaboration. Website page content and visual assets are unchanged.
-The nine SVG diagrams remain proposals under design/diagram-proposals/.
+This revision replaces stale text tiles across the site with animated,
+interactive visuals, refreshes the home page, rebuilds the platform,
+industry and Intelligent Factory pages, and updates the About team.
 
-No remote GitHub repository, branch, tag, release, or Netlify deployment
-has been created by preparing this starter.
+Working folder moved to C:\Apps\EnvoyWebsite3\envoy-website on November 9, 2026.
 
-Suggested first release tag after import: v7.0
-Next enhancement: Version 8, unless Gordon specifies another version.
+Suggested release tag once reviewed: v8.0
+Next enhancement: Version 9, unless Gordon specifies another version.

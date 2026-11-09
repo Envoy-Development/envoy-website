@@ -1,5 +1,5 @@
 {
-  "website_version": 5,
+  "website_version": 8,
   "source_page": "https://envoydevelopment.com/about",
   "retrieved_at": "2026-10-31T18:01:08.898633+00:00",
   "source_note": "Public employee portraits from the current Envoy About page. The employee-photo upload folder was not visible in this session. Original image bytes are unchanged; CSS controls framing.",
@@ -152,6 +152,20 @@
     },
     {
       "order": 11,
+      "name": "Todd Fytczyk",
+      "role": "Process Engineer - Pulp, Recaust",
+      "group": "engineering",
+      "source_title": "Todd Fytczykk.jpg (employee photo supplied by Gordon Jones)",
+      "source_url": null,
+      "mapping_basis": "Name, role and photo supplied directly by Gordon Jones on November 9, 2026. Photo resized and cropped to 200 x 234 for the gallery.",
+      "width": 200,
+      "height": 234,
+      "sha256": "bc8e39b47d40abdcf20ed7a55cae2260e7085e106b2a6aaf3d7db865945baa00",
+      "size_bytes": 32232,
+      "asset": "assets/team/todd-fytczyk.jpg"
+    },
+    {
+      "order": 12,
       "name": "Alyssa Burkard",
       "role": "Process Engineer - Pulp & Recovery",
       "group": "engineering",
@@ -165,7 +179,7 @@
       "asset": "assets/team/alyssa-burkard.jpg"
     },
     {
-      "order": 12,
+      "order": 13,
       "name": "Derek Hyyppa",
       "role": "Data Scientist",
       "group": "software-data-operations",
@@ -179,7 +193,7 @@
       "asset": "assets/team/derek-hyyppa.jpg"
     },
     {
-      "order": 13,
+      "order": 14,
       "name": "Ian Journeaux",
       "role": "Process Engineer - Paper",
       "group": "engineering",
@@ -191,20 +205,6 @@
       "sha256": "0f7b752e2f651daa2e948fb3c4f0b5d6522284d6b86698879990ca3ccb02350d",
       "size_bytes": 6289,
       "asset": "assets/team/ian-journeaux.jpg"
-    },
-    {
-      "order": 14,
-      "name": "David Kammerdeiner",
-      "role": "Creative Director",
-      "group": "software-data-operations",
-      "source_title": "David K",
-      "source_url": "https://static.showit.co/200/pvc89IOWCj2HygBlVpLmfQ/233516/david_k.png",
-      "mapping_basis": "Exact name/role from current page text, matched to explicitly titled portrait by first name and surname initial in current team sequence. No face-based identification.",
-      "width": 200,
-      "height": 133,
-      "sha256": "c64edad700e293a353bf1d40eba52d6127824f4b3489ce87bc486e9353c11013",
-      "size_bytes": 33478,
-      "asset": "assets/team/david-kammerdeiner.png"
     },
     {
       "order": 15,
@@ -458,5 +458,6 @@
       "size_bytes": 68574,
       "asset": "assets/team/sandip-neupane.png"
     }
-  ]
+  ],
+  "change_note": "November 9, 2026: removed David Kammerdeiner; added Todd Fytczyk (Process Engineer, Pulp and Recaust) from a photo Gordon supplied. Gallery remains 32 people."
 }

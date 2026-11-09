@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envoy Development | Operational Intelligence for Process Industries</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="description" content="Operational intelligence software built by process engineers. Improve visibility, reliability, operating targets and team knowledge with Envoy’s platform and ongoing engineering guidance." />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* Fade-in utility */
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/industries.css" />
+  <link rel="stylesheet" href="css/messaging.css" />
+  <link rel="stylesheet" href="css/priorities.css" />
+  <link rel="stylesheet" href="css/modules.css" />
+  <link rel="stylesheet" href="css/fit-diagram.css" />
+  <link rel="stylesheet" href="css/industries-cards.css" />
+</head>
+<body class="home-v3">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Six Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Six decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Six Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+  <section class="hero msg-home-hero" aria-label="Operational intelligence for process industries">
+    <div class="hero-bg" aria-hidden="true"></div><div class="hero-inner container">
+      <div class="hero-content"><p class="eyebrow">Run reliably. Make better operating decisions.</p>
+        <h1>Operational Intelligence<br>for <span class="boxed">Process Industries<span class="boxed-dot">.</span></span></h1>
+        <p class="hero-sub">An intelligence platform built by process engineers with decades of factory experience. Envoy combines physics-based analytics, artificial intelligence agents, and ongoing engineering guidance to help your team identify developing problems, improve operating targets, and solve difficult process issues.</p>
+        <div class="btn-group"><a class="btn btn-primary" href="contact.html">Request a Demo</a><a class="btn btn-outline" href="solutions.html">Explore the Platform</a></div>
+        <p class="msg-hero-note">Built for the plant you already have. <a href="solutions.html#connected-plant">See how Envoy fits.</a></p>
+      </div>
+      <div class="hero-image" aria-hidden="true"><img src="external-assets/static.showit.co/2588ea688b-envoy_homepage_man.png" alt="" fetchpriority="high" decoding="async" /></div>
+    </div>
+  </section>
+
+  <section class="pain-points section" aria-labelledby="outcomes-heading"><div class="container">
+  <div class="section-intro"><p class="eyebrow">Your Team’s Priorities</p><h2 id="outcomes-heading">Spend less time searching.<br>More time improving your plant.</h2>
+    <p>Data sits in different systems, conditions change, and experienced people are stretched. Envoy points your team at what deserves attention.</p></div>
+  <div class="a-grid">
+    <article class="a-panel"><div class="a-viz"><svg viewBox="0 0 260 120"><line x1="26" y1="104" x2="250" y2="104" stroke="#3f7d5c" stroke-width="1"/>
+<line x1="26" y1="104" x2="26" y2="10" stroke="#3f7d5c" stroke-width="1"/>
+<text x="250" y="114" text-anchor="end" class="a-axis">LOAD</text>
+<text transform="translate(18,104) rotate(-90)" class="a-axis">CURRENT</text>
+<path d="M26.0,104.0 L28.8,101.0 L31.7,98.2 L34.5,95.4 L37.3,92.7 L40.2,90.1 L43.0,87.5 L45.8,85.0 L48.7,82.6 L51.5,80.3 L54.4,78.1 L57.2,75.9 L60.0,73.8 L62.9,71.7 L65.7,69.7 L68.5,67.8 L71.4,65.9 L74.2,64.1 L77.0,62.3 L79.9,60.6 L82.7,58.9 L85.5,57.3 L88.4,55.8 L91.2,54.2 L94.1,52.8 L96.9,51.3 L99.7,49.9 L102.6,48.6 L105.4,47.3 L108.2,46.0 L111.1,44.8 L113.9,43.6 L116.7,42.5 L119.6,41.3 L122.4,40.3 L125.2,39.2 L128.1,38.2 L130.9,37.2 L133.7,36.2 L136.6,35.3 L139.4,34.4 L142.3,33.5 L145.1,32.7 L147.9,31.8 L150.8,31.0 L153.6,30.2 L156.4,29.5 L159.3,28.8 L162.1,28.0 L164.9,27.4 L167.8,26.7 L170.6,26.0 L173.4,25.4 L176.3,24.8 L179.1,24.2 L181.9,23.6 L184.8,23.1 L187.6,22.5 L190.5,22.0 L193.3,21.5 L196.1,21.0 L199.0,20.5 L201.8,20.1 L204.6,19.6 L207.5,19.2 L210.3,18.8 L213.1,18.3 L216.0,17.9 L218.8,17.6 L221.6,17.2 L224.5,16.8 L227.3,16.5 L230.2,16.1 L233.0,15.8 L235.8,15.5 L238.7,15.2 L241.5,14.9 L244.3,14.6 L247.2,14.3 L250.0,14.0" stroke="#e5f5ec" stroke-width="1.4" opacity=".85"/>
+<circle class="a1-pt" style="animation-delay:0.20s" cx="146.5" cy="29.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.21s" cx="162.0" cy="24.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.22s" cx="153.9" cy="32.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.23s" cx="217.0" cy="14.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.24s" cx="212.5" cy="18.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.25s" cx="151.3" cy="31.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.26s" cx="154.1" cy="27.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.27s" cx="108.1" cy="45.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.29s" cx="141.9" cy="33.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.30s" cx="209.9" cy="15.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.31s" cx="159.8" cy="26.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.32s" cx="237.8" cy="13.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.33s" cx="154.4" cy="32.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.34s" cx="172.0" cy="28.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.35s" cx="244.0" cy="12.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.36s" cx="203.8" cy="21.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.37s" cx="178.0" cy="24.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.38s" cx="164.0" cy="29.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.39s" cx="139.0" cy="34.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.40s" cx="122.2" cy="42.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.41s" cx="220.6" cy="14.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.42s" cx="222.3" cy="19.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.43s" cx="125.7" cy="39.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.45s" cx="115.6" cy="43.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.46s" cx="173.7" cy="23.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.47s" cx="159.6" cy="31.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.48s" cx="206.1" cy="19.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.49s" cx="135.9" cy="35.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.50s" cx="232.1" cy="14.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.51s" cx="233.3" cy="14.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.52s" cx="212.7" cy="19.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.53s" cx="195.8" cy="20.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.54s" cx="245.3" cy="15.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.55s" cx="188.7" cy="21.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.56s" cx="185.0" cy="23.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.57s" cx="195.8" cy="22.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.58s" cx="167.9" cy="26.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.59s" cx="118.4" cy="41.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.61s" cx="225.0" cy="12.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.62s" cx="136.2" cy="36.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.63s" cx="180.4" cy="23.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.64s" cx="238.7" cy="12.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.65s" cx="208.9" cy="23.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.66s" cx="194.4" cy="24.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.67s" cx="200.5" cy="22.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.68s" cx="179.7" cy="24.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.69s" cx="228.2" cy="11.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.70s" cx="202.5" cy="19.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.71s" cx="167.8" cy="24.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.72s" cx="126.4" cy="39.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.73s" cx="239.2" cy="20.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.74s" cx="202.8" cy="24.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.75s" cx="181.5" cy="21.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.77s" cx="177.8" cy="24.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.78s" cx="96.0" cy="54.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.79s" cx="198.7" cy="18.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.80s" cx="187.2" cy="25.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.81s" cx="232.4" cy="13.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.82s" cx="208.7" cy="16.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.83s" cx="180.1" cy="25.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.84s" cx="158.0" cy="31.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.85s" cx="158.2" cy="27.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.86s" cx="221.7" cy="19.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.87s" cx="176.0" cy="23.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.88s" cx="179.9" cy="26.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.89s" cx="96.8" cy="49.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.90s" cx="144.7" cy="32.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.91s" cx="234.8" cy="16.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.93s" cx="178.0" cy="26.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.94s" cx="117.5" cy="41.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.95s" cx="178.5" cy="28.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.96s" cx="204.7" cy="20.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.97s" cx="101.9" cy="49.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.98s" cx="204.7" cy="18.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:0.99s" cx="234.3" cy="18.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.00s" cx="189.2" cy="18.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.01s" cx="180.9" cy="24.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.02s" cx="170.5" cy="28.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.03s" cx="112.9" cy="41.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.04s" cx="214.3" cy="14.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.05s" cx="173.9" cy="25.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.06s" cx="228.4" cy="18.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.07s" cx="136.7" cy="35.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.09s" cx="151.4" cy="32.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.10s" cx="183.9" cy="23.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.11s" cx="158.4" cy="25.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.12s" cx="211.5" cy="17.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.13s" cx="70.3" cy="66.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.14s" cx="200.2" cy="19.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.15s" cx="131.4" cy="37.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.16s" cx="115.5" cy="41.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.17s" cx="236.7" cy="13.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.18s" cx="162.2" cy="28.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.19s" cx="171.4" cy="25.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.20s" cx="111.3" cy="39.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.21s" cx="225.3" cy="15.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.22s" cx="171.8" cy="26.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.23s" cx="114.3" cy="39.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.25s" cx="186.3" cy="22.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.26s" cx="187.4" cy="24.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.27s" cx="180.8" cy="22.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.28s" cx="181.3" cy="25.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.29s" cx="136.0" cy="36.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.30s" cx="217.1" cy="17.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.31s" cx="181.3" cy="24.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.32s" cx="185.2" cy="24.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.33s" cx="159.4" cy="29.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.34s" cx="225.9" cy="17.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.35s" cx="137.5" cy="32.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.36s" cx="231.9" cy="17.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.37s" cx="221.6" cy="18.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.38s" cx="223.4" cy="12.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.39s" cx="211.7" cy="19.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.41s" cx="223.6" cy="14.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.42s" cx="189.7" cy="19.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.43s" cx="212.2" cy="18.8" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.44s" cx="226.5" cy="19.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.45s" cx="174.9" cy="24.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.46s" cx="168.1" cy="25.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.47s" cx="232.8" cy="13.9" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.48s" cx="186.7" cy="22.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.49s" cx="160.8" cy="26.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.50s" cx="210.6" cy="16.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.51s" cx="169.8" cy="28.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.52s" cx="228.8" cy="13.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.53s" cx="223.1" cy="16.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.54s" cx="172.8" cy="26.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.55s" cx="191.2" cy="22.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.57s" cx="194.7" cy="17.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.58s" cx="111.7" cy="42.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.59s" cx="243.0" cy="18.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.60s" cx="135.2" cy="35.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.61s" cx="224.3" cy="17.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.62s" cx="153.3" cy="30.7" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.63s" cx="226.1" cy="17.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.64s" cx="109.1" cy="48.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.65s" cx="217.5" cy="16.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.66s" cx="130.6" cy="39.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.67s" cx="151.2" cy="31.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.68s" cx="189.8" cy="23.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.69s" cx="198.8" cy="22.0" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.70s" cx="98.0" cy="49.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.71s" cx="238.0" cy="14.5" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.73s" cx="217.0" cy="19.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.74s" cx="176.9" cy="26.6" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.75s" cx="238.3" cy="16.1" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.76s" cx="229.6" cy="14.3" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.77s" cx="219.4" cy="17.2" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.78s" cx="171.5" cy="25.4" r="1.7"/>
+<circle class="a1-pt" style="animation-delay:1.79s" cx="140.5" cy="34.7" r="1.7"/>
+<circle class="a1-ring" cx="57.4" cy="26.6" r="7" fill="none" stroke="#ff7a59" stroke-width="1.6"/>
+<circle class="a1-new" cx="57.4" cy="26.6" r="4.6" fill="#e4572e" stroke="#2a0f08" stroke-width="1.2"/>
+<line class="a1-lbl" x1="57.4" y1="32.6" x2="57.4" y2="75.8" stroke="#ff7a59" stroke-width="1" stroke-dasharray="2 3"/>
+<text class="a1-lbl a-red" x="73.4" y="29.6">NEW READING</text></svg></div>
+      <div class="a-body"><div class="a-num">01 / SEE</div><h3>See your process clearly</h3><p>Know how your process normally runs, so a reading that does not fit stands out.</p></div></article>
+    <article class="a-panel"><div class="a-viz"><svg viewBox="0 0 260 120"><rect x="10" y="46" width="240" height="32" fill="rgba(125,211,168,.10)"/>
+<line x1="10" y1="46" x2="250" y2="46" stroke="#4b8f6b" stroke-dasharray="3 4"/>
+<line x1="10" y1="78" x2="250" y2="78" stroke="#4b8f6b" stroke-dasharray="3 4"/>
+<path class="a-draw" d="M10.0,58.4 L12.0,59.2 L14.0,64.4 L16.1,63.4 L18.1,56.3 L20.1,66.0 L22.1,63.8 L24.1,66.0 L26.1,60.8 L28.2,61.1 L30.2,58.6 L32.2,69.6 L34.2,61.5 L36.2,66.8 L38.2,60.1 L40.3,62.5 L42.3,57.0 L44.3,60.9 L46.3,65.0 L48.3,58.2 L50.3,65.2 L52.4,63.0 L54.4,58.9 L56.4,60.5 L58.4,60.6 L60.4,61.9 L62.4,60.4 L64.5,59.5 L66.5,61.1 L68.5,58.9 L70.5,58.1 L72.5,61.9 L74.5,64.6 L76.6,57.4 L78.6,62.0 L80.6,60.1 L82.6,59.1 L84.6,64.6 L86.6,60.4 L88.7,66.5 L90.7,59.7 L92.7,63.2 L94.7,61.3 L96.7,59.7 L98.7,63.8 L100.8,61.5 L102.8,63.8 L104.8,61.9 L106.8,58.7 L108.8,61.7 L110.8,62.2 L112.9,64.9 L114.9,59.3 L116.9,61.9 L118.9,56.8 L120.9,64.0 L122.9,58.8 L125.0,56.6 L127.0,61.8 L129.0,65.3 L131.0,57.4 L133.0,58.7 L135.0,59.8 L137.1,58.6 L139.1,63.1 L141.1,59.6 L143.1,59.8 L145.1,63.7 L147.1,59.7 L149.2,63.3 L151.2,59.1 L153.2,58.4 L155.2,56.5 L157.2,67.6 L159.2,61.0 L161.3,62.7 L163.3,61.9 L165.3,62.5 L167.3,62.1 L169.3,67.7 L171.3,58.9 L173.4,57.3 L175.4,59.0 L177.4,58.0 L179.4,64.2 L181.4,64.5 L183.4,59.1 L185.5,57.6 L187.5,59.6 L189.5,63.7 L191.5,50.0 L193.5,58.9 L195.5,53.0 L197.6,58.2 L199.6,50.7 L201.6,52.0 L203.6,47.2 L205.6,47.7 L207.6,53.7 L209.7,50.9 L211.7,46.1 L213.7,43.6 L215.7,39.4 L217.7,42.8 L219.7,42.8 L221.8,41.5 L223.8,40.4 L225.8,36.2 L227.8,38.3 L229.8,37.2 L231.8,40.1 L233.9,40.7 L235.9,33.6 L237.9,30.6 L239.9,31.6 L241.9,28.9 L243.9,27.4 L246.0,28.3 L248.0,24.2 L250.0,28.1" stroke="#7dd3a8" stroke-width="2"/>
+<circle class="a-ring" cx="213.7" cy="43.6" r="9" fill="none" stroke="#f5b942" stroke-width="1.6"/>
+<circle cx="213.7" cy="43.6" r="3.2" fill="#f5b942"/>
+<text x="199.7" y="27.6" class="a-tag">FLAG</text></svg></div>
+      <div class="a-body"><div class="a-num">02 / PROTECT</div><h3>Protect reliable operation</h3><p>Catch drifting equipment, sensors and loops before they cost production.</p></div></article>
+    <article class="a-panel"><div class="a-viz"><svg viewBox="0 0 260 120"><rect x="104" y="8" width="38" height="104" fill="rgba(185,194,189,.14)"/>
+<line x1="104" y1="8" x2="104" y2="112" stroke="rgba(185,194,189,.35)"/>
+<line x1="142" y1="8" x2="142" y2="112" stroke="rgba(185,194,189,.35)"/>
+<text x="123.0" y="118" text-anchor="middle" class="a3-gray">GRADE CHANGE</text>
+<rect x="10" y="31" width="94" height="18" fill="rgba(125,211,168,.10)"/>
+<line x1="10" y1="31" x2="104" y2="31" stroke="#4b8f6b" stroke-dasharray="3 4"/>
+<line x1="10" y1="49" x2="104" y2="49" stroke="#4b8f6b" stroke-dasharray="3 4"/>
+<line x1="10" y1="40" x2="104" y2="40" stroke="#a7e8c8" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="12" y="27" class="a3-tag">TARGET A</text>
+<g class="a3-new"><rect x="142" y="74" width="108" height="12" fill="rgba(125,211,168,.12)"/>
+<line x1="142" y1="74" x2="250" y2="74" stroke="#4b8f6b" stroke-dasharray="3 4"/>
+<line x1="142" y1="86" x2="250" y2="86" stroke="#4b8f6b" stroke-dasharray="3 4"/>
+<line x1="142" y1="80" x2="250" y2="80" stroke="#a7e8c8" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="248" y="70" text-anchor="end" class="a3-tag">NEW TARGET B</text></g>
+<path class="a-draw" d="M10.0,39.3 L11.5,40.6 L13.0,35.2 L14.5,44.2 L16.0,38.0 L17.5,38.5 L19.1,43.5 L20.6,40.6 L22.1,40.1 L23.6,38.5 L25.1,35.9 L26.6,40.5 L28.1,43.1 L29.6,37.7 L31.1,43.5 L32.6,37.1 L34.2,38.1 L35.7,41.3 L37.2,40.0 L38.7,41.8 L40.2,38.1 L41.7,37.3 L43.2,35.1 L44.7,36.9 L46.2,37.2 L47.7,36.3 L49.2,40.8 L50.8,38.3 L52.3,34.8 L53.8,46.5 L55.3,37.8 L56.8,36.7 L58.3,43.2 L59.8,43.0 L61.3,37.0 L62.8,36.2 L64.3,37.4 L65.8,42.9 L67.4,39.2 L68.9,37.9 L70.4,39.9 L71.9,43.1 L73.4,36.4 L74.9,39.0 L76.4,36.4 L77.9,45.7 L79.4,44.7 L80.9,42.5 L82.5,39.7 L84.0,41.7 L85.5,34.6 L87.0,40.7 L88.5,36.6 L90.0,36.6 L91.5,38.2 L93.0,39.2 L94.5,41.6 L96.0,42.0 L97.5,40.9 L99.1,37.9 L100.6,42.2 L102.1,40.3 L103.6,43.9" stroke="#7dd3a8" stroke-width="2"/>
+<path d="M102.1,40.3 L103.6,43.9 L105.1,41.5 L106.6,42.5 L108.1,43.9 L109.6,45.3 L111.1,46.7 L112.6,47.8 L114.2,48.5 L115.7,48.7 L117.2,48.6 L118.7,48.7 L120.2,49.2 L121.7,50.8 L123.2,53.4 L124.7,57.2 L126.2,61.8 L127.7,66.7 L129.2,71.2 L130.8,75.0 L132.3,77.8 L133.8,79.4 L135.3,80.1 L136.8,80.1 L138.3,79.8 L139.8,79.4 L141.3,79.1 L142.8,80.1" stroke="#b9c2bd" stroke-width="1.6" stroke-dasharray="3 3" opacity=".8"/>
+<path class="a-draw" style="animation-delay:1.4s" d="M142.8,80.1 L144.3,80.4 L145.8,79.3 L147.4,80.3 L148.9,79.9 L150.4,76.8 L151.9,74.6 L153.4,83.6 L154.9,81.3 L156.4,79.9 L157.9,77.2 L159.4,77.9 L160.9,82.1 L162.5,75.5 L164.0,79.5 L165.5,81.4 L167.0,80.2 L168.5,81.2 L170.0,79.8 L171.5,83.8 L173.0,78.4 L174.5,77.8 L176.0,80.4 L177.5,82.3 L179.1,79.9 L180.6,81.7 L182.1,79.2 L183.6,78.1 L185.1,82.2 L186.6,82.5 L188.1,82.5 L189.6,79.3 L191.1,78.2 L192.6,78.1 L194.2,79.6 L195.7,80.9 L197.2,80.8 L198.7,77.7 L200.2,80.3 L201.7,80.0 L203.2,80.1 L204.7,80.0 L206.2,79.7 L207.7,80.9 L209.2,80.2 L210.8,80.4 L212.3,78.9 L213.8,80.6 L215.3,79.8 L216.8,76.6 L218.3,80.8 L219.8,79.6 L221.3,81.5 L222.8,79.7 L224.3,79.8 L225.8,80.3 L227.4,80.0 L228.9,79.3 L230.4,77.1 L231.9,82.9 L233.4,77.5 L234.9,79.5 L236.4,81.0 L237.9,80.6 L239.4,80.9 L240.9,81.2 L242.5,82.0 L244.0,80.5 L245.5,84.7 L247.0,78.4 L248.5,80.4 L250.0,79.4" stroke="#7dd3a8" stroke-width="2"/></svg></div>
+      <div class="a-body"><div class="a-num">03 / IMPROVE</div><h3>Improve operating performance</h3><p>Targets and limits that move with each grade and product, not one fixed number.</p></div></article>
+    <article class="a-panel"><div class="a-viz a4"><svg viewBox="0 0 260 120"><defs><clipPath id="typeclip"><rect class="typed" x="38" y="10" width="0" height="20"/></clipPath></defs>
+<rect x="16" y="10" width="228" height="22" rx="11" fill="rgba(6,26,15,.7)" stroke="#4b8f6b"/>
+<circle cx="29" cy="20.5" r="4" fill="none" stroke="#a7e8c8" stroke-width="1.5"/>
+<line x1="32" y1="23.5" x2="35" y2="26.5" stroke="#a7e8c8" stroke-width="1.5" stroke-linecap="round"/>
+<text x="40" y="24.5" class="q" clip-path="url(#typeclip)">Why did steam demand jump overnight?</text>
+<g class="row r1"><rect x="16" y="42" width="228" height="20" rx="4" fill="rgba(78,202,138,.10)" stroke="#4eca8a"/><rect x="22" y="47" width="79" height="10" rx="5" fill="#0d3d22" stroke="#4eca8a" stroke-width=".8"/><text x="61" y="54.3" text-anchor="middle" class="pill" fill="#a7e8c8">ENGINEER NOTE</text><rect x="109" y="48" width="71" height="3" rx="1.5" fill="#5f8f75"/><rect x="109" y="53.5" width="58" height="3" rx="1.5" fill="#3f6b55"/>
+<text x="238" y="55" text-anchor="end" class="pill" fill="#6f9c84">2025</text>
+</g>
+<g class="row r2"><rect x="16" y="67" width="228" height="20" rx="4" fill="rgba(6,26,15,.45)" stroke="rgba(125,211,168,.25)"/><rect x="22" y="72" width="58" height="10" rx="5" fill="rgba(125,211,168,.12)" stroke="#7dd3a8" stroke-width=".8"/><text x="51" y="79.3" text-anchor="middle" class="pill" fill="#7dd3a8">PAST CASE</text><rect x="88" y="73" width="92" height="3" rx="1.5" fill="#5f8f75"/><rect x="88" y="78.5" width="70" height="3" rx="1.5" fill="#3f6b55"/>
+<text x="238" y="80" text-anchor="end" class="pill" fill="#6f9c84">2024</text>
+</g>
+<g class="row r3"><rect x="16" y="92" width="228" height="20" rx="4" fill="rgba(6,26,15,.45)" stroke="rgba(125,211,168,.25)"/><rect x="22" y="97" width="36" height="10" rx="5" fill="rgba(125,211,168,.12)" stroke="#7dd3a8" stroke-width=".8"/><text x="40" y="104.3" text-anchor="middle" class="pill" fill="#7dd3a8">TREND</text><rect x="66" y="98" width="114" height="3" rx="1.5" fill="#5f8f75"/><rect x="66" y="103.5" width="83" height="3" rx="1.5" fill="#3f6b55"/>
+<path d="M196.0,97.7 L198.2,99.6 L200.4,102.5 L202.6,103.0 L204.8,104.7 L207.1,106.6 L209.3,106.0 L211.5,105.6 L213.7,102.8 L215.9,100.0 L218.1,98.1 L220.3,98.2 L222.5,95.7 L224.7,96.5 L226.9,99.8 L229.2,101.6 L231.4,102.7 L233.6,102.5 L235.8,103.1 L238.0,100.3" stroke="#7dd3a8" stroke-width="1.3" fill="none"/>
+</g></svg></div>
+      <div class="a-body"><div class="a-num">04 / BUILD</div><h3>Build a more capable team</h3><p>Ask a question, get past cases, trends and engineer notes. Knowledge that stays when people move on.</p></div></article>
+  </div>
+</div></section>
+
+  <section class="product-suite section" aria-labelledby="modules-heading"><div class="container">
+  <div class="section-intro"><p class="eyebrow">The Envoy Platform</p><h2 id="modules-heading">One platform. Three connected modules.</h2></div>
+  <div class="mc-row">
+    <div class="mc-text"><div class="mc-num">01 / PROCESS RELIABILITY REPORTING</div><h3>What needs attention, and why?</h3>
+      <p class="d">Agentic AI scans every sensor, every day, and our engineers review what it finds. You start the day with a short report of meaningful changes, with the evidence behind each one and help with the ones that need a closer look.</p>
+      <div class="mc-feat"><span>Morning reports</span><span>Sensor and loop health</span><span>Root-cause investigations</span></div>
+      <a class="m-link" href="process-reliability-reporting.html">Explore Reporting <span aria-hidden="true">→</span></a></div>
+    <div class="mc-vis"><div class="hdr"><span>MORNING REPORT</span><span>06:00</span></div>
+      <div class="rep"><i style="background:#ff7a59"></i><div><b>Steam header pressure</b><small>Low since 03:10 and falling</small></div><svg viewBox="0 0 110 30"><path d="M2.0,17.0 L4.7,12.4 L7.4,15.4 L10.2,14.4 L12.9,14.5 L15.6,14.8 L18.3,13.0 L21.0,14.8 L23.7,14.1 L26.5,18.3 L29.2,15.2 L31.9,14.6 L34.6,14.7 L37.3,14.3 L40.1,13.9 L42.8,14.6 L45.5,15.5 L48.2,14.8 L50.9,16.0 L53.6,14.8 L56.4,15.0 L59.1,16.5 L61.8,15.5 L64.5,14.5 L67.2,14.8 L69.9,15.5 L72.7,16.9 L75.4,15.6 L78.1,16.4 L80.8,18.5 L83.5,17.5 L86.3,18.9 L89.0,21.0 L91.7,21.5 L94.4,21.9 L97.1,23.3 L99.8,20.6 L102.6,25.3 L105.3,24.2 L108.0,24.3" stroke="#ff7a59"/></svg></div>
+      <div class="rep"><i style="background:#f5b942"></i><div><b>Feed pump vibration</b><small>Up 40% over 7 days</small></div><svg viewBox="0 0 110 30"><path d="M2.0,22.4 L4.7,22.7 L7.4,20.8 L10.2,19.6 L12.9,20.8 L15.6,20.4 L18.3,22.1 L21.0,20.9 L23.7,19.8 L26.5,20.8 L29.2,18.6 L31.9,17.3 L34.6,19.1 L37.3,18.8 L40.1,17.4 L42.8,16.3 L45.5,17.4 L48.2,13.3 L50.9,17.4 L53.6,16.8 L56.4,13.6 L59.1,15.6 L61.8,13.9 L64.5,16.0 L67.2,11.8 L69.9,13.0 L72.7,15.0 L75.4,15.3 L78.1,10.4 L80.8,12.4 L83.5,13.2 L86.3,11.6 L89.0,14.4 L91.7,10.2 L94.4,12.0 L97.1,9.8 L99.8,12.9 L102.6,10.6 L105.3,9.8 L108.0,7.6" stroke="#f5b942"/></svg></div>
+      <div class="rep"><i style="background:#f5b942"></i><div><b>Flow loop FIC-210</b><small>Cycling, likely valve stiction</small></div><svg viewBox="0 0 110 30"><path d="M2.0,23.0 L4.7,22.5 L7.4,22.5 L10.2,22.7 L12.9,22.2 L15.6,21.6 L18.3,7.5 L21.0,7.5 L23.7,8.8 L26.5,7.1 L29.2,7.6 L31.9,21.8 L34.6,22.1 L37.3,22.3 L40.1,21.3 L42.8,21.0 L45.5,22.0 L48.2,8.7 L50.9,8.5 L53.6,8.1 L56.4,7.8 L59.1,8.2 L61.8,7.9 L64.5,22.5 L67.2,21.5 L69.9,22.1 L72.7,21.9 L75.4,22.3 L78.1,22.1 L80.8,9.5 L83.5,8.9 L86.3,8.9 L89.0,6.8 L91.7,7.8 L94.4,21.6 L97.1,22.3 L99.8,20.6 L102.6,22.7 L105.3,22.6 L108.0,21.2" stroke="#f5b942"/></svg></div>
+      <div class="rep"><i style="background:#4eca8a"></i><div><b>Flow meter FT-118</b><small>Back in range after recalibration</small></div><svg viewBox="0 0 110 30"><path d="M2.0,7.0 L4.7,7.2 L7.4,8.0 L10.2,8.6 L12.9,10.0 L15.6,7.8 L18.3,8.8 L21.0,8.2 L23.7,9.8 L26.5,8.7 L29.2,9.4 L31.9,6.9 L34.6,7.8 L37.3,7.2 L40.1,9.5 L42.8,8.7 L45.5,7.7 L48.2,7.5 L50.9,8.5 L53.6,7.3 L56.4,7.1 L59.1,8.5 L61.8,15.9 L64.5,14.6 L67.2,14.8 L69.9,15.8 L72.7,15.6 L75.4,16.7 L78.1,12.9 L80.8,15.9 L83.5,14.5 L86.3,15.1 L89.0,15.8 L91.7,16.1 L94.4,16.0 L97.1,15.2 L99.8,16.6 L102.6,14.7 L105.3,14.9 L108.0,15.8" stroke="#4eca8a"/></svg></div>
+    </div>
+  </div>
+  <div class="mc-row flip">
+    <div class="mc-text"><div class="mc-num">02 / ENVOY SMART CENTERLINES</div><h3>Where should this process be operating?</h3>
+      <p class="d">Targets and limits for each product, grade and speed, set from your own data and kept current by engineers. Operators see at a glance whether they are in range.</p>
+      <div class="mc-feat"><span>Targets by condition</span><span>Live comparisons</span><span>Engineer-maintained</span></div>
+      <a class="m-link" href="smart-centerlines.html">Explore Centerlines <span aria-hidden="true">→</span></a></div>
+    <div class="mc-vis"><div class="hdr"><span>REFINER LOAD · GRADE 42</span><span>LIVE</span></div>
+      <svg class="cl-svg" viewBox="0 0 500 200" preserveAspectRatio="none">
+        <rect x="0" y="70" width="500" height="60" fill="rgba(125,211,168,.12)"/>
+        <line x1="0" y1="70" x2="500" y2="70" stroke="#4b8f6b" stroke-dasharray="4 5"/>
+        <line x1="0" y1="130" x2="500" y2="130" stroke="#4b8f6b" stroke-dasharray="4 5"/>
+        <line x1="0" y1="100" x2="500" y2="100" stroke="#a7e8c8" stroke-width="1.4" stroke-dasharray="8 6"/>
+        <text x="6" y="64" style="font:700 10px Inter,sans-serif;letter-spacing:.12em;fill:#6f9c84">HIGH LIMIT</text>
+        <text x="6" y="146" style="font:700 10px Inter,sans-serif;letter-spacing:.12em;fill:#6f9c84">LOW LIMIT</text>
+        <text x="494" y="64" text-anchor="end" style="font:700 10px Inter,sans-serif;letter-spacing:.12em;fill:#a7e8c8">TARGET</text>
+        <path d="M0.0,98.3 L2.3,110.0 L4.6,109.9 L6.8,116.4 L9.1,112.4 L11.4,113.6 L13.7,117.1 L16.0,120.0 L18.3,116.9 L20.5,120.0 L22.8,118.6 L25.1,122.8 L27.4,114.8 L29.7,118.3 L32.0,111.3 L34.2,108.2 L36.5,106.5 L38.8,102.4 L41.1,103.8 L43.4,103.8 L45.7,98.6 L47.9,97.5 L50.2,98.3 L52.5,92.2 L54.8,90.2 L57.1,87.4 L59.4,82.4 L61.6,88.8 L63.9,80.9 L66.2,88.3 L68.5,86.7 L70.8,90.9 L73.1,88.4 L75.3,87.5 L77.6,92.6 L79.9,91.6 L82.2,94.6 L84.5,97.2 L86.8,98.6 L89.0,100.3 L91.3,100.2 L93.6,103.9 L95.9,99.5 L98.2,106.8 L100.5,104.8 L102.7,112.5 L105.0,113.6 L107.3,104.2 L109.6,110.5 L111.9,109.4 L114.2,106.2 L116.4,110.2 L118.7,106.2 L121.0,101.2 L123.3,104.5 L125.6,103.5 L127.9,102.9 L130.1,97.4 L132.4,101.6 L134.7,100.6 L137.0,93.6 L139.3,94.0 L141.6,94.7 L143.8,92.4 L146.1,98.7 L148.4,93.6 L150.7,89.7 L153.0,90.3 L155.3,92.6 L157.5,100.0 L159.8,93.1 L162.1,94.6 L164.4,96.5 L166.7,95.8 L168.9,103.7 L171.2,96.3 L173.5,101.1 L175.8,100.4 L178.1,102.8 L180.4,98.4 L182.6,108.1 L184.9,103.2 L187.2,104.3 L189.5,101.9 L191.8,102.9 L194.1,107.0 L196.3,108.3 L198.6,107.6 L200.9,108.7 L203.2,106.9 L205.5,104.4 L207.8,106.3 L210.0,105.0 L212.3,102.2 L214.6,103.9 L216.9,104.9 L219.2,100.9 L221.5,98.4 L223.7,101.0 L226.0,103.8 L228.3,96.9 L230.6,96.8 L232.9,96.3 L235.2,100.0 L237.4,90.7 L239.7,97.2 L242.0,99.7 L244.3,93.8 L246.6,100.9 L248.9,98.3 L251.1,95.5 L253.4,98.2 L255.7,93.4 L258.0,96.9 L260.3,104.6 L262.6,97.0 L264.8,105.8 L267.1,100.5 L269.4,104.2 L271.7,101.8 L274.0,95.3 L276.3,100.6 L278.5,103.2 L280.8,99.3 L283.1,98.8 L285.4,104.0 L287.7,100.8 L290.0,97.6 L292.2,100.4 L294.5,104.8 L296.8,100.5 L299.1,104.3 L301.4,105.7 L303.7,100.8 L305.9,97.0 L308.2,96.0 L310.5,99.5 L312.8,101.8 L315.1,99.7 L317.4,100.2 L319.6,97.0 L321.9,99.0 L324.2,96.6 L326.5,96.9 L328.8,94.0 L331.1,93.2 L333.3,96.6 L335.6,94.8 L337.9,95.5 L340.2,100.6 L342.5,98.5 L344.7,107.8 L347.0,102.2 L349.3,97.8 L351.6,102.3 L353.9,101.3 L356.2,98.5 L358.4,104.1 L360.7,98.7 L363.0,92.0 L365.3,103.7 L367.6,99.6 L369.9,106.0 L372.1,99.6 L374.4,98.0 L376.7,106.1 L379.0,98.1 L381.3,101.9 L383.6,105.4 L385.8,101.3 L388.1,100.5 L390.4,100.8 L392.7,102.8 L395.0,97.7 L397.3,101.7 L399.5,101.4 L401.8,106.5 L404.1,98.3 L406.4,96.4 L408.7,101.3 L411.0,97.8 L413.2,99.8 L415.5,99.3 L417.8,102.4 L420.1,96.9 L422.4,98.7 L424.7,91.4 L426.9,96.5 L429.2,103.9 L431.5,97.4 L433.8,97.5 L436.1,96.1 L438.4,101.6 L440.6,100.6 L442.9,96.6 L445.2,102.3 L447.5,101.2 L449.8,102.8 L452.1,98.7 L454.3,106.0 L456.6,102.0 L458.9,100.5 L461.2,99.3 L463.5,100.1 L465.8,103.3 L468.0,99.9 L470.3,103.9 L472.6,102.3 L474.9,104.5 L477.2,102.8 L479.5,100.0 L481.7,94.4 L484.0,100.9 L486.3,102.2 L488.6,100.3 L490.9,101.4 L493.2,98.2 L495.4,98.4 L497.7,96.6 L500.0,103.5" stroke="#7dd3a8" stroke-width="2.2" style="stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 4s ease-out forwards"/>
+        <circle cx="500" cy="104" r="5" fill="#e9fff4" style="filter:drop-shadow(0 0 6px #7dd3a8)"/>
+      </svg>
+      <div class="cl-read"><div>Target<b>620 kW</b></div><div>Now<b>612 kW</b></div><div>Status<b class="ok">In range</b></div></div>
+    </div>
+  </div>
+  <div class="mc-row">
+    <div class="mc-text"><div class="mc-num">03 / ENVOY INTELLIGENCE</div><h3>How do we understand the problem and respond?</h3>
+      <p class="d">AI connected to your process data, equipment context and plant knowledge. Experienced staff investigate faster, and new engineers and operators learn how the process works.</p>
+      <div class="mc-feat"><span>Plant-grounded answers</span><span>Onboarding</span><span>Procedures and findings</span></div>
+      <a class="m-link" href="envoy-intelligence.html">Explore Intelligence <span aria-hidden="true">→</span></a></div>
+    <div class="mc-vis"><div class="hdr"><span>ENVOY INTELLIGENCE</span><span>ASK</span></div>
+      <div class="chat">
+        <div class="q">Why did steam use per ton go up last week?</div>
+        <div class="typing"><i></i><i></i><i></i></div>
+        <div class="a">It rose about 6% after Tuesday’s product change, and condensate return dropped at the same time. <b>Check the steam traps on the feed heater.</b>
+          <div class="src"><span>TREND</span><span>PAST CASE</span><span>PROCEDURE</span></div></div>
+      </div>
+    </div>
+  </div>
+  <p class="msg-section-link"><a class="text-link" href="solutions.html">See how the platform fits together <span aria-hidden="true">→</span></a></p>
+</div></section>
+
+  <section class="section ind-muted" aria-labelledby="fit-heading"><div class="container"><div class="ind-two-col fit-split">
+    <div class="ind-copy"><p class="eyebrow">Built for Established Plants</p><h2 id="fit-heading">Work with the systems you already have.</h2>
+      <p>A plant can contain decades of equipment, different control systems, and uneven access to process history. Envoy is designed for that reality.</p>
+      <p>Our vendor-agnostic approach works across mixed equipment and data environments. We connect to available sources, use an existing historian where one is in place, and can provide historian capability where it is needed.</p>
+      <p>Start with a priority process area. We work with your team to understand the data, equipment and operating questions that matter there.</p>
+      <a class="ind-link" href="solutions.html#connected-plant">Explore the data foundation <span aria-hidden="true">→</span></a>
+    </div>
+    <figure class="fit-diagram"><svg class="fd-svg" viewBox="0 0 660 506" role="img" aria-labelledby="fd-title"><title id="fd-title">Mixed plant control systems and historians of different ages connect through OPC UA compliant secure connectors into the Envoy Process Intelligence Platform</title><text class="fd-hdr" x="0" y="14">YOUR PLANT, AS IT IS</text>
+<text class="fd-hdr" x="436" y="58">ONE PLATFORM</text>
+<g class="fd-area"><rect x="0" y="26" width="300" height="68" rx="10"/><text class="fd-name" x="14" y="48">Boilers & Utilities</text>
+<g class="fd-chip"><rect x="14" y="60" width="139" height="20" rx="10"/><text x="83.4" y="73.6" text-anchor="middle">DCS · Vendor A · 1996</text></g>
+<g class="fd-chip"><rect x="158.85" y="60" width="80" height="20" rx="10"/><text x="199.0" y="73.6" text-anchor="middle">Historian A</text></g>
+</g>
+<path class="fd-wire" d="M300,60 C322,60 316,226 338,226"/>
+<circle r="3.2" class="fd-pkt"><animateMotion dur="2.4s" begin="-0.00s" repeatCount="indefinite" path="M300,60 C322,60 316,226 338,226"/></circle>
+<g class="fd-area"><rect x="0" y="106" width="300" height="68" rx="10"/><text class="fd-name" x="14" y="128">Production Line 1</text>
+<g class="fd-chip"><rect x="14" y="140" width="139" height="20" rx="10"/><text x="83.4" y="153.6" text-anchor="middle">DCS · Vendor B · 2014</text></g>
+<g class="fd-chip"><rect x="158.85" y="140" width="80" height="20" rx="10"/><text x="199.0" y="153.6" text-anchor="middle">Historian A</text></g>
+</g>
+<path class="fd-wire" d="M300,140 C322,140 316,244 338,244"/>
+<circle r="3.2" class="fd-pkt"><animateMotion dur="2.4s" begin="-0.37s" repeatCount="indefinite" path="M300,140 C322,140 316,244 338,244"/></circle>
+<g class="fd-area"><rect x="0" y="186" width="300" height="68" rx="10"/><text class="fd-name" x="14" y="208">Production Line 2</text>
+<g class="fd-chip"><rect x="14" y="220" width="104" height="20" rx="10"/><text x="65.9" y="233.6" text-anchor="middle">PLCs · Vendor C</text></g>
+<g class="fd-chip gap"><rect x="123.75" y="220" width="86" height="20" rx="10"/><text x="166.8" y="233.6" text-anchor="middle">No historian</text></g>
+</g>
+<path class="fd-wire" d="M300,220 C322,220 316,262 338,262"/>
+<circle r="3.2" class="fd-pkt"><animateMotion dur="2.4s" begin="-0.74s" repeatCount="indefinite" path="M300,220 C322,220 316,262 338,262"/></circle>
+<g class="fd-area"><rect x="0" y="266" width="300" height="68" rx="10"/><text class="fd-name" x="14" y="288">Raw Materials</text>
+<g class="fd-chip"><rect x="14" y="300" width="139" height="20" rx="10"/><text x="83.4" y="313.6" text-anchor="middle">DCS · Vendor A · 2003</text></g>
+<g class="fd-chip"><rect x="158.85" y="300" width="121" height="20" rx="10"/><text x="219.5" y="313.6" text-anchor="middle">Historian B · 1999</text></g>
+</g>
+<path class="fd-wire" d="M300,300 C322,300 316,280 338,280"/>
+<circle r="3.2" class="fd-pkt"><animateMotion dur="2.4s" begin="-1.11s" repeatCount="indefinite" path="M300,300 C322,300 316,280 338,280"/></circle>
+<g class="fd-area"><rect x="0" y="346" width="300" height="68" rx="10"/><text class="fd-name" x="14" y="368">Packaging</text>
+<g class="fd-chip"><rect x="14" y="380" width="104" height="20" rx="10"/><text x="65.9" y="393.6" text-anchor="middle">PLCs · Vendor D</text></g>
+<g class="fd-chip gap"><rect x="123.75" y="380" width="104" height="20" rx="10"/><text x="175.6" y="393.6" text-anchor="middle">HMI trends only</text></g>
+</g>
+<path class="fd-wire" d="M300,380 C322,380 316,298 338,298"/>
+<circle r="3.2" class="fd-pkt"><animateMotion dur="2.4s" begin="-1.48s" repeatCount="indefinite" path="M300,380 C322,380 316,298 338,298"/></circle>
+<g class="fd-area"><rect x="0" y="426" width="300" height="68" rx="10"/><text class="fd-name" x="14" y="448">Lab & Quality</text>
+<g class="fd-chip"><rect x="14" y="460" width="39" height="20" rx="10"/><text x="33.7" y="473.6" text-anchor="middle">LIMS</text></g>
+<g class="fd-chip gap"><rect x="59.4" y="460" width="86" height="20" rx="10"/><text x="102.5" y="473.6" text-anchor="middle">Spreadsheets</text></g>
+</g>
+<path class="fd-wire" d="M300,460 C322,460 316,316 338,316"/>
+<circle r="3.2" class="fd-pkt"><animateMotion dur="2.4s" begin="-1.85s" repeatCount="indefinite" path="M300,460 C322,460 316,316 338,316"/></circle>
+<rect class="fd-gate" x="338" y="212" width="68" height="122" rx="10"/>
+<text class="fd-gate-t" x="372" y="266" text-anchor="middle">Secure</text>
+<text class="fd-gate-t" x="372" y="282" text-anchor="middle">connectors</text>
+<g class="fd-opc"><rect x="310" y="346" width="124" height="22" rx="11"/><text x="372" y="361" text-anchor="middle">OPC UA COMPLIANT</text></g>
+<path class="fd-main" d="M406,273 H436"/>
+<circle r="3.6" class="fd-pkt"><animateMotion dur="1.1s" repeatCount="indefinite" path="M406,273 H436"/></circle>
+<rect class="fd-plat" x="436" y="70" width="224" height="408" rx="16"/>
+<rect class="fd-plat-ring" x="436" y="70" width="224" height="408" rx="16"/>
+<text class="fd-plat-t" x="456" y="108">Envoy Process</text>
+<text class="fd-plat-t" x="456" y="128">Intelligence Platform</text>
+<text class="fd-plat-s" x="456" y="152">Every area in one view</text>
+<line x1="456" y1="170" x2="640" y2="170" stroke="rgba(167,232,200,.25)"/>
+<text class="fd-plat-k" x="456" y="194">MODULES</text>
+<g class="fd-mod"><rect x="456" y="208" width="184" height="34" rx="8"/><circle cx="474" cy="225" r="4.5" style="animation-delay:0.0s"/><text x="488" y="229.5">Reliability Reporting</text></g>
+<g class="fd-mod"><rect x="456" y="252" width="184" height="34" rx="8"/><circle cx="474" cy="269" r="4.5" style="animation-delay:0.6s"/><text x="488" y="273.5">Smart Centerlines</text></g>
+<g class="fd-mod"><rect x="456" y="296" width="184" height="34" rx="8"/><circle cx="474" cy="313" r="4.5" style="animation-delay:1.2s"/><text x="488" y="317.5">Envoy Intelligence</text></g>
+<g class="fd-hist"><rect x="456" y="352" width="184" height="34" rx="8"/><text x="548.0" y="373.5" text-anchor="middle">+ Envoy historian where none exists</text></g>
+<line x1="456" y1="426" x2="640" y2="426" stroke="rgba(167,232,200,.25)"/>
+<text class="fd-plat-s" x="456" y="452">Reviewed by Envoy engineers</text></svg><figcaption><span>Connected data source</span><span class="gap">Gap Envoy can fill</span></figcaption></figure>
+  </div></div></section>
+
+  <section class="section" aria-labelledby="engineering-heading"><div class="container"><div class="feature-split-inner">
+    <div class="feature-split-content"><p class="eyebrow">An Extension of Your Team</p><h2 id="engineering-heading">Experienced engineers who stay involved.</h2>
+      <p>The value of a finding depends on understanding the process behind it. Envoy’s engineers help interpret what changed, why it matters, and what your team should investigate next.</p>
+      <p>That support starts with clear daily priorities and extends to difficult troubleshooting, operating-target development and knowledge transfer. When specialist experience is hard to hire or retain locally, your team has people to call on.</p>
+      <p class="msg-emphasis">A focused morning report. A deeper investigation when you need it. Engineering support as your plant changes.</p>
+      <a class="btn btn-outline" href="process-reliability-reporting.html">See the Reliability Module</a>
+    </div>
+    <figure class="feature-split-img msg-report-figure"><img src="eprr-daily-report.png" alt="Envoy daily report example with process trends and engineering commentary" loading="lazy" /><figcaption>Example reporting format from Envoy’s pulp-and-paper work.</figcaption></figure>
+  </div></div></section>
+<section class="stats-section" aria-labelledby="why-heading"><div class="container">
+    <div class="section-intro" style="text-align:center;margin-left:auto;margin-right:auto"><p class="eyebrow" style="background:rgba(125,211,168,.14);color:#7dd3a8">Why Envoy</p><h2 id="why-heading" style="color:#fff">Why leading plants choose Envoy.</h2></div>
+    <div class="stats-grid" id="statsgrid"><div class="stat-item"><div class="stat-num"><span class="stat-count" data-n="600">600</span>+</div><div class="stat-label">Plant Processes</div><div class="stat-sub">Monitored across our client base</div></div><div class="stat-item"><div class="stat-num"><span class="stat-count" data-n="97">97</span>%</div><div class="stat-label">Client Renewal Rate</div><div class="stat-sub">Across all service tiers</div></div><div class="stat-item"><div class="stat-num"><span class="stat-count" data-n="500">500</span>+</div><div class="stat-label">Years of Mill Experience</div><div class="stat-sub">Combined on our engineering team</div></div><div class="stat-item"><div class="stat-num"><span class="stat-count" data-n="20">20</span>+</div><div class="stat-label">In-House Engineers</div><div class="stat-sub">With real plant-side backgrounds</div></div></div>
+  </div></section>
+<script>
+(function () {
+  var g = document.getElementById('statsgrid'); if (!g || !('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = g.querySelectorAll('.stat-count'); els.forEach(function (e) { e.textContent = '0'; });
+  new IntersectionObserver(function (es, ob) { es.forEach(function (en) { if (!en.isIntersecting) return; ob.disconnect();
+    els.forEach(function (e, k) { var n = +e.dataset.n, t0 = null;
+      function f(ts) { if (!t0) t0 = ts + k * 150; var p = Math.min(1, Math.max(0, (ts - t0) / 1400)); e.textContent = Math.round(n * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(f); }
+      requestAnimationFrame(f); }); }); }, { threshold: .4 }).observe(g);
+})();
+</script>
+<section class="home-industries section" aria-labelledby="industries-heading">
+    <div class="container">
+      <div class="industry-section-heading">
+        <div class="section-intro">
+          <p class="eyebrow">Industries</p>
+          <h2 id="industries-heading">Deep roots. A broader future.</h2>
+          <p>Proven in pulp and paper. Extending our approach to food and specialty chemicals, with applications grounded in each operation’s processes and priorities.</p>
+        </div>
+        <a class="text-link" href="industries.html">Explore our industries <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="ia-grid"><a class="ia-card" href="pulp-and-paper.html"><div class="ia-vis"><div class="ia-cap">CONTINUOUS DIGESTER</div><svg class="ix" viewBox="0 0 300 200"><defs><clipPath id="dgclipA"><path d="M120,40 Q120,18 145,18 Q170,18 170,40 V162 L154,182 H136 L120,162 Z"/></clipPath></defs>
+<g clip-path="url(#dgclipA)"><rect x="118" y="16" width="56" height="54" fill="rgba(167,232,200,.10)"/><rect x="118" y="70" width="56" height="48" fill="rgba(245,185,66,.22)" class="ix-heat"/><rect x="118" y="118" width="56" height="70" fill="rgba(78,202,138,.16)"/>
+<circle cx="135.0" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-0.62s" repeatCount="indefinite"/></circle>
+<circle cx="141.1" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-0.93s" repeatCount="indefinite"/></circle>
+<circle cx="128.5" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-2.41s" repeatCount="indefinite"/></circle>
+<circle cx="160.9" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-4.80s" repeatCount="indefinite"/></circle>
+<circle cx="155.1" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-1.33s" repeatCount="indefinite"/></circle>
+<circle cx="146.4" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-1.66s" repeatCount="indefinite"/></circle>
+<circle cx="132.6" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-0.64s" repeatCount="indefinite"/></circle>
+<circle cx="134.1" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-5.56s" repeatCount="indefinite"/></circle>
+<circle cx="157.5" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-4.84s" repeatCount="indefinite"/></circle>
+<circle cx="156.4" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-1.16s" repeatCount="indefinite"/></circle>
+<circle cx="137.8" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-3.76s" repeatCount="indefinite"/></circle>
+<circle cx="153.8" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-5.13s" repeatCount="indefinite"/></circle>
+<circle cx="159.4" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-0.52s" repeatCount="indefinite"/></circle>
+<circle cx="149.0" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-4.03s" repeatCount="indefinite"/></circle>
+<circle cx="145.2" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-1.07s" repeatCount="indefinite"/></circle>
+<circle cx="144.0" cy="20" r="1.6" fill="#e9fff4" opacity=".75"><animate attributeName="cy" from="22" to="178" dur="6s" begin="-0.54s" repeatCount="indefinite"/></circle>
+</g>
+<path class="ix-vessel" d="M120,40 Q120,18 145,18 Q170,18 170,40 V162 L154,182 H136 L120,162 Z"/>
+<line x1="122" y1="118" x2="168" y2="118" stroke="#a7e8c8" stroke-dasharray="2 3"/>
+<text class="ix-zone" x="145" y="46" text-anchor="middle">IMPREG.</text>
+<text class="ix-zone" x="145" y="96" text-anchor="middle">COOK</text>
+<text class="ix-zone" x="145" y="142" text-anchor="middle">WASH</text>
+<rect class="ix-equip" x="30" y="14" width="44" height="30" rx="4"/><text class="ix-lbl" x="52" y="33" text-anchor="middle">CHIPS</text>
+<path class="ix-flow" d="M74,29 H104 V8 H145 V18"/>
+<path class="ix-flow" d="M40,62 H120"/><text class="ix-lbl" x="42" y="57">WHITE LIQUOR</text>
+<path class="ix-pipe" d="M170,104 H214 V80 H170"/><path class="ix-flow hot" d="M170,104 H214 V80 H170"/>
+<rect class="ix-equip" x="204" y="84" width="20" height="16" rx="3"/><text class="ix-lbl" x="214" y="95" text-anchor="middle">HX</text>
+<text class="ix-lbl" x="228" y="94">COOK CIRC.</text>
+<path class="ix-flow" d="M170,120 H262"/><text class="ix-lbl" x="226" y="115">EXTRACTION</text>
+<path class="ix-flow" d="M262,156 H170"/><text class="ix-lbl" x="214" y="151">WASH FILTRATE</text>
+<path class="ix-flow" d="M145,182 V192 H262"/><text class="ix-lbl" x="226" y="188">TO BLOW TANK</text></svg></div><div class="ia-body"><div class="m-kicker">Our foundation</div><h3>Pulp &amp; Paper</h3><p>Practical engineering insight across pulping, paper machines, chemical recovery and utilities.</p><div class="ia-tags"><span>Digesters and fiberlines</span><span>Paper machines</span><span>Recovery and utilities</span></div><span class="m-link">Explore pulp &amp; paper <span aria-hidden="true">→</span></span></div></a><a class="ia-card" href="food.html"><div class="ia-vis"><div class="ia-cap">CLEAN-IN-PLACE CIRCUIT</div><svg class="ix" viewBox="0 0 300 200"><rect class="ix-equip t-w" x="18" y="22" width="30" height="52" rx="5"/><rect class="ix-liq t-w" x="21" y="44" width="24" height="27" rx="3"/><text class="ix-lbl" x="33" y="16" text-anchor="middle">WATER</text><line class="ix-pipe" x1="33" y1="74" x2="33" y2="92"/>
+<rect class="ix-equip t-c" x="56" y="22" width="30" height="52" rx="5"/><rect class="ix-liq t-c" x="59" y="44" width="24" height="27" rx="3"/><text class="ix-lbl" x="71" y="16" text-anchor="middle">CAUSTIC</text><line class="ix-pipe" x1="71" y1="74" x2="71" y2="92"/>
+<rect class="ix-equip t-a" x="94" y="22" width="30" height="52" rx="5"/><rect class="ix-liq t-a" x="97" y="44" width="24" height="27" rx="3"/><text class="ix-lbl" x="109" y="16" text-anchor="middle">ACID</text><line class="ix-pipe" x1="109" y1="74" x2="109" y2="92"/>
+<path class="ix-pipe" d="M33,92 H109"/>
+<path class="ix-pipe" d="M71,92 V128 H100 M120,128 H150 M172,128 H186 V40 H226 V54"/><path class="ix-flow cip" d="M71,92 V128 H100 M120,128 H150 M172,128 H186 V40 H226 V54"/>
+<circle class="ix-equip" cx="110" cy="128" r="10"/><path d="M106,123 L116,128 L106,133 Z" fill="#a7e8c8"/>
+<text class="ix-lbl" x="110" y="150" text-anchor="middle">SUPPLY PUMP</text>
+<rect class="ix-equip" x="150" y="120" width="22" height="16" rx="3"/><text class="ix-lbl" x="161" y="131" text-anchor="middle">HX</text>
+<path class="ix-vessel" d="M204,52 Q204,44 214,44 H250 Q260,44 260,52 V146 Q260,158 248,160 H216 Q204,158 204,146 Z"/>
+<circle cx="226" cy="60" r="4.5" fill="#a7e8c8"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="237.0" y2="40.9"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="245.9" y2="50.7"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="247.7" y2="63.8"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="241.6" y2="75.6"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="229.8" y2="81.7"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="216.7" y2="79.9"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="206.9" y2="71.0"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="204.1" y2="58.1"/>
+<line class="ix-spray cip" x1="226" y1="60" x2="209.1" y2="45.9"/>
+<text class="ix-lbl" x="232" y="112" text-anchor="middle">PROCESS</text><text class="ix-lbl" x="232" y="122" text-anchor="middle">TANK</text>
+<path class="ix-pipe" d="M232,160 V182 H176 M156,182 H33 V74"/><path class="ix-flow cip" d="M232,160 V182 H176 M156,182 H33 V74"/>
+<circle class="ix-equip" cx="166" cy="182" r="9"/><path d="M170,178 L161,182 L170,186 Z" fill="#a7e8c8"/>
+<text class="ix-lbl" x="96" y="177" text-anchor="middle">RETURN</text>
+<g class="ix-steps">
+<text class="ix-step" x="232" y="34" text-anchor="middle" opacity="1">PRE-RINSE<animate attributeName="opacity" values="1;0;0;0;0" dur="12.5s" calcMode="discrete" repeatCount="indefinite"/></text>
+<text class="ix-step" x="232" y="34" text-anchor="middle" opacity="0">CAUSTIC WASH<animate attributeName="opacity" values="0;1;0;0;0" dur="12.5s" calcMode="discrete" repeatCount="indefinite"/></text>
+<text class="ix-step" x="232" y="34" text-anchor="middle" opacity="0">RINSE<animate attributeName="opacity" values="0;0;1;0;0" dur="12.5s" calcMode="discrete" repeatCount="indefinite"/></text>
+<text class="ix-step" x="232" y="34" text-anchor="middle" opacity="0">ACID WASH<animate attributeName="opacity" values="0;0;0;1;0" dur="12.5s" calcMode="discrete" repeatCount="indefinite"/></text>
+<text class="ix-step" x="232" y="34" text-anchor="middle" opacity="0">FINAL RINSE<animate attributeName="opacity" values="0;0;0;0;1" dur="12.5s" calcMode="discrete" repeatCount="indefinite"/></text>
+</g></svg></div><div class="ia-body"><div class="m-kicker">Expanding our focus</div><h3>Food</h3><p>Applications around process consistency, yield, interruptions and energy, from thermal processing to clean-in-place.</p><div class="ia-tags"><span>CIP cycles</span><span>Thermal processing</span><span>Utilities</span></div><span class="m-link">Explore food <span aria-hidden="true">→</span></span></div></a><a class="ia-card" href="specialty-chemicals.html"><div class="ia-vis"><div class="ia-cap">JACKETED BATCH REACTOR</div><svg class="ix" viewBox="0 0 300 200"><path class="ix-jacket" d="M92,80 V138 Q92,174 135,174 Q178,174 178,138 V80"/>
+<path class="ix-flow hot" d="M92,80 V138 Q92,174 135,174 Q178,174 178,138 V80"/>
+<defs><clipPath id="rxclipA"><path d="M100,56 V136 Q100,166 135,166 Q170,166 170,136 V56 Z"/></clipPath></defs>
+<g clip-path="url(#rxclipA)"><path class="ix-liqsurf" d="M96,96 Q115,90 135,96 T174,96 V170 H96 Z"/></g>
+<path class="ix-vessel" d="M100,56 V136 Q100,166 135,166 Q170,166 170,136 V56"/><path class="ix-vessel" d="M96,56 H174"/>
+<rect class="ix-equip" x="125" y="16" width="20" height="18" rx="3"/><text class="ix-lbl" x="135" y="12" text-anchor="middle">AGITATOR</text>
+<line x1="135" y1="34" x2="135" y2="146" stroke="#a7e8c8" stroke-width="2"/>
+<g class="ix-imp"><line x1="118" y1="112" x2="152" y2="112" stroke="#e9fff4" stroke-width="3" stroke-linecap="round"/></g>
+<g class="ix-imp"><line x1="118" y1="144" x2="152" y2="144" stroke="#e9fff4" stroke-width="3" stroke-linecap="round"/></g>
+<path class="ix-flow" d="M30,40 H112 V56"/><text class="ix-lbl" x="32" y="35">FEED A</text>
+<path class="ix-flow" d="M30,70 H70 Q80,70 80,60 V48 H118 V56"/><text class="ix-lbl" x="32" y="65">FEED B</text>
+<path class="ix-pipe" d="M158,56 V30 H196"/><rect class="ix-equip" x="196" y="20" width="54" height="20" rx="4"/><text class="ix-lbl" x="223" y="33" text-anchor="middle">CONDENSER</text>
+<text class="ix-lbl" x="60" y="168">JACKET</text>
+<rect x="196" y="104" width="94" height="62" rx="6" fill="rgba(6,26,15,.55)" stroke="rgba(125,211,168,.25)"/>
+<text class="ix-lbl" x="202" y="116">BATCH TEMP</text>
+<path d="M202,158 L226,128 L262,128 L284,150" fill="none" stroke="#a7e8c8" stroke-dasharray="4 3" stroke-width="1.2"/>
+<path class="ix-trace" d="M202,158 L206,154 L210,149 L214,144 L218,139 L222,134 L226,130 L230,127 L234,129 L238,127 L242,128 L246,129 L250,127 L254,128 L258,128 L262,129 L266,132 L270,137 L274,142 L278,146 L284,150" fill="none" stroke="#4eca8a" stroke-width="1.8"/></svg></div><div class="ia-body"><div class="m-kicker">Expanding our focus</div><h3>Specialty Chemicals</h3><p>Applications around batch consistency, material use, process variability and engineering investigations.</p><div class="ia-tags"><span>Batch reactors</span><span>Temperature profiles</span><span>Raw material use</span></div><span class="m-link">Explore specialty chemicals <span aria-hidden="true">→</span></span></div></a></div>
+    </div>
+  </section>
+  <section class="section ind-muted" aria-labelledby="start-heading"><div class="container">
+    <div class="section-intro"><p class="eyebrow">A Practical Starting Point</p><h2 id="start-heading">Begin with the problem your team needs to solve.</h2><p>Whether the priority is downtime, operating consistency or engineering capacity, the first step is understanding your plant.</p></div>
+    <div class="ind-steps"><article class="ind-step"><span>01 / UNDERSTAND</span><h3>Discuss your process and priorities</h3><p>Walk through the recurring issue, current systems and information your team needs.</p></article><article class="ind-step"><span>02 / CONNECT</span><h3>Define the first application</h3><p>Agree the process area, data connections, module scope and practical measures of progress.</p></article><article class="ind-step"><span>03 / IMPROVE</span><h3>Work with your team over time</h3><p>Review findings, investigate problems and refine the operating knowledge your team uses.</p></article></div>
+  </div></section>
+<section class="cta-section" aria-label="Discuss your plant"><div class="cta-bg-img" aria-hidden="true"></div><div class="cta-inner">
+      <p class="eyebrow eyebrow-light">Start With Your Plant</p><h2>What would a clearer operating picture change for your plant?</h2><p>Tell us what is consuming your team’s time. We’ll show how Envoy’s platform and engineers could help with that specific challenge.</p>
+      <div class="btn-group"><a class="btn btn-white" href="contact.html">Request a Demo</a><a class="btn btn-white-outline" href="solutions.html">Explore the Platform</a></div>
+    </div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining AI agents, engineering expertise, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Six Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

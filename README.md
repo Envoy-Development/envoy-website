@@ -49,7 +49,7 @@ Ask the assistant to read `AGENTS.md`, the project state, and the latest branch 
 
 ## Versions, downloads, and account checks
 
-The next enhancement is Version 8. Update the version and change log for each requested revision, then tag completed versions. GitHub supports [ZIP snapshots of tags and releases](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives). Use those for occasional downloads; ordinary collaboration happens through branches and pull requests.
+The current revision is Version 8 (see `CHANGELOG.md`); the next enhancement is Version 9. Update the version and change log for each requested revision, then tag completed versions. GitHub supports [ZIP snapshots of tags and releases](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives). Use those for occasional downloads; ordinary collaboration happens through branches and pull requests.
 
 Check the actual Netlify plan before enabling two-person development: current credit-based Free and Personal plans exclude additional Git Contributors on private repositories and organization-owned private repositories; Pro includes those features. See [Netlify's plan comparison](https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/). A private GitHub repository does not itself make the Netlify preview private.
 

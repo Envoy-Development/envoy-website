@@ -1,17 +1,19 @@
 # Project state
 
-Updated November 5, 2026. Owner: Gordon Jones, Envoy Development.
+Updated November 9, 2026. Owner: Gordon Jones, Envoy Development.
 
 ## Current work
 
-- Version 7 is the prepared repository structure; there is no remote URL yet.
-- `site/` contains the website from the Version 6 review package: 21 pages, approved industry
-  hero images, current messaging, and the rebuilt About Envoy/team page.
-- `design/diagram-proposals/Envoy-Website-V6-Diagram-Proposal.html` is the
-  complete nine-concept review board. Diagrams have not been inserted into
-  the actual pages.
-- `netlify.toml` publishes only `site/`. Documentation, source records, and
-  diagram proposals stay outside that publish directory.
+- Version 8 (November 7 to 9, 2026) is the current revision. See `CHANGELOG.md`.
+- Local working copy: `C:\Apps\EnvoyWebsite3\envoy-website` (moved from
+  `C:\Apps\EnvoyWebsite\envoy-website` on November 9, 2026). It is a Git
+  repository; Gordon commits to `main`.
+- `site/` holds the 21 website pages. The diagram concepts have now been
+  implemented as interactive visuals on the home, platform, industry and
+  Intelligent Factory pages. `design/diagram-proposals/` is kept as history.
+- `netlify.toml` publishes only `site/`.
+- Backup, preview and option files are still inside `site/` and would be
+  published. Clear them before release.
 
 ## Decisions to carry forward
 
@@ -22,19 +24,21 @@ Updated November 5, 2026. Owner: Gordon Jones, Envoy Development.
   hero is the final HD-chest revision.
 - Pulp and paper is the established foundation. Food and specialty chemicals
   are new industry focuses; do not invent customers or results for them.
-- The About gallery uses 32 unmodified public website portraits captured on
-  October 31, 2026. Higher-resolution employee originals were not available.
+- The About gallery has 32 people: 31 public website portraits captured on
+  October 31, 2026, plus Todd Fytczyk from a photo Gordon supplied on
+  November 9, 2026. David Kammerdeiner was removed.
+- Home page figures supplied by Gordon (November 9, 2026): 600+ plant
+  processes, 97% client renewal rate.
 - The contact form is a preview and does not send messages. Assessment and
   resource pages retain their existing in-progress content.
 - Every later enhancement increments the review version and change log.
 
-## Suggested first substantive revision after setup
+## Open items
 
-Implement an agreed subset of the diagrams on a Version 8 branch. The prior
-recommendation was to begin with the homepage, Reliability Reporting, and
-pulp and paper, with an improvement to the existing Smart Centerlines chart.
-The full diagram proposal records placement, replacement text/cards, and
-mobile composition notes for all nine pages.
+- Clear backup, preview and option files out of `site/` before release.
+- Remove the unused full-size `assets/team/Todd Fytczykk.jpg`.
+- Update `book.html`, which still describes the seven disciplines, and decide
+  whether the seven-disciplines and technology-stack menu links stay.
 
 ## Repository and hosting handoff
 

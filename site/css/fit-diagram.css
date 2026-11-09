@@ -1,0 +1,35 @@
+/* Home page: "Work with the systems you already have" connection diagram (Nov 2026) */
+.ind-two-col.fit-split { grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); align-items: center; }
+.fit-diagram { margin: 0; background: #fff; border: 1px solid #e3efe8; border-radius: 18px; padding: 1.6rem 1.6rem 1.2rem; box-shadow: 0 20px 50px rgba(13,61,34,.08); }
+.fd-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.fd-hdr { font: 700 10px Inter, sans-serif; letter-spacing: .14em; fill: #238a5e; }
+.fd-area rect { fill: #f9fbfa; stroke: #d6ece0; }
+.fd-name { font: 650 12.5px Inter, sans-serif; fill: #111827; }
+.fd-chip rect { fill: #f0faf5; stroke: #a7e8c8; }
+.fd-chip text { font: 600 9.5px Inter, sans-serif; fill: #1a5c38; }
+.fd-chip.gap rect { fill: #fff8eb; stroke: #e0a83a; stroke-dasharray: 3 3; }
+.fd-chip.gap text { fill: #9a6510; }
+.fd-wire { fill: none; stroke: #bfe3cf; stroke-width: 1.6; }
+.fd-pkt { fill: #238a5e; }
+.fd-gate { fill: #1a5c38; }
+.fd-gate-t { font: 700 10.5px Inter, sans-serif; fill: #fff; }
+.fd-opc rect { fill: #e8f5ee; stroke: #238a5e; }
+.fd-opc text { font: 800 8.5px Inter, sans-serif; letter-spacing: .12em; fill: #0d3d22; }
+.fd-main { stroke: #238a5e; stroke-width: 3; stroke-dasharray: 6 6; animation: fdflow .8s linear infinite; }
+@keyframes fdflow { to { stroke-dashoffset: -12; } }
+.fd-plat { fill: #0d3d22; }
+.fd-plat-ring { fill: none; stroke: #4eca8a; stroke-width: 1.5; opacity: .45; }
+.fd-plat-t { font: 750 16px Inter, sans-serif; fill: #fff; letter-spacing: -.01em; }
+.fd-plat-s { font: 500 11px Inter, sans-serif; fill: #a7e8c8; }
+.fd-plat-k { font: 700 9px Inter, sans-serif; letter-spacing: .14em; fill: #7dd3a8; }
+.fd-mod rect { fill: rgba(255,255,255,.06); stroke: rgba(125,211,168,.3); }
+.fd-mod circle { fill: #4eca8a; animation: fdpulse 1.8s ease-in-out infinite; }
+.fd-mod text { font: 600 11.5px Inter, sans-serif; fill: #fff; }
+@keyframes fdpulse { 50% { opacity: .35; } }
+.fd-hist rect { fill: none; stroke: rgba(167,232,200,.55); stroke-dasharray: 4 4; }
+.fd-hist text { font: 600 10px Inter, sans-serif; fill: #a7e8c8; }
+.fit-diagram figcaption { font-size: .8rem; color: #6b7280; margin-top: .9rem; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+.fit-diagram figcaption span::before { content: ""; display: inline-block; width: 18px; height: 9px; border-radius: 5px; margin-right: .45rem; vertical-align: -1px; background: #f0faf5; border: 1px solid #a7e8c8; }
+.fit-diagram figcaption span.gap::before { background: #fff8eb; border: 1px dashed #e0a83a; }
+@media (max-width: 1024px) { .ind-two-col.fit-split { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .fd-pkt { display: none; } .fd-main, .fd-mod circle { animation: none; } }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home page: "Three connected modules" options (v1)</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/messaging.css" />
+<style>
+  body { background: #f0faf5; }
+  .opt-label { background: #111827; color: #e5e7eb; font: 600 .85rem/1 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; padding: 1rem 0; }
+  .opt-label .container { display: flex; justify-content: space-between; gap: 1rem; }
+  .opt-label span:last-child { color: #9ca3af; font-weight: 500; text-transform: none; letter-spacing: 0; }
+  .opt.product-suite { padding: 96px 0; }
+  .m-kicker { font: 700 .72rem Inter, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #238a5e; }
+  .m-link { display: inline-flex; align-items: center; gap: .4rem; font-weight: 650; color: #1a5c38; font-size: .95rem; border-bottom: 1.5px solid #a7e8c8; padding-bottom: 2px; transition: gap .2s, border-color .2s; }
+  .m-link:hover { gap: .7rem; border-color: #238a5e; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes ring { 0% { transform: scale(.6); opacity: 1; } 100% { transform: scale(2); opacity: 0; } }
+  @keyframes rowin { 0%, 8% { opacity: 0; transform: translateY(8px); } 18%, 88% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+  /* ================= OPTION A: product windows ================= */
+  .ma-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .ma-card { background: #fff; border: 1px solid #dfeee6; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: transform .3s, box-shadow .3s; }
+  .ma-card:hover { transform: translateY(-4px); box-shadow: 0 24px 50px rgba(13,61,34,.14); }
+  .ma-window { margin: 1.1rem 1.1rem 0; border-radius: 10px; overflow: hidden; background: #0d3d22; box-shadow: 0 10px 24px rgba(13,61,34,.18); }
+  .ma-chrome { display: flex; align-items: center; gap: .35rem; padding: .5rem .75rem; background: #12492a; }
+  .ma-chrome i { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.25); }
+  .ma-chrome span { margin-left: .5rem; font: 600 .68rem Inter, sans-serif; color: #a7e8c8; letter-spacing: .04em; }
+  .ma-shot { aspect-ratio: 16 / 10; background: #fff; overflow: hidden; position: relative; }
+  .ma-shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; transform: scale(1.0); transform-origin: 30% 20%; transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+  .ma-card:hover .ma-shot img { transform: scale(1.12); }
+  .ma-chat { position: absolute; inset: 0; background: #f6faf8; padding: .9rem; display: flex; flex-direction: column; gap: .55rem; font-size: .74rem; line-height: 1.4; }
+  .ma-q { align-self: flex-end; background: #1a5c38; color: #fff; border-radius: 10px 10px 2px 10px; padding: .5rem .7rem; max-width: 80%; }
+  .ma-a { align-self: flex-start; background: #fff; border: 1px solid #dfeee6; border-radius: 10px 10px 10px 2px; padding: .55rem .7rem; max-width: 92%; color: #1f2937; }
+  .ma-a b { color: #1a5c38; }
+  .ma-src { display: flex; gap: .35rem; flex-wrap: wrap; margin-top: .35rem; }
+  .ma-src span { font: 700 .58rem Inter, sans-serif; letter-spacing: .08em; color: #1a5c38; background: #e8f5ee; border-radius: 999px; padding: .15rem .45rem; }
+  .ma-body { padding: 1.5rem 1.5rem 1.6rem; display: flex; flex-direction: column; flex: 1; }
+  .ma-body h3 { font-size: 1.3rem; line-height: 1.25; color: #111827; margin: .45rem 0 .35rem; letter-spacing: -.01em; }
+  .ma-qline { color: #1a5c38; font-weight: 650; font-size: .98rem; margin-bottom: .7rem; }
+  .ma-body p.d { font-size: .92rem; color: #4b5563; margin-bottom: 1rem; }
+  .ma-chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.4rem; }
+  .ma-chips span { font-size: .78rem; color: #1f2937; background: #f0faf5; border: 1px solid #d6ece0; border-radius: 999px; padding: .25rem .65rem; }
+  .ma-body .m-link { margin-top: auto; align-self: flex-start; }
+
+  /* ================= OPTION B: connected loop ================= */
+  .mb-wrap { display: grid; grid-template-columns: 6fr 5fr; gap: 3.5rem; align-items: center; }
+  .mb-svg { width: 100%; height: auto; display: block; }
+  .mb-loop { fill: none; stroke: #bfe3cf; stroke-width: 2; }
+  .mb-flow { fill: none; stroke: #238a5e; stroke-width: 2.5; stroke-dasharray: 10 14; animation: flow 1.6s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -24; } }
+  .mb-spoke { stroke: #cfe8db; stroke-width: 1.5; stroke-dasharray: 3 5; }
+  .mb-hub { fill: #0d3d22; }
+  .mb-hubring { fill: none; stroke: #4eca8a; stroke-width: 1.5; opacity: .5; transform-box: fill-box; transform-origin: center; animation: ring 3s ease-out infinite; }
+  .mb-node { cursor: pointer; }
+  .mb-node circle.base { fill: #fff; stroke: #a7e8c8; stroke-width: 2; transition: fill .3s, stroke .3s, r .3s; }
+  .mb-node.active circle.base { fill: #1a5c38; stroke: #1a5c38; }
+  .mb-node text { font: 700 13px Inter, sans-serif; fill: #0d3d22; transition: fill .3s; }
+  .mb-node.active text.in { fill: #fff; }
+  .mb-node text.lbl { font: 650 14px Inter, sans-serif; fill: #111827; }
+  .mb-node text.verb { font: 700 10px Inter, sans-serif; letter-spacing: .14em; fill: #238a5e; }
+  .mb-pkt { fill: #4eca8a; filter: drop-shadow(0 0 5px #4eca8a); }
+  .mb-panel { border-left: 3px solid #238a5e; padding-left: 1.75rem; min-height: 330px; }
+  .mb-panel h3 { font-size: 1.6rem; letter-spacing: -.015em; margin: .5rem 0 .5rem; color: #111827; }
+  .mb-panel .qline { font-size: 1.12rem; color: #1a5c38; font-weight: 650; margin-bottom: .9rem; }
+  .mb-panel p.d { color: #4b5563; margin-bottom: 1.1rem; }
+  .mb-panel ol { counter-reset: n; margin-bottom: 1.5rem; }
+  .mb-panel li { counter-increment: n; display: flex; gap: .75rem; padding: .55rem 0; border-top: 1px solid #dfeee6; font-size: .94rem; color: #1f2937; }
+  .mb-panel li:last-child { border-bottom: 1px solid #dfeee6; }
+  .mb-panel li::before { content: "0" counter(n); font: 700 .75rem Inter, sans-serif; color: #238a5e; padding-top: .18rem; }
+  .mb-fade { animation: fadeup .45s ease-out; }
+  @keyframes fadeup { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .mb-tabs { display: flex; gap: .5rem; margin-top: 1.5rem; }
+  .mb-tabs button { width: 36px; height: 4px; border: 0; border-radius: 2px; background: #cfe8db; cursor: pointer; padding: 0; }
+  .mb-tabs button.on { background: #238a5e; }
+
+  /* ================= OPTION C: editorial rows ================= */
+  .mc-row { display: grid; grid-template-columns: 5fr 6fr; gap: 4rem; align-items: center; padding: 3rem 0; border-top: 1px solid #d6ece0; }
+  .mc-row:last-of-type { border-bottom: 1px solid #d6ece0; }
+  .mc-row.flip .mc-text { order: 2; } .mc-row.flip .mc-vis { order: 1; }
+  .mc-num { font: 800 .8rem Inter, sans-serif; letter-spacing: .14em; color: #238a5e; }
+  .mc-text h3 { font-size: clamp(1.5rem, 2.4vw, 2.05rem); line-height: 1.15; letter-spacing: -.02em; color: #111827; margin: .6rem 0 .6rem; }
+  .mc-mod { font-weight: 700; color: #1a5c38; margin-bottom: .6rem; }
+  .mc-text p.d { color: #4b5563; margin-bottom: 1rem; max-width: 470px; }
+  .mc-feat { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-bottom: 1.4rem; font-size: .88rem; color: #1f2937; }
+  .mc-feat span::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #4eca8a; margin-right: .5rem; vertical-align: middle; }
+  .mc-vis { background: #0d3d22; border-radius: 16px; padding: 1.25rem; box-shadow: 0 24px 50px rgba(13,61,34,.18); background-image: linear-gradient(rgba(125,211,168,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(125,211,168,.06) 1px, transparent 1px); background-size: 28px 28px; min-height: 270px; position: relative; overflow: hidden; }
+  .mc-vis .hdr { display: flex; justify-content: space-between; font: 700 .68rem Inter, sans-serif; letter-spacing: .12em; color: #7dd3a8; margin-bottom: .9rem; }
+  .mc-vis .hdr span:last-child { color: #6f9c84; }
+  /* C1 morning report */
+  .rep { display: grid; grid-template-columns: 10px 1fr 110px; align-items: center; gap: .8rem; padding: .7rem .8rem; border: 1px solid rgba(125,211,168,.18); border-radius: 8px; background: rgba(6,26,15,.45); margin-bottom: .55rem; opacity: 0; animation: rowin 9s ease-out infinite; }
+  .rep:nth-child(3) { animation-delay: .35s; } .rep:nth-child(4) { animation-delay: .7s; } .rep:nth-child(5) { animation-delay: 1.05s; }
+  .rep i { width: 10px; height: 10px; border-radius: 50%; }
+  .rep b { display: block; color: #fff; font-size: .85rem; font-weight: 650; }
+  .rep small { color: #a9c3b5; font-size: .76rem; }
+  .rep svg { width: 110px; height: 30px; }
+  .rep path { fill: none; stroke-width: 1.6; stroke-linejoin: round; }
+  /* C2 centerline gauge */
+  .cl-svg { width: 100%; height: 170px; margin-top: 1rem; display: block; }
+  .cl-svg path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .cl-read { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(125,211,168,.18); margin-top: .5rem; padding-top: .7rem; }
+  .cl-read div { color: #a9c3b5; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; }
+  .cl-read b { display: block; color: #fff; font-size: 1.15rem; letter-spacing: 0; text-transform: none; margin-top: .15rem; }
+  .cl-read b.ok { color: #4eca8a; }
+  /* C3 chat */
+  .chat { display: flex; flex-direction: column; gap: .65rem; }
+  .chat .q, .chat .a { opacity: 0; animation: rowin 10s ease-out infinite; font-size: .86rem; line-height: 1.45; }
+  .chat .q { align-self: flex-end; background: #238a5e; color: #fff; border-radius: 12px 12px 2px 12px; padding: .6rem .85rem; max-width: 78%; }
+  .chat .typing { align-self: flex-start; display: flex; gap: 4px; padding: .6rem .8rem; background: rgba(255,255,255,.08); border-radius: 12px; opacity: 0; animation: typing 10s infinite; }
+  .chat .typing i { width: 6px; height: 6px; border-radius: 50%; background: #a7e8c8; animation: bob 1s infinite; }
+  .chat .typing i:nth-child(2) { animation-delay: .15s; } .chat .typing i:nth-child(3) { animation-delay: .3s; }
+  @keyframes typing { 0%, 10% { opacity: 0; } 12%, 24% { opacity: 1; } 26%, 100% { opacity: 0; } }
+  @keyframes bob { 50% { transform: translateY(-3px); } }
+  .chat .a { animation-delay: 2.4s; align-self: flex-start; background: rgba(255,255,255,.95); color: #1f2937; border-radius: 12px 12px 12px 2px; padding: .7rem .9rem; max-width: 92%; }
+  .chat .a b { color: #1a5c38; }
+  .chat .src { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .5rem; }
+  .chat .src span { font: 700 .6rem Inter, sans-serif; letter-spacing: .08em; color: #1a5c38; background: #e8f5ee; border-radius: 999px; padding: .18rem .5rem; }
+
+  @media (max-width: 1024px) {
+    .ma-grid { grid-template-columns: 1fr; max-width: 560px; }
+    .mb-wrap, .mc-row { grid-template-columns: 1fr; gap: 2rem; }
+    .mc-row.flip .mc-text { order: 1; } .mc-row.flip .mc-vis { order: 2; }
+  }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .rep, .chat .q, .chat .a { opacity: 1; } }
+</style>
+</head>
+<body>
+
+<!-- ============================ OPTION A ============================ -->
+<div class="opt-label"><div class="container"><span>Option A: Product windows</span><span>Keep three cards, but lead each with a real Envoy screen. Text cut to a question, one line and three short chips.</span></div></div>
+<section class="product-suite section opt"><div class="container">
+  <div class="section-intro"><p class="eyebrow">The Envoy Platform</p><h2>One platform. Three connected modules.</h2><p>Each module answers a different operating question, with experienced engineers supporting your team.</p></div>
+  <div class="ma-grid">
+    <article class="ma-card"><div class="ma-window"><div class="ma-chrome"><i></i><i></i><i></i><span>Morning report</span></div><div class="ma-shot"><img src="eprr-daily-report.png" alt="Morning report item with trend" /></div></div>
+      <div class="ma-body"><div class="m-kicker">Reliability</div><h3>Process Reliability Reporting</h3><div class="ma-qline">What needs attention, and why?</div>
+        <p class="d">A short, engineer-reviewed morning report. Meaningful changes flagged, with the evidence behind them.</p>
+        <div class="ma-chips"><span>Morning reports</span><span>Sensor and loop health</span><span>Root-cause help</span></div>
+        <a class="m-link" href="process-reliability-reporting.html">Explore Reporting <span aria-hidden="true">→</span></a></div></article>
+    <article class="ma-card"><div class="ma-window"><div class="ma-chrome"><i></i><i></i><i></i><span>Targets and limits</span></div><div class="ma-shot"><img src="sc-centerline-limits.png" alt="Centerline limits comparison" style="object-position:center" /></div></div>
+      <div class="ma-body"><div class="m-kicker">Optimization</div><h3>Envoy Smart Centerlines</h3><div class="ma-qline">Where should this process be operating?</div>
+        <p class="d">Targets and limits for each product, grade and speed, compared live with reviewed ranges.</p>
+        <div class="ma-chips"><span>Targets by condition</span><span>Live comparisons</span><span>Engineer-maintained</span></div>
+        <a class="m-link" href="smart-centerlines.html">Explore Centerlines <span aria-hidden="true">→</span></a></div></article>
+    <article class="ma-card"><div class="ma-window"><div class="ma-chrome"><i></i><i></i><i></i><span>Envoy Intelligence</span></div><div class="ma-shot"><div class="ma-chat">
+        <div class="ma-q">Why did steam use per ton go up last week?</div>
+        <div class="ma-a">It rose about 6% after Tuesday’s product change. Condensate return dropped at the same time. <b>Check the steam traps on the feed heater.</b>
+          <div class="ma-src"><span>TREND</span><span>PAST CASE</span><span>PROCEDURE</span></div></div></div></div></div>
+      <div class="ma-body"><div class="m-kicker">Knowledge &amp; Guidance</div><h3>Envoy Intelligence</h3><div class="ma-qline">How do we understand the problem and respond?</div>
+        <p class="d">AI connected to your process data, equipment context and plant knowledge.</p>
+        <div class="ma-chips"><span>Plant-grounded answers</span><span>Onboarding</span><span>Reviewed findings</span></div>
+        <a class="m-link" href="envoy-intelligence.html">Explore Intelligence <span aria-hidden="true">→</span></a></div></article>
+  </div>
+</div></section>
+
+<!-- ============================ OPTION B ============================ -->
+<div class="opt-label"><div class="container"><span>Option B: Connected loop</span><span>Shows the "connected" part. The three modules sit on one loop around your plant data. Click a module, or let it cycle.</span></div></div>
+<section class="product-suite section opt"><div class="container">
+  <div class="section-intro"><p class="eyebrow">The Envoy Platform</p><h2>One platform. Three connected modules.</h2><p>Each module answers a different question. Together they find a problem, explain it and keep it from coming back.</p></div>
+  <div class="mb-wrap" id="mbwrap">
+    <svg class="mb-svg" viewBox="0 -20 560 450" aria-hidden="true">
+      <path id="mbloop" class="mb-loop" d="M280,70 A175,175 0 1,1 279.9,70 Z"/>
+      <path class="mb-flow" d="M280,70 A175,175 0 1,1 279.9,70 Z"/>
+      <line class="mb-spoke" x1="280" y1="245" x2="280" y2="70"/><line class="mb-spoke" x1="280" y1="245" x2="431.6" y2="332.5"/><line class="mb-spoke" x1="280" y1="245" x2="128.4" y2="332.5"/>
+      <circle class="mb-hubring" cx="280" cy="245" r="62"/>
+      <circle class="mb-hub" cx="280" cy="245" r="62"/>
+      <text x="280" y="236" text-anchor="middle" style="font:700 13px Inter,sans-serif;fill:#fff">Your plant data</text>
+      <text x="280" y="254" text-anchor="middle" style="font:500 10.5px Inter,sans-serif;fill:#a7e8c8">historian · DCS · lab</text>
+      <text x="280" y="270" text-anchor="middle" style="font:500 10.5px Inter,sans-serif;fill:#a7e8c8">+ Envoy engineers</text>
+      <circle r="5" class="mb-pkt"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#mbloop"/></animateMotion></circle>
+      <circle r="5" class="mb-pkt"><animateMotion dur="6s" begin="-2s" repeatCount="indefinite"><mpath href="#mbloop"/></animateMotion></circle>
+      <circle r="5" class="mb-pkt"><animateMotion dur="6s" begin="-4s" repeatCount="indefinite"><mpath href="#mbloop"/></animateMotion></circle>
+      <g class="mb-node active" data-i="0"><circle class="base" cx="280" cy="70" r="34"/><text class="in" x="280" y="75" text-anchor="middle">01</text>
+        <text class="verb" x="280" y="-4" text-anchor="middle">FIND IT</text><text class="lbl" x="280" y="13" text-anchor="middle">Reliability Reporting</text></g>
+      <g class="mb-node" data-i="1"><circle class="base" cx="431.6" cy="332.5" r="34"/><text class="in" x="431.6" y="337.5" text-anchor="middle">02</text>
+        <text class="verb" x="431.6" y="392" text-anchor="middle">EXPLAIN IT</text><text class="lbl" x="431.6" y="408" text-anchor="middle">Envoy Intelligence</text></g>
+      <g class="mb-node" data-i="2"><circle class="base" cx="128.4" cy="332.5" r="34"/><text class="in" x="128.4" y="337.5" text-anchor="middle">03</text>
+        <text class="verb" x="128.4" y="392" text-anchor="middle">HOLD IT</text><text class="lbl" x="128.4" y="408" text-anchor="middle">Smart Centerlines</text></g>
+    </svg>
+    <div>
+      <div class="mb-panel" id="mbpanel"></div>
+      <div class="mb-tabs" id="mbtabs"><button class="on"></button><button></button><button></button></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============================ OPTION C ============================ -->
+<div class="opt-label"><div class="container"><span>Option C: Question rows</span><span>No cards. Each module gets a full-width row: the question as a headline, short text, and a live mini view of the product. Rows split by hairline rules.</span></div></div>
+<section class="product-suite section opt"><div class="container">
+  <div class="section-intro"><p class="eyebrow">The Envoy Platform</p><h2>One platform. Three connected modules.</h2></div>
+  <div class="mc-row">
+    <div class="mc-text"><div class="mc-num">01 / PROCESS RELIABILITY REPORTING</div><h3>What needs attention, and why?</h3>
+      <p class="d">Start the day with a short, engineer-reviewed report. Meaningful changes are flagged with the evidence, and engineers help with the ones that need a closer look.</p>
+      <div class="mc-feat"><span>Morning reports</span><span>Sensor and loop health</span><span>Root-cause investigations</span></div>
+      <a class="m-link" href="process-reliability-reporting.html">Explore Reporting <span aria-hidden="true">→</span></a></div>
+    <div class="mc-vis"><div class="hdr"><span>MORNING REPORT</span><span>06:00</span></div>
+      <div class="rep"><i style="background:#ff7a59"></i><div><b>Steam header pressure</b><small>Low since 03:10 and falling</small></div><svg viewBox="0 0 110 30"><path d="M2.0,17.0 L4.7,12.4 L7.4,15.4 L10.2,14.4 L12.9,14.5 L15.6,14.8 L18.3,13.0 L21.0,14.8 L23.7,14.1 L26.5,18.3 L29.2,15.2 L31.9,14.6 L34.6,14.7 L37.3,14.3 L40.1,13.9 L42.8,14.6 L45.5,15.5 L48.2,14.8 L50.9,16.0 L53.6,14.8 L56.4,15.0 L59.1,16.5 L61.8,15.5 L64.5,14.5 L67.2,14.8 L69.9,15.5 L72.7,16.9 L75.4,15.6 L78.1,16.4 L80.8,18.5 L83.5,17.5 L86.3,18.9 L89.0,21.0 L91.7,21.5 L94.4,21.9 L97.1,23.3 L99.8,20.6 L102.6,25.3 L105.3,24.2 L108.0,24.3" stroke="#ff7a59"/></svg></div>
+      <div class="rep"><i style="background:#f5b942"></i><div><b>Feed pump vibration</b><small>Up 40% over 7 days</small></div><svg viewBox="0 0 110 30"><path d="M2.0,22.4 L4.7,22.7 L7.4,20.8 L10.2,19.6 L12.9,20.8 L15.6,20.4 L18.3,22.1 L21.0,20.9 L23.7,19.8 L26.5,20.8 L29.2,18.6 L31.9,17.3 L34.6,19.1 L37.3,18.8 L40.1,17.4 L42.8,16.3 L45.5,17.4 L48.2,13.3 L50.9,17.4 L53.6,16.8 L56.4,13.6 L59.1,15.6 L61.8,13.9 L64.5,16.0 L67.2,11.8 L69.9,13.0 L72.7,15.0 L75.4,15.3 L78.1,10.4 L80.8,12.4 L83.5,13.2 L86.3,11.6 L89.0,14.4 L91.7,10.2 L94.4,12.0 L97.1,9.8 L99.8,12.9 L102.6,10.6 L105.3,9.8 L108.0,7.6" stroke="#f5b942"/></svg></div>
+      <div class="rep"><i style="background:#f5b942"></i><div><b>Flow loop FIC-210</b><small>Cycling, likely valve stiction</small></div><svg viewBox="0 0 110 30"><path d="M2.0,23.0 L4.7,22.5 L7.4,22.5 L10.2,22.7 L12.9,22.2 L15.6,21.6 L18.3,7.5 L21.0,7.5 L23.7,8.8 L26.5,7.1 L29.2,7.6 L31.9,21.8 L34.6,22.1 L37.3,22.3 L40.1,21.3 L42.8,21.0 L45.5,22.0 L48.2,8.7 L50.9,8.5 L53.6,8.1 L56.4,7.8 L59.1,8.2 L61.8,7.9 L64.5,22.5 L67.2,21.5 L69.9,22.1 L72.7,21.9 L75.4,22.3 L78.1,22.1 L80.8,9.5 L83.5,8.9 L86.3,8.9 L89.0,6.8 L91.7,7.8 L94.4,21.6 L97.1,22.3 L99.8,20.6 L102.6,22.7 L105.3,22.6 L108.0,21.2" stroke="#f5b942"/></svg></div>
+      <div class="rep"><i style="background:#4eca8a"></i><div><b>Flow meter FT-118</b><small>Back in range after recalibration</small></div><svg viewBox="0 0 110 30"><path d="M2.0,7.0 L4.7,7.2 L7.4,8.0 L10.2,8.6 L12.9,10.0 L15.6,7.8 L18.3,8.8 L21.0,8.2 L23.7,9.8 L26.5,8.7 L29.2,9.4 L31.9,6.9 L34.6,7.8 L37.3,7.2 L40.1,9.5 L42.8,8.7 L45.5,7.7 L48.2,7.5 L50.9,8.5 L53.6,7.3 L56.4,7.1 L59.1,8.5 L61.8,15.9 L64.5,14.6 L67.2,14.8 L69.9,15.8 L72.7,15.6 L75.4,16.7 L78.1,12.9 L80.8,15.9 L83.5,14.5 L86.3,15.1 L89.0,15.8 L91.7,16.1 L94.4,16.0 L97.1,15.2 L99.8,16.6 L102.6,14.7 L105.3,14.9 L108.0,15.8" stroke="#4eca8a"/></svg></div>
+    </div>
+  </div>
+  <div class="mc-row flip">
+    <div class="mc-text"><div class="mc-num">02 / ENVOY SMART CENTERLINES</div><h3>Where should this process be operating?</h3>
+      <p class="d">Targets and limits for each product, grade and speed, set from your own data and kept current by engineers. Operators see at a glance whether they are in range.</p>
+      <div class="mc-feat"><span>Targets by condition</span><span>Live comparisons</span><span>Engineer-maintained</span></div>
+      <a class="m-link" href="smart-centerlines.html">Explore Centerlines <span aria-hidden="true">→</span></a></div>
+    <div class="mc-vis"><div class="hdr"><span>REFINER LOAD · GRADE 42</span><span>LIVE</span></div>
+      <svg class="cl-svg" viewBox="0 0 500 200" preserveAspectRatio="none">
+        <rect x="0" y="70" width="500" height="60" fill="rgba(125,211,168,.12)"/>
+        <line x1="0" y1="70" x2="500" y2="70" stroke="#4b8f6b" stroke-dasharray="4 5"/>
+        <line x1="0" y1="130" x2="500" y2="130" stroke="#4b8f6b" stroke-dasharray="4 5"/>
+        <line x1="0" y1="100" x2="500" y2="100" stroke="#a7e8c8" stroke-width="1.4" stroke-dasharray="8 6"/>
+        <text x="6" y="64" style="font:700 10px Inter,sans-serif;letter-spacing:.12em;fill:#6f9c84">HIGH LIMIT</text>
+        <text x="6" y="146" style="font:700 10px Inter,sans-serif;letter-spacing:.12em;fill:#6f9c84">LOW LIMIT</text>
+        <text x="494" y="64" text-anchor="end" style="font:700 10px Inter,sans-serif;letter-spacing:.12em;fill:#a7e8c8">TARGET</text>
+        <path d="M0.0,98.3 L2.3,110.0 L4.6,109.9 L6.8,116.4 L9.1,112.4 L11.4,113.6 L13.7,117.1 L16.0,120.0 L18.3,116.9 L20.5,120.0 L22.8,118.6 L25.1,122.8 L27.4,114.8 L29.7,118.3 L32.0,111.3 L34.2,108.2 L36.5,106.5 L38.8,102.4 L41.1,103.8 L43.4,103.8 L45.7,98.6 L47.9,97.5 L50.2,98.3 L52.5,92.2 L54.8,90.2 L57.1,87.4 L59.4,82.4 L61.6,88.8 L63.9,80.9 L66.2,88.3 L68.5,86.7 L70.8,90.9 L73.1,88.4 L75.3,87.5 L77.6,92.6 L79.9,91.6 L82.2,94.6 L84.5,97.2 L86.8,98.6 L89.0,100.3 L91.3,100.2 L93.6,103.9 L95.9,99.5 L98.2,106.8 L100.5,104.8 L102.7,112.5 L105.0,113.6 L107.3,104.2 L109.6,110.5 L111.9,109.4 L114.2,106.2 L116.4,110.2 L118.7,106.2 L121.0,101.2 L123.3,104.5 L125.6,103.5 L127.9,102.9 L130.1,97.4 L132.4,101.6 L134.7,100.6 L137.0,93.6 L139.3,94.0 L141.6,94.7 L143.8,92.4 L146.1,98.7 L148.4,93.6 L150.7,89.7 L153.0,90.3 L155.3,92.6 L157.5,100.0 L159.8,93.1 L162.1,94.6 L164.4,96.5 L166.7,95.8 L168.9,103.7 L171.2,96.3 L173.5,101.1 L175.8,100.4 L178.1,102.8 L180.4,98.4 L182.6,108.1 L184.9,103.2 L187.2,104.3 L189.5,101.9 L191.8,102.9 L194.1,107.0 L196.3,108.3 L198.6,107.6 L200.9,108.7 L203.2,106.9 L205.5,104.4 L207.8,106.3 L210.0,105.0 L212.3,102.2 L214.6,103.9 L216.9,104.9 L219.2,100.9 L221.5,98.4 L223.7,101.0 L226.0,103.8 L228.3,96.9 L230.6,96.8 L232.9,96.3 L235.2,100.0 L237.4,90.7 L239.7,97.2 L242.0,99.7 L244.3,93.8 L246.6,100.9 L248.9,98.3 L251.1,95.5 L253.4,98.2 L255.7,93.4 L258.0,96.9 L260.3,104.6 L262.6,97.0 L264.8,105.8 L267.1,100.5 L269.4,104.2 L271.7,101.8 L274.0,95.3 L276.3,100.6 L278.5,103.2 L280.8,99.3 L283.1,98.8 L285.4,104.0 L287.7,100.8 L290.0,97.6 L292.2,100.4 L294.5,104.8 L296.8,100.5 L299.1,104.3 L301.4,105.7 L303.7,100.8 L305.9,97.0 L308.2,96.0 L310.5,99.5 L312.8,101.8 L315.1,99.7 L317.4,100.2 L319.6,97.0 L321.9,99.0 L324.2,96.6 L326.5,96.9 L328.8,94.0 L331.1,93.2 L333.3,96.6 L335.6,94.8 L337.9,95.5 L340.2,100.6 L342.5,98.5 L344.7,107.8 L347.0,102.2 L349.3,97.8 L351.6,102.3 L353.9,101.3 L356.2,98.5 L358.4,104.1 L360.7,98.7 L363.0,92.0 L365.3,103.7 L367.6,99.6 L369.9,106.0 L372.1,99.6 L374.4,98.0 L376.7,106.1 L379.0,98.1 L381.3,101.9 L383.6,105.4 L385.8,101.3 L388.1,100.5 L390.4,100.8 L392.7,102.8 L395.0,97.7 L397.3,101.7 L399.5,101.4 L401.8,106.5 L404.1,98.3 L406.4,96.4 L408.7,101.3 L411.0,97.8 L413.2,99.8 L415.5,99.3 L417.8,102.4 L420.1,96.9 L422.4,98.7 L424.7,91.4 L426.9,96.5 L429.2,103.9 L431.5,97.4 L433.8,97.5 L436.1,96.1 L438.4,101.6 L440.6,100.6 L442.9,96.6 L445.2,102.3 L447.5,101.2 L449.8,102.8 L452.1,98.7 L454.3,106.0 L456.6,102.0 L458.9,100.5 L461.2,99.3 L463.5,100.1 L465.8,103.3 L468.0,99.9 L470.3,103.9 L472.6,102.3 L474.9,104.5 L477.2,102.8 L479.5,100.0 L481.7,94.4 L484.0,100.9 L486.3,102.2 L488.6,100.3 L490.9,101.4 L493.2,98.2 L495.4,98.4 L497.7,96.6 L500.0,103.5" stroke="#7dd3a8" stroke-width="2.2" style="stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 4s ease-out forwards"/>
+        <circle cx="500" cy="104" r="5" fill="#e9fff4" style="filter:drop-shadow(0 0 6px #7dd3a8)"/>
+      </svg>
+      <div class="cl-read"><div>Target<b>620 kW</b></div><div>Now<b>612 kW</b></div><div>Status<b class="ok">In range</b></div></div>
+    </div>
+  </div>
+  <div class="mc-row">
+    <div class="mc-text"><div class="mc-num">03 / ENVOY INTELLIGENCE</div><h3>How do we understand the problem and respond?</h3>
+      <p class="d">AI connected to your process data, equipment context and plant knowledge. Experienced staff investigate faster, and new engineers and operators learn how the process works.</p>
+      <div class="mc-feat"><span>Plant-grounded answers</span><span>Onboarding</span><span>Procedures and findings</span></div>
+      <a class="m-link" href="envoy-intelligence.html">Explore Intelligence <span aria-hidden="true">→</span></a></div>
+    <div class="mc-vis"><div class="hdr"><span>ENVOY INTELLIGENCE</span><span>ASK</span></div>
+      <div class="chat">
+        <div class="q">Why did steam use per ton go up last week?</div>
+        <div class="typing"><i></i><i></i><i></i></div>
+        <div class="a">It rose about 6% after Tuesday’s product change, and condensate return dropped at the same time. <b>Check the steam traps on the feed heater.</b>
+          <div class="src"><span>TREND</span><span>PAST CASE</span><span>PROCEDURE</span></div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<script>
+(function () {
+  var data = [
+    { k: 'Reliability', n: 'Process Reliability Reporting', q: 'What needs attention, and why?', d: 'A short, engineer-reviewed morning report. Meaningful changes are flagged with the evidence behind them.',
+      f: ['Morning reports with supporting evidence', 'Process, sensor and control-loop monitoring', 'Root-cause investigations and engineering support'], h: 'process-reliability-reporting.html', b: 'Explore Reporting' },
+    { k: 'Knowledge & Guidance', n: 'Envoy Intelligence', q: 'How do we understand the problem and respond?', d: 'AI connected to your process data, equipment context and plant knowledge. Investigate faster and bring new people up to speed.',
+      f: ['Guidance grounded in your plant’s context', 'Onboarding and knowledge transfer', 'Procedures and reviewed findings'], h: 'envoy-intelligence.html', b: 'Explore Intelligence' },
+    { k: 'Optimization', n: 'Envoy Smart Centerlines', q: 'Where should this process be operating?', d: 'Targets and limits for each product, grade and speed, so the fix holds and the process stays where it runs best.',
+      f: ['Targets for comparable operating conditions', 'Live comparisons with reviewed ranges', 'Engineering help to maintain targets'], h: 'smart-centerlines.html', b: 'Explore Centerlines' }
+  ];
+  var nodes = document.querySelectorAll('.mb-node'), tabs = document.querySelectorAll('#mbtabs button'),
+      panel = document.getElementById('mbpanel'), wrap = document.getElementById('mbwrap'), cur = 0, t;
+  function show(i) {
+    cur = i; var m = data[i];
+    nodes.forEach(function (n, k) { n.classList.toggle('active', k === i); });
+    tabs.forEach(function (b, k) { b.classList.toggle('on', k === i); });
+    panel.innerHTML = '<div class="mb-fade"><div class="m-kicker">' + m.k.replace('&', '&amp;') + '</div><h3>' + m.n + '</h3><div class="qline">' + m.q + '</div><p class="d">' + m.d +
+      '</p><ol>' + m.f.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ol><a class="m-link" href="' + m.h + '">' + m.b + ' <span aria-hidden="true">→</span></a></div>';
+    clearTimeout(t); t = setTimeout(tick, 6500);
+  }
+  function tick() { if (wrap.matches(':hover')) { t = setTimeout(tick, 1000); } else show((cur + 1) % 3); }
+  nodes.forEach(function (n, k) { n.addEventListener('click', function () { show(k); }); });
+  tabs.forEach(function (b, k) { b.addEventListener('click', function () { show(k); }); });
+  show(0);
+})();
+</script>
+</body>
+</html>

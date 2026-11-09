@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Centerlines | Envoy Development</title>
+  <meta name="description" content="Engineer-reviewed targets for your product, grade, production rate, and operating conditions. Help teams improve consistency and work toward better process performance." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+  <link rel="stylesheet" href="css/industries.css" />
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/messaging.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item" aria-current="page"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html" aria-current="page">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+<section class="product-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="product-hero-inner container">
+    <div class="product-hero-content">
+      <p class="eyebrow">Optimization Module · Smart Centerlines</p>
+      <h1>Know where your process<br>should run.</h1>
+      <p class="hero-sub">Help operators maintain the conditions that support quality, production, and cost goals. Envoy Smart Centerlines combines operating history, process knowledge, and engineering review to establish targets for the product, rate, and conditions you are running today.</p>
+      <div class="btn-group"><a href="contact.html" class="btn btn-primary">Request a Demo</a><a href="solutions.html" class="btn btn-outline">Platform Overview</a></div>
+    </div>
+    <div class="product-hero-img"><img src="sc-hero.png" alt="Engineer blended with process equipment, representing Smart Centerlines" decoding="async" fetchpriority="high" /></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container"><div class="ind-two-col">
+    <div class="ind-copy"><p class="eyebrow">A Shared Operating Reference</p><h2>Make good operating conditions easier to repeat.</h2>
+      <p>A centerline is an agreed target or operating range for a process variable in a defined context. That context matters: a useful setting for one product or production rate may be wrong for another.</p>
+      <p>Smart Centerlines gives engineers and operators a common reference. Live comparisons make deviations visible, while engineering review helps establish whether the targets make sense for the equipment, product requirements, and operating constraints.</p>
+      <p>Your team can spend more time improving performance when the starting point is clear. Shared targets also help new operators understand what good operation looks like and give experienced crews a basis for explaining their decisions.</p>
+    </div>
+    <aside class="ind-sidebar"><h3>Targets that reflect how you are running</h3><ul><li>The product, grade, or recipe being made.</li><li>Production speed or operating rate.</li><li>Relevant material and equipment conditions.</li><li>Quality requirements and process constraints.</li></ul></aside>
+  </div></div>
+</section>
+<section class="section ind-muted">
+  <div class="container"><div class="ind-intro"><p class="eyebrow">Engineering Behind the Targets</p><h2>Use the evidence. Apply process judgment.</h2><p>Historical performance is a useful starting point for optimization. Our engineers work with your team to turn that history into operating guidance that reflects the physical process and your priorities.</p></div>
+    <div class="ind-steps">
+      <div class="ind-step"><span>01 · COMPARE</span><h3>Find relevant operating history.</h3><p>Examine comparable runs with the quality and performance outcomes you want to repeat. Separate meaningful operating conditions so unlike products, grades, or rates do not get combined into one misleading target.</p></div>
+      <div class="ind-step"><span>02 · REVIEW</span><h3>Establish practical targets.</h3><p>Use statistical analysis alongside process knowledge to review candidate ranges. Engineers consider equipment limits, quality needs, and interactions between variables before agreeing targets with your team.</p></div>
+      <div class="ind-step"><span>03 · MAINTAIN</span><h3>Keep the reference useful.</h3><p>Compare live conditions with approved ranges and review deviations. Revisit targets as materials, equipment, products, and operating requirements change, so the reference continues to fit the plant.</p></div>
+    </div>
+  </div>
+</section>
+<section class="dark-diagram section">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow eyebrow-light">How It Looks</p>
+        <h2>See the target in its operating context.</h2>
+        <p>In this illustrative pulp-and-paper example, each grade has its own operating range. The target changes with what the machine is making, so the operator can compare current conditions with the relevant reference.</p>
+      </div>
+      <div class="diagram-wrap fade-in" role="img" aria-label="Illustrative pulp-and-paper operating window diagram: one process variable tracked across three grade runs. Each grade has its own approved operating window: a shaded band between a dashed upper and lower limit, with a dashed centerline target, and the window visibly steps to new values at each grade change. The two grade-change periods are shaded gray and excluded from evaluation. During the third grade the variable rises above its upper limit for a period, and that single excursion is flagged.">
+        <svg viewBox="0 0 1000 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+          <!-- ─── Plot area ─── -->
+          <rect x="70" y="24" width="880" height="226" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+
+          <!-- ─── Approved operating windows (grade-specific) ─── -->
+          <!-- Grade A: 14.0 – 19.0, centerline 16.5 -->
+          <rect x="70" y="80.5" width="250" height="94.2" fill="rgba(125,211,168,0.17)"/>
+          <!-- Grade B: 18.0 – 21.0, centerline 19.5 -->
+          <rect x="380" y="42.8" width="250" height="56.5" fill="rgba(125,211,168,0.17)"/>
+          <!-- Grade C: 12.5 – 17.5, centerline 15.0 -->
+          <rect x="690" y="108.8" width="260" height="94.2" fill="rgba(125,211,168,0.17)"/>
+
+          <!-- ─── Upper / lower limits (dashed red) ─── -->
+          <g stroke="rgba(255,138,128,0.85)" stroke-width="1.4" stroke-dasharray="7,5" fill="none">
+            <line x1="70"  y1="80.5"  x2="320" y2="80.5"/>
+            <line x1="70"  y1="174.7" x2="320" y2="174.7"/>
+            <line x1="380" y1="42.8"  x2="630" y2="42.8"/>
+            <line x1="380" y1="99.3"  x2="630" y2="99.3"/>
+            <line x1="690" y1="108.8" x2="950" y2="108.8"/>
+            <line x1="690" y1="202.9" x2="950" y2="202.9"/>
+          </g>
+
+          <!-- ─── Centerline targets (dashed green) ─── -->
+          <g stroke="#7dd3a8" stroke-width="1.8" stroke-dasharray="9,5" opacity="0.85" fill="none">
+            <line x1="70"  y1="127.6" x2="320" y2="127.6"/>
+            <line x1="380" y1="71.1"  x2="630" y2="71.1"/>
+            <line x1="690" y1="155.8" x2="950" y2="155.8"/>
+          </g>
+
+          <!-- ─── Faint connectors: limits and target stepping to the new grade ─── -->
+          <g stroke="rgba(255,255,255,0.28)" stroke-width="1" stroke-dasharray="2,4" fill="none">
+            <line x1="320" y1="80.5"  x2="380" y2="42.8"/>
+            <line x1="320" y1="174.7" x2="380" y2="99.3"/>
+            <line x1="320" y1="127.6" x2="380" y2="71.1"/>
+            <line x1="630" y1="42.8"  x2="690" y2="108.8"/>
+            <line x1="630" y1="99.3"  x2="690" y2="202.9"/>
+            <line x1="630" y1="71.1"  x2="690" y2="155.8"/>
+          </g>
+
+          <!-- ─── Grade-change periods: grayed out, not evaluated ─── -->
+          <g>
+            <rect x="320" y="24" width="60" height="226" fill="rgba(200,214,224,0.16)"/>
+            <rect x="630" y="24" width="60" height="226" fill="rgba(200,214,224,0.16)"/>
+          </g>
+          <g stroke="rgba(200,214,224,0.35)" stroke-width="1" stroke-dasharray="4,4">
+            <line x1="320" y1="24" x2="320" y2="250"/>
+            <line x1="380" y1="24" x2="380" y2="250"/>
+            <line x1="630" y1="24" x2="630" y2="250"/>
+            <line x1="690" y1="24" x2="690" y2="250"/>
+          </g>
+          <text x="350" y="140" text-anchor="middle" font-size="8.5" font-weight="600" letter-spacing="0.3"
+                fill="rgba(213,226,235,0.75)" font-family="Inter,sans-serif" transform="rotate(-90,350,140)">GRADE CHANGE (NOT EVALUATED)</text>
+          <text x="660" y="140" text-anchor="middle" font-size="8.5" font-weight="600" letter-spacing="0.3"
+                fill="rgba(213,226,235,0.75)" font-family="Inter,sans-serif" transform="rotate(-90,660,140)">GRADE CHANGE (NOT EVALUATED)</text>
+
+          <!-- ─── Process variable trace ─── -->
+          <!-- Grade A run -->
+          <polyline fill="none" stroke="rgba(120,190,255,0.9)" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"
+            points="70.0,102.0 74.0,118.3 78.0,117.1 82.0,121.6 86.0,130.4 90.0,133.9 94.0,135.8 98.0,133.3 102.0,126.8 106.0,116.2 110.0,115.8 114.0,107.3 118.0,107.0 122.0,109.9 126.0,114.9 130.0,125.3 134.0,138.3 138.0,134.2 142.0,132.3 146.0,126.7 150.0,122.9 154.0,135.0 158.0,139.1 162.0,146.2 166.0,132.8 170.0,133.7 174.0,132.7 178.0,141.7 182.0,152.0 186.0,153.6 190.0,150.8 194.0,143.9 198.0,157.0 202.0,150.0 206.0,155.6 210.0,156.6 214.0,155.5 218.0,155.4 222.0,147.1 226.0,137.1 230.0,134.4 234.0,140.1 238.0,135.3 242.0,131.9 246.0,124.8 250.0,124.8 254.0,141.5 258.0,145.7 262.0,145.4 266.0,133.3 270.0,134.1 274.0,125.4 278.0,124.8 282.0,137.8 286.0,136.2 290.0,130.7 294.0,128.2 298.0,143.5 302.0,137.5 306.0,142.3 310.0,159.4 314.0,157.9 318.0,166.2"/>
+          <!-- Grade change 1 (muted, not evaluated) -->
+          <polyline fill="none" stroke="rgba(205,219,230,0.6)" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"
+            points="318.0,166.2 322.0,139.9 326.0,127.5 330.0,112.7 334.0,106.4 338.0,102.9 342.0,92.4 346.0,89.7 350.0,91.9 354.0,98.3 358.0,87.3 362.0,92.1 366.0,97.5 370.0,91.7 374.0,84.6 378.0,84.0 382.0,76.5"/>
+          <!-- Grade B run -->
+          <polyline fill="none" stroke="rgba(120,190,255,0.9)" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"
+            points="382.0,76.5 386.0,75.6 390.0,73.5 394.0,70.7 398.0,73.5 402.0,71.7 406.0,60.4 410.0,67.5 414.0,67.6 418.0,65.9 422.0,69.9 426.0,70.6 430.0,79.2 434.0,79.5 438.0,77.8 442.0,71.8 446.0,68.5 450.0,73.5 454.0,79.9 458.0,70.8 462.0,68.8 466.0,80.7 470.0,81.9 474.0,85.3 478.0,86.3 482.0,92.2 486.0,90.0 490.0,88.8 494.0,86.3 498.0,78.2 502.0,76.0 506.0,81.0 510.0,86.8 514.0,85.1 518.0,75.8 522.0,70.1 526.0,73.1 530.0,67.0 534.0,66.1 538.0,70.4 542.0,68.6 546.0,69.9 550.0,75.8 554.0,76.9 558.0,74.9 562.0,68.0 566.0,74.1 570.0,72.4 574.0,72.1 578.0,72.1 582.0,77.4 586.0,69.2 590.0,62.9 594.0,56.7 598.0,57.4 602.0,52.8 606.0,53.8 610.0,52.2 614.0,57.3 618.0,58.2 622.0,61.6 626.0,67.5 630.0,74.5"/>
+          <!-- Grade change 2 (muted, not evaluated) -->
+          <polyline fill="none" stroke="rgba(205,219,230,0.6)" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"
+            points="626.0,67.5 630.0,74.5 634.0,79.5 638.0,85.1 642.0,88.3 646.0,94.1 650.0,89.3 654.0,89.8 658.0,95.7 662.0,103.4 666.0,118.1 670.0,125.3 674.0,138.9 678.0,145.6 682.0,149.7 686.0,151.5 690.0,146.8"/>
+          <!-- Grade C run, before the excursion -->
+          <polyline fill="none" stroke="rgba(120,190,255,0.9)" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"
+            points="690.0,146.8 694.0,152.5 698.0,130.0 702.0,138.2 706.0,132.9 710.0,149.7 714.0,141.3 718.0,153.5 722.0,150.7 726.0,150.9 730.0,144.6 734.0,142.3 738.0,142.8 742.0,147.5 746.0,143.8 750.0,145.3 754.0,144.7 758.0,144.2 762.0,141.4 766.0,140.1 770.0,136.4 774.0,130.1 778.0,125.9 782.0,119.0 786.0,114.5 790.0,105.8"/>
+          <!-- Grade C run, after the excursion -->
+          <polyline fill="none" stroke="rgba(120,190,255,0.9)" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"
+            points="834.0,104.9 838.0,112.3 842.0,118.6 846.0,123.2 850.0,132.1 854.0,135.7 858.0,137.3 862.0,142.9 866.0,149.2 870.0,150.7 874.0,154.3 878.0,155.1 882.0,155.1 886.0,159.0 890.0,157.1 894.0,170.7 898.0,173.1 902.0,163.5 906.0,171.1 910.0,172.2 914.0,170.4 918.0,162.4 922.0,156.1 926.0,150.5 930.0,154.3 934.0,159.1 938.0,152.9 942.0,159.2 946.0,163.3 950.0,153.9"/>
+          <!-- The one flagged excursion, above the upper limit during Grade C -->
+          <polyline fill="none" stroke="#ff8a4c" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"
+            points="786.0,114.5 790.0,105.8 794.0,101.4 798.0,93.8 802.0,90.3 806.0,89.2 810.0,86.8 814.0,85.5 818.0,85.3 822.0,87.1 826.0,91.2 830.0,100.4 834.0,104.9 838.0,112.3"/>
+          <rect x="778" y="76" width="66" height="46" rx="8" fill="none" stroke="rgba(255,110,90,0.85)" stroke-width="1.4"/>
+          <line x1="811" y1="76" x2="811" y2="64" stroke="rgba(255,110,90,0.6)" stroke-width="1"/>
+          <text x="811" y="58" text-anchor="middle" font-size="9" font-weight="700" fill="#ff8a4c" font-family="Inter,sans-serif">Excursion: outside upper limit</text>
+
+          <!-- ─── Axes ─── -->
+          <line x1="70" y1="250" x2="950" y2="250" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          <line x1="70" y1="24"  x2="70"  y2="250" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          <text x="26" y="137" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif" transform="rotate(-90,26,137)">Process Variable</text>
+
+          <!-- ─── Window annotations (Grade A) ─── -->
+          <text x="78" y="76"  font-size="8.5" font-weight="600" fill="rgba(255,138,128,0.9)" font-family="Inter,sans-serif">▲ Upper limit</text>
+          <text x="78" y="187" font-size="8.5" font-weight="600" fill="rgba(255,138,128,0.9)" font-family="Inter,sans-serif">▼ Lower limit</text>
+          <text x="78" y="124" font-size="8.5" font-weight="600" fill="rgba(125,211,168,0.85)" font-family="Inter,sans-serif">Centerline target</text>
+
+          <!-- ─── Grade labels ─── -->
+          <text x="195" y="268" text-anchor="middle" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.5)" font-family="Inter,sans-serif">Grade A</text>
+          <text x="505" y="268" text-anchor="middle" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.5)" font-family="Inter,sans-serif">Grade B</text>
+          <text x="820" y="268" text-anchor="middle" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.5)" font-family="Inter,sans-serif">Grade C</text>
+
+          <!-- ─── Legend ─── -->
+          <rect x="70" y="284" width="880" height="30" rx="4" fill="rgba(255,255,255,0.03)"/>
+          <line x1="86" y1="299" x2="112" y2="299" stroke="rgba(120,190,255,0.9)" stroke-width="2"/>
+          <text x="118" y="302" font-size="8.5" fill="rgba(255,255,255,0.55)" font-family="Inter,sans-serif">Variable tracking within approved range</text>
+          <line x1="316" y1="299" x2="342" y2="299" stroke="#ff8a4c" stroke-width="2.6"/>
+          <text x="348" y="302" font-size="8.5" fill="rgba(255,255,255,0.55)" font-family="Inter,sans-serif">Flagged excursion</text>
+          <rect x="452" y="293" width="12" height="12" rx="2" fill="rgba(125,211,168,0.22)" stroke="#7dd3a8" stroke-width="1"/>
+          <text x="470" y="302" font-size="8.5" fill="rgba(255,255,255,0.55)" font-family="Inter,sans-serif">Approved operating window (grade-specific)</text>
+          <rect x="694" y="293" width="12" height="12" rx="2" fill="rgba(200,214,224,0.20)" stroke="rgba(200,214,224,0.5)" stroke-width="1"/>
+          <text x="712" y="302" font-size="8.5" fill="rgba(255,255,255,0.55)" font-family="Inter,sans-serif">Grade change: excluded from evaluation</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+<section class="section">
+  <div class="container"><div class="ind-intro"><p class="eyebrow">What Your Team Can Improve</p><h2>Build consistency into daily operation.</h2></div>
+    <div class="ind-application-grid">
+      <article class="ind-application"><h3>Quality across shifts</h3><p>Give different crews the same reference for operating conditions. Make it easier to discuss deviations, compare decisions, and work toward more consistent quality.</p></article>
+      <article class="ind-application"><h3>Product changes and restarts</h3><p>Use reviewed targets as a starting point when moving to a new product or recovering from a disruption. Compare current conditions with a relevant successful run.</p></article>
+      <article class="ind-application"><h3>Cost and production tradeoffs</h3><p>Evaluate quality, throughput, energy, and material use together. Better operating conditions depend on your objectives and constraints; a historical range is the beginning of that discussion.</p></article>
+      <article class="ind-application"><h3>Knowledge transfer</h3><p>Make experienced operators’ knowledge easier to discuss and share. Documented targets and their operating context help new team members understand both the setting and its purpose.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section ind-muted">
+  <div class="container"><div class="ind-two-col">
+    <div class="ind-copy"><p class="eyebrow">Part of the Envoy Platform</p><h2>A reference your team can keep improving.</h2><p>Smart Centerlines fits alongside reliability reporting and Envoy Intelligence on the same operational intelligence platform. Reliability findings can identify questions for target review, while process knowledge helps the team understand what the targets mean.</p><p>Start with an operating objective and a process area. We’ll review the available history, relevant operating conditions, and engineering work needed to establish and maintain useful targets.</p></div>
+    <aside class="ind-sidebar"><h3>Supported by process engineers</h3><p>Your plant retains the operating decisions. Envoy engineers bring analysis and practical process experience to target selection, review, and ongoing improvement.</p><a href="solutions.html" class="ind-link">Explore the platform <span aria-hidden="true">→</span></a></aside>
+  </div></div>
+</section>
+<section class="cta-section ind-cta">
+  <div class="cta-bg-img" aria-hidden="true"></div>
+  <div class="cta-inner"><p class="eyebrow eyebrow-light">Improve Operating Consistency</p><h2>Which operating target would make the biggest difference?</h2><p>Bring a quality challenge, a production objective, or a process area where targets vary across shifts. We’ll explore a practical starting point with your team.</p><div class="btn-group"><a href="contact.html" class="btn btn-white">Request a Demo</a><a href="envoy-intelligence.html" class="btn btn-white-outline">Explore Envoy Intelligence</a></div></div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

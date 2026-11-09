@@ -1,0 +1,8 @@
+/* Smart Centerlines page: product screenshot section (Nov 2026) */
+.sc-screen { margin: 2.25rem 0 0; background: #fff; border: 1px solid #e3efe8; border-radius: 14px; overflow: hidden; box-shadow: 0 28px 60px rgba(13,61,34,.14); }
+.sc-chrome { display: flex; align-items: center; gap: .4rem; padding: .7rem 1rem; background: #f3f4f6; border-bottom: 1px solid #e5e7eb; }
+.sc-chrome i { width: 10px; height: 10px; border-radius: 50%; background: #d1d5db; }
+.sc-chrome span { margin-left: .75rem; font: 600 .78rem Inter, sans-serif; color: #4b5563; }
+.sc-scroll { overflow-x: auto; }
+.sc-scroll img { display: block; width: 100%; min-width: 860px; height: auto; }
+.sc-screen-cap { font-size: .82rem; color: #6b7280; margin-top: .9rem; }

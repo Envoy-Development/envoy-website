@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process Reliability Reporting | Envoy Development</title>
+  <meta name="description" content="Engineer-reviewed morning reports, sensor and control loop monitoring, and root cause investigations to support reliable operation across process industries." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+  <link rel="stylesheet" href="css/industries.css" />
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/messaging.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item" aria-current="page"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html" aria-current="page">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+<section class="product-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="product-hero-inner container">
+    <div class="product-hero-content">
+      <p class="eyebrow">Reliability Module · Process Reliability Reporting</p>
+      <h1>Catch developing problems.<br>Protect reliable production.</h1>
+      <p class="hero-sub">Help reduce unplanned downtime by giving your team an earlier view of developing problems and a clear place to focus. Envoy combines process analysis with experienced engineers who review operating changes, monitor sensors and control loops, and help investigate the issues affecting reliable production.</p>
+      <div class="btn-group"><a href="contact.html" class="btn btn-primary">Request a Demo</a><a href="solutions.html" class="btn btn-outline">Platform Overview</a></div>
+    </div>
+    <div class="product-hero-img"><img src="eprr-hero.png" alt="Process engineer blended with industrial equipment" decoding="async" fetchpriority="high" /></div>
+  </div>
+</section>
+<section class="feature-split section">
+  <div class="container"><div class="feature-split-inner">
+    <div class="feature-split-content">
+      <p class="eyebrow">Your Morning Priorities</p><h2>A clear starting point for your day.</h2>
+      <p>Your team should be able to start with the findings that deserve attention. Envoy engineers review the operating data, consider what your process is doing, and deliver a concise morning report with supporting trends and practical questions to pursue.</p>
+      <p>The report reflects the judgment of someone who knows your equipment and operating history. Your feedback helps us distinguish an expected change from an issue worth investigating, keeping the findings relevant as the plant changes.</p>
+      <ul class="feature-bullets">
+        <li>Prioritized findings with an explanation of why they matter.</li>
+        <li>Supporting trends and operating context.</li>
+        <li>Questions and next checks for your team to consider.</li>
+        <li>Direct access to the engineers behind the findings.</li>
+      </ul>
+    </div>
+    <figure class="feature-split-img"><img src="eprr-daily-report.png" alt="Example morning report with an operating trend and engineer commentary" loading="lazy" /><figcaption class="ind-context">An example of the concise findings and supporting trends in an Envoy morning report.</figcaption></figure>
+  </div></div>
+</section>
+<section class="section ind-muted" id="reliability-coverage">
+  <div class="container"><div class="ind-intro"><p class="eyebrow">Reliability Across the Process</p><h2>See the changes that can affect production.</h2><p>A useful warning depends on the equipment, its operating state, and the signals around it. Our review connects those details so your team can assess what needs attention.</p></div>
+    <div class="ind-card-grid">
+      <article class="ind-card"><h3>Equipment and process performance</h3><p>Investigate changes in pressure, temperature, flow, and other operating signals that may indicate fouling, degradation, or emerging production constraints. Earlier attention gives your team more opportunity to plan an intervention.</p></article>
+      <article class="ind-card"><h3>Modes and setpoints</h3><p>Understand when equipment is running in a different mode or at different setpoints than expected. Review those changes against the product, production rate, and recent operating history.</p></article>
+      <article class="ind-card"><h3>Control loop health</h3><p>Identify control loops that are hunting, spending time at their limits, or performing differently. Help engineers and operators focus their investigation on control behavior that may be affecting stability.</p></article>
+      <article class="ind-card"><h3>Sensor health</h3><p>Review suspect measurements, unusual signal behavior, and inconsistencies between related readings. Give your team evidence to check whether a developing issue belongs to the process or the measurement.</p></article>
+      <article class="ind-card"><h3>Energy and material use</h3><p>Examine unexpected changes in steam, power, water, and material use alongside production conditions. Find operating losses that warrant investigation before they become accepted as normal.</p></article>
+      <article class="ind-card"><h3>Quality and stability</h3><p>Look at changes in variability and operating conditions associated with production or quality problems. Bring useful evidence to recurring issues that are difficult to see in an individual trend.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container"><div class="ind-two-col">
+    <div class="ind-copy"><p class="eyebrow">Root Cause Investigations</p><h2>Keep working until the problem is better understood.</h2>
+      <p>Some questions need more than a morning report. When a problem persists, Envoy engineers can compare operating periods, examine related variables, and work with your team to investigate likely causes.</p>
+      <p>In a paper mill, that may mean tracing conditions around recurring sheet breaks. In another process, the question may be a quality change or unexplained energy use. The investigation follows the equipment, the evidence, and the decision your team needs to make.</p>
+    </div>
+    <aside class="ind-sidebar"><h3>An extension of your engineering team</h3><ul><li>Experienced people to discuss findings and challenge assumptions.</li><li>Deeper studies when a recurring issue needs more attention.</li><li>Practical explanations that help your team build process knowledge.</li></ul></aside>
+  </div></div>
+</section>
+<section class="section ind-muted">
+  <div class="container"><div class="ind-intro"><p class="eyebrow">Getting Started</p><h2>Start with the process area that matters most.</h2></div>
+    <div class="ind-steps">
+      <div class="ind-step"><span>01 · CONNECT</span><h3>Work with the data you have.</h3><p>Use an existing historian, connect uncovered areas, or discuss historian capability where it is needed. We agree the connections, reporting scope, and delivery schedule with your team.</p></div>
+      <div class="ind-step"><span>02 · UNDERSTAND</span><h3>Bring the operating context.</h3><p>Your Envoy engineer learns the equipment, typical operating conditions, and current priorities. Your team’s experience helps establish what a meaningful finding looks like.</p></div>
+      <div class="ind-step"><span>03 · FOLLOW THROUGH</span><h3>Turn findings into useful conversations.</h3><p>Review the reports, investigate the important questions, and share what changed. Ongoing collaboration keeps the service aligned with the work your plant needs to do.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-section ind-cta">
+  <div class="cta-bg-img" aria-hidden="true"></div>
+  <div class="cta-inner"><p class="eyebrow eyebrow-light">Protect Reliable Production</p><h2>What is your team trying to catch earlier?</h2><p>Tell us about a recurring problem, a process area, or a gap in engineering capacity. We’ll show how the reporting service could support your team.</p><div class="btn-group"><a href="contact.html" class="btn btn-white">Request a Demo</a><a href="smart-centerlines.html" class="btn btn-white-outline">Explore Smart Centerlines</a></div></div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

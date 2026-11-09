@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platform Overview | Envoy Development</title>
+  <meta name="description" content="One operational intelligence software platform with modules for reliability reporting, Smart Centerlines and Envoy Intelligence. Built for mixed plant systems, with experienced engineering support." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  
+    .products-compare { overflow-x:auto; border:1px solid var(--gray-200); border-radius:var(--radius); background:#fff; }
+    .products-compare table { width:100%; border-collapse:collapse; min-width:720px; text-align:left; }
+    .products-compare th, .products-compare td { padding:1.3rem 1.35rem; border-bottom:1px solid var(--gray-200); vertical-align:top; line-height:1.65; font-size:.9rem; }
+    .products-compare thead { background:var(--green-800); color:#fff; }
+    .products-compare tbody th { color:var(--green-800); width:18%; background:var(--green-50); }
+    .products-compare tbody td { width:27.3%; color:var(--gray-600); }
+    .products-compare tbody tr:last-child > * { border-bottom:0; }
+    .products-compare a { color:var(--green-800); text-decoration:underline; text-underline-offset:3px; font-weight:600; }
+    .products-industry-links { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.5rem; }
+    .products-note { font-size:.85rem; margin-top:1rem; max-width:840px; }
+    .products-tier .tier-badge { margin-bottom:1.1rem; }
+    .products-tier .tier-icon { margin-bottom:1rem; }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="css/industries.css" />
+  <link rel="stylesheet" href="css/messaging.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item" aria-current="page"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Five decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html" aria-current="page">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Five Decisions</a><a href="maturity-model.html">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+  <section class="product-hero msg-platform-hero"><div class="hero-bg" aria-hidden="true"></div><div class="product-hero-inner container">
+    <div class="product-hero-content"><p class="eyebrow">The Envoy Operational Intelligence Platform</p><h1>One platform for<br>better plant performance.</h1>
+      <p class="hero-sub">Connect your plant’s data, process knowledge and engineering experience. Envoy combines physics-based analytics, AI and ongoing engineering guidance in a software platform that helps your team improve reliability, operating performance and access to practical knowledge.</p>
+      <div class="btn-group"><a class="btn btn-primary" href="contact.html">Request a Demo</a><a class="btn btn-outline" href="#platform-modules">Explore the Modules</a></div>
+    </div><div class="product-hero-img" aria-hidden="true"><img src="assets/platform-heroes/platform-overview-hero.png" alt="" fetchpriority="high" decoding="async" /></div>
+  </div></section>
+
+  <section class="section" id="connected-plant" aria-labelledby="foundation-heading"><div class="container">
+    <div class="ind-two-col"><div class="ind-copy"><p class="eyebrow">The Shared Data Foundation</p><h2 id="foundation-heading">A clearer view of the plant you already have.</h2>
+      <p>Established plants rarely have one generation of equipment or one control-system vendor. Process history may be complete in one area and missing in another.</p>
+      <p>Envoy takes a vendor-agnostic approach. Connect available process-data sources and use the historian you already have. Where coverage is missing, Envoy can provide historian capability to collect and retain time-stamped process data, giving your team an operating history to review and analyze.</p>
+      <p>We work with your team to confirm the interfaces, access and data quality needed for the first application. The starting point is your operating priority and the systems available to support it.</p>
+    </div><div class="msg-foundation" aria-label="Platform foundation">
+      <p class="msg-diagram-label">YOUR PLANT</p><div class="msg-source-grid"><span>Existing<br>historians</span><span>Mixed controls<br>and equipment</span><span>Historian capability<br>where needed</span></div>
+      <div class="msg-foundation-core"><strong>A shared view of your process</strong><p>Operating data · Equipment context · Plant knowledge</p></div>
+      <div class="msg-methods"><span>Physics-based analytics</span><span>Artificial intelligence</span><span>Experienced engineers</span></div>
+      <p class="msg-diagram-label msg-diagram-footer">SUPPORTING YOUR PLATFORM MODULES</p>
+    </div></div>
+  </div></section>
+
+  <section class="product-suite section ind-muted" id="platform-modules" aria-labelledby="platform-modules-heading"><div class="container">
+    <div class="section-intro"><p class="eyebrow">Platform Modules</p><h2 id="platform-modules-heading">Start with the operating question that matters most.</h2><p>Reliability, optimization and practical intelligence share the same foundation. We define the initial module scope around your plant’s priorities and develop the application with your team.</p></div>
+    <div class="tiers-grid msg-modules"><article class="tier-card" id="module-reliability">
+          <div class="tier-badge">Reliability</div><div class="tier-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-8 10-8 10S4 17 4 12V6z"/><path d="M8 12l3 3 5-6"/></svg></div>
+          <h3>Process Reliability Reporting</h3><p class="msg-module-question">What needs attention, and why?</p>
+          <p class="tier-desc">Start the day with a short, engineer-reviewed set of priorities. Investigate meaningful changes and get experienced help with the problems that need a closer look.</p><ul class="tier-features"><li>Concise morning reports with supporting evidence</li><li>Process, sensor and control-loop monitoring</li><li>Root-cause investigations and engineering support</li></ul>
+          <a class="btn btn-outline" href="process-reliability-reporting.html">Explore Reporting</a></article><article class="tier-card" id="module-optimization">
+          <div class="tier-badge">Optimization</div><div class="tier-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 4v16h18M6 8h12M6 12h12M6 16h12"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Envoy Smart Centerlines</h3><p class="msg-module-question">Where should this process be operating?</p>
+          <p class="tier-desc">Give your team operating targets that reflect the product, grade, speed and conditions at hand. Keep attention on the settings that support quality, throughput and efficient resource use.</p><ul class="tier-features"><li>Targets for comparable operating conditions</li><li>Live comparisons with reviewed operating ranges</li><li>Engineering help to develop and maintain targets</li></ul>
+          <a class="btn btn-outline" href="smart-centerlines.html">Explore Centerlines</a></article><article class="tier-card" id="module-knowledge">
+          <div class="tier-badge">Knowledge &amp; Guidance</div><div class="tier-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6c-3-3-7-3-10-2v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-3-1-7-1-10 2zM12 6v15"/></svg></div>
+          <h3>Envoy Intelligence</h3><p class="msg-module-question">How do we understand the problem and respond?</p>
+          <p class="tier-desc">Connect AI to process data, equipment context and plant knowledge. Help experienced staff investigate problems and help new engineers and operators learn how the process works.</p><ul class="tier-features"><li>Guidance grounded in the plant’s context</li><li>Onboarding and knowledge transfer</li><li>Access to procedures and reviewed findings</li></ul>
+          <a class="btn btn-outline" href="envoy-intelligence.html">Explore Intelligence</a></article></div>
+  </div></section>
+
+  <section class="section" id="compare-modules" aria-labelledby="comparison-heading"><div class="container">
+    <div class="section-intro"><p class="eyebrow">What Your Team Receives</p><h2 id="comparison-heading">Clear roles within one platform.</h2><p>Each module supports a different part of the work, while retaining the process context and engineering involvement that make the result useful.</p></div>
+    <div class="products-compare" tabindex="0" role="region" aria-label="Module comparison; scroll horizontally on smaller screens"><table><thead><tr><th scope="col">Your priority</th><th scope="col">Process Reliability Reporting</th><th scope="col">Smart Centerlines</th><th scope="col">Envoy Intelligence</th></tr></thead><tbody>
+      <tr><th scope="row">Operating goal</th><td>Reduce avoidable production losses and focus engineering attention.</td><td>Improve consistency and operate closer to effective targets.</td><td>Help people understand the process, investigate problems and share knowledge.</td></tr>
+      <tr><th scope="row">Practical output</th><td>Concise morning findings, supporting trends and deeper investigations.</td><td>Reviewed targets and operating ranges for current conditions.</td><td>Process-specific answers and investigation guidance grounded in available plant knowledge.</td></tr>
+      <tr><th scope="row">Engineering partnership</th><td>Interpretation, prioritization, root-cause investigation and follow-through.</td><td>Target selection, validation and maintenance as conditions change.</td><td>Application definition, relevant process context and review of knowledge used by the team.</td></tr>
+      <tr><th scope="row">Learn more</th><td><a href="process-reliability-reporting.html">Explore Reporting</a></td><td><a href="smart-centerlines.html">Explore Centerlines</a></td><td><a href="envoy-intelligence.html">Explore Intelligence</a></td></tr>
+    </tbody></table></div>
+  </div></section>
+
+  <section class="section ind-muted" aria-labelledby="methods-heading"><div class="container">
+    <div class="section-intro"><p class="eyebrow">How the Platform Becomes Useful</p><h2 id="methods-heading">Intelligence grounded in the physical process.</h2><p>Useful guidance has to account for the equipment, the operating conditions and the decision your team is making.</p></div>
+    <div class="ind-card-grid"><article class="ind-card"><span class="ind-card-number">PROCESS KNOWLEDGE</span><h3>Physics-based analytics</h3><p>Apply engineering relationships, operating constraints and analytical methods to interpret how the process is behaving.</p></article><article class="ind-card"><span class="ind-card-number">KNOWLEDGE ACCESS</span><h3>AI in the plant’s context</h3><p>Connect AI to relevant data, equipment information and approved process knowledge so it can help your team ask better questions and investigate.</p></article><article class="ind-card"><span class="ind-card-number">ONGOING SUPPORT</span><h3>Experienced engineering judgment</h3><p>Keep people who understand the process involved in interpreting findings, developing targets and helping your team solve difficult problems.</p></article></div>
+  </div></section>
+
+  <section class="section" aria-labelledby="people-heading"><div class="container"><div class="ind-two-col">
+    <div class="ind-copy"><p class="eyebrow">Support Beyond the Screen</p><h2 id="people-heading">Give your team more experience to draw on.</h2>
+      <p>Recruiting a specialist for every process area is difficult, especially at remote plants. Envoy’s engineers extend your team’s capacity for daily review, deeper investigation and operating improvement.</p>
+      <p>We also help make process knowledge easier to use and pass on. New engineers and operators can learn the equipment, understand why operating targets matter, and find relevant procedures and prior findings.</p>
+      <a class="ind-link" href="envoy-intelligence.html#knowledge-applications">Explore onboarding and knowledge transfer <span aria-hidden="true">→</span></a>
+    </div><aside class="ind-sidebar"><h3>Start with a defined application</h3><ul><li>Choose a priority process area and a clear operating objective.</li><li>Confirm available data, historian needs and the people involved.</li><li>Agree the modules, engineering support and reporting arrangements.</li><li>Review results together and refine the application as your needs change.</li></ul></aside>
+  </div></div></section>
+
+  <section class="section msg-industry-band" aria-labelledby="platform-industries-heading"><div class="container"><p class="eyebrow">Industry Experience</p><h2 id="platform-industries-heading">Built in pulp and paper. Expanding across process industries.</h2><p>Our engineering foundation comes from complex pulp-and-paper operations. We are extending that approach to food and specialty chemicals, with each application grounded in its own equipment, operating conditions and priorities.</p><div class="products-industry-links"><a class="btn btn-outline" href="pulp-and-paper.html">Pulp &amp; Paper</a><a class="btn btn-outline" href="food.html">Food</a><a class="btn btn-outline" href="specialty-chemicals.html">Specialty Chemicals</a></div></div></section>
+<section class="cta-section" aria-label="Discuss your plant"><div class="cta-bg-img" aria-hidden="true"></div><div class="cta-inner">
+      <p class="eyebrow eyebrow-light">Start With Your Plant</p><h2>Where does your team need a clearer answer?</h2><p>Bring a recurring reliability issue, an operating target or a knowledge gap. We’ll show how the platform can support your team around that priority.</p>
+      <div class="btn-group"><a class="btn btn-white" href="contact.html">Request a Demo</a><a class="btn btn-white-outline" href="industries.html">Explore Industries</a></div>
+    </div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining engineering expertise, analytics, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Five Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+</body>
+</html>

@@ -30,6 +30,11 @@ Intelligent Factory
 - Start Here, Decisions, Maturity Model and Assessment rebuilt with interactive
   visuals. The decisions page adds what to run and when. The seven-disciplines
   and technology-stack framing was dropped from these pages. The book page is unchanged.
+- Maturity Model (November 10): the curve is replaced by an interactive five-step
+  staircase with the service bars underneath (Reliability Reporting for levels 1
+  and 2, Smart Centerlines for 3 and 4, Envoy Intelligence for 5). Selecting a
+  step opens a fuller panel: what the level looks like, how you know you are
+  there, the trap, and the next step. New stylesheet `maturity-steps.css`.
 
 About
 - Added Todd Fytczyk (Process Engineer, Pulp and Recaust). Removed David Kammerdeiner.

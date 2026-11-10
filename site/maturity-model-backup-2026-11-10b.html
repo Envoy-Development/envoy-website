@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Maturity Model | The Intelligent Factory | Envoy Development</title>
+  <meta name="description" content="Unstable, Stable, Repeatable, Optimized, Adaptive. Five levels of operational maturity, and why most industrial AI fails because it is sold at the wrong one." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+  <link rel="stylesheet" href="css/v3.css" />
+  <link rel="stylesheet" href="css/intelligent-factory.css" />
+  <link rel="stylesheet" href="css/maturity-steps.css" />
+  <meta name="robots" content="noindex, nofollow" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Envoy Development Home"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /></a>
+      <ul class="nav-links"><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-0">Platform <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-0"><a href="solutions.html" class="dropdown-item"><strong>Platform Overview</strong><span>The platform and its modules</span></a><a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Engineer-reviewed findings and investigations</span></a><a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Operating targets grounded in process context</span></a><a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>Engineering knowledge and practical guidance</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-1">Industries <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-1"><a href="industries.html" class="dropdown-item"><strong>Industries Overview</strong><span>Our approach across process industries</span></a><a href="pulp-and-paper.html" class="dropdown-item"><strong>Pulp &amp; Paper</strong><span>Our engineering foundation</span></a><a href="food.html" class="dropdown-item"><strong>Food</strong><span>Applications for a new industry focus</span></a><a href="specialty-chemicals.html" class="dropdown-item"><strong>Specialty Chemicals</strong><span>Applications for a new industry focus</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-2">The Intelligent Factory <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-2"><a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a><a href="five-decisions.html" class="dropdown-item"><strong>The Six Decisions</strong><span>What every factory decides, every day</span></a><a href="maturity-model.html" class="dropdown-item" aria-current="page"><strong>The Maturity Model</strong><span>From Unstable to Adaptive</span></a><a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Six decisions, five levels</span></a><a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a></div></li><li class="nav-item"><button class="nav-link" type="button" aria-expanded="false" aria-controls="nav-group-3">Company <span class="nav-chevron" aria-hidden="true">▾</span></button><div class="nav-dropdown" id="nav-group-3"><a href="about.html" class="dropdown-item"><strong>About Envoy</strong><span>Our people and our engineering background</span></a><a href="careers.html" class="dropdown-item"><strong>Careers</strong><span>Bring your process-industry experience</span></a><a href="contact.html" class="dropdown-item"><strong>Contact Us</strong><span>Demos, application discussions, and support</span></a></div></li></ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request a Demo</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span><span></span></button>
+    </div></nav>
+  <div class="mobile-menu" id="mobile-navigation" role="navigation" aria-label="Mobile navigation"><div class="mobile-group"><h3>Platform</h3><a href="solutions.html">Platform Overview</a><a href="process-reliability-reporting.html">Process Reliability Reporting</a><a href="smart-centerlines.html">Envoy Smart Centerlines</a><a href="envoy-intelligence.html">Envoy Intelligence</a></div><div class="mobile-group"><h3>Industries</h3><a href="industries.html">Industries Overview</a><a href="pulp-and-paper.html">Pulp &amp; Paper</a><a href="food.html">Food</a><a href="specialty-chemicals.html">Specialty Chemicals</a></div><div class="mobile-group"><h3>The Intelligent Factory</h3><a href="intelligent-factory.html">Start Here</a><a href="five-decisions.html">The Six Decisions</a><a href="maturity-model.html" aria-current="page">The Maturity Model</a><a href="assessment.html">The Assessment</a><a href="book.html">The Book</a></div><div class="mobile-group"><h3>Company</h3><a href="about.html">About Envoy</a><a href="careers.html">Careers</a><a href="contact.html">Contact Us</a></div><a class="btn btn-primary" href="contact.html">Request a Demo</a></div>
+<main id="main-content">
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="product-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="product-hero-inner container">
+      <div class="product-hero-content">
+        <p class="eyebrow">The Intelligent Factory:&nbsp;&nbsp;&nbsp;The Maturity Model</p>
+        <h1>Where is your operation on the curve?</h1>
+        <p class="hero-sub">Unstable, Stable, Repeatable, Optimized, Adaptive. Every operation sits somewhere on this five-level curve. Knowing where you are matters more than knowing where you're headed, because it tells you what will work next and what will fail.</p>
+        <div class="btn-group">
+          <a class='btn btn-primary' href='assessment.html'>Take the Assessment</a>
+          <a class='btn btn-outline' href='intelligent-factory.html'>Intelligent Factory: Start Here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mc-sec" style="background:var(--gray-50);"><div class="container">
+    <div class="section-intro fade-in"><p class="eyebrow">The Model</p><h2>Five levels of operational maturity.</h2>
+      <p>Maturity is not how much technology an operation owns. It is how decisions get made. Each level is a real shift in how the operation detects, decides and learns, and each has a trap that keeps teams stuck there.</p>
+      <p>Most plants we work with are Unstable. Some are Stable but not yet Repeatable. Some are Repeatable but not yet Optimized. Each step has to be earned in order, and each one pays for itself.</p></div>
+    <div class="ms-wrap pre" id="mswrap">
+      <div class="ms-stage">
+        <div class="ms-steps"><div class="ms-step ms-s1" data-i="0" style="--i:0" tabindex="0" role="button" aria-label="Level 1, Unstable"><span class="ms-pin"></span><span class="ms-k">LEVEL 1</span><h3>Unstable</h3><p>Firefighting. Problems find you.</p></div><div class="ms-step ms-s2" data-i="1" style="--i:1" tabindex="0" role="button" aria-label="Level 2, Stable"><span class="ms-pin"></span><span class="ms-k">LEVEL 2</span><h3>Stable</h3><p>You know what is wrong and you are fixing it.</p></div><div class="ms-step ms-s3" data-i="2" style="--i:2" tabindex="0" role="button" aria-label="Level 3, Repeatable"><span class="ms-pin"></span><span class="ms-k">LEVEL 3</span><h3>Repeatable</h3><p>Everyone runs it the same way.</p></div><div class="ms-step ms-s4" data-i="3" style="--i:3" tabindex="0" role="button" aria-label="Level 4, Optimized"><span class="ms-pin"></span><span class="ms-k">LEVEL 4</span><h3>Optimized</h3><p>You know the best way, not just a consistent way.</p></div><div class="ms-step ms-s5" data-i="4" style="--i:4" tabindex="0" role="button" aria-label="Level 5, Adaptive"><span class="ms-pin"></span><span class="ms-k">LEVEL 5</span><h3>Adaptive</h3><p>What you learn gets baked back in.</p><svg class="ms-loop" viewBox="0 0 74 74" aria-hidden="true"><g class="ms-spin"><path d="M37 8 a29 29 0 0 1 28 22" fill="none" stroke="#4eca8a" stroke-width="7" stroke-linecap="round"/><path d="M58 27 l9 4 l2 -10" fill="#4eca8a"/><path d="M37 66 a29 29 0 0 1 -28 -22" fill="none" stroke="#4eca8a" stroke-width="7" stroke-linecap="round"/><path d="M16 47 l-9 -4 l-2 10" fill="#4eca8a"/></g><text x="37" y="35" text-anchor="middle">learn</text><text x="37" y="47" text-anchor="middle">&amp; keep</text></svg></div></div>
+        <div class="ms-svc"><div class="ms-bar ms-b1" data-l="0,1"><b>Envoy Process Reliability Reporting</b><span>Levels 1 and 2</span></div><div class="ms-bar ms-b2" data-l="2,3"><b>Envoy Smart Centerlines</b><span>Levels 3 and 4</span></div><div class="ms-bar ms-b3" data-l="4"><b>Envoy Intelligence</b><span>Level 5</span></div></div>
+        <p class="ms-hint">Select a step to see what that level looks like in a plant.</p>
+      </div>
+      <div class="ms-panel" aria-live="polite"><div class="ms-card" data-i="0"><span class="mc-k">LEVEL 1</span><h3>Unstable</h3><p class="ms-tagl">Firefighting. Problems find you.</p><p>Most of the day goes to the last upset. Breaks, trips and quality excursions arrive without warning, and the same ones come back. Instruments drift or fail and stay that way for weeks. Loops run in manual because auto does not hold. Good people work hard, but the process sets the agenda.</p><h4>How you know you are here</h4><ul><li>The morning meeting is about yesterday's upset, not today's plan.</li><li>Loops run in manual because crews do not trust them in auto.</li><li>The same failure has a nickname and a history.</li></ul><p class="mc-trap"><b>The trap:</b> Heroic firefighting becomes normal and gets rewarded.</p><p class="ms-next"><b>Next step:</b> Get eyes on the whole operation every day. <b>Envoy Process Reliability Reporting</b> scans every sensor and loop, and an engineer reviews the findings with your team.</p></div><div class="ms-card" data-i="1"><span class="mc-k">LEVEL 2</span><h3>Stable</h3><p class="ms-tagl">You know what is wrong and you are fixing it.</p><p>Problems are found before they find you. There is a regular list of bad instruments, poor loops and abnormal conditions, and each item has an owner. Upsets still happen, but fewer of them are surprises. The process is under control, but crews still run it their own way.</p><h4>How you know you are here</h4><ul><li>A daily or weekly findings list, with a name on every item.</li><li>Repeat failures are falling.</li><li>Each shift still runs the same product differently.</li></ul><p class="mc-trap"><b>The trap:</b> Finding more problems is mistaken for better performance.</p><p class="ms-next"><b>Next step:</b> Write down the best-known way to run each product and rate. <b>Envoy Smart Centerlines</b> sets targets and limits from your own operating history.</p></div><div class="ms-card" data-i="2"><span class="mc-k">LEVEL 3</span><h3>Repeatable</h3><p class="ms-tagl">Everyone runs it the same way.</p><p>Each product and rate has targets and limits, and crews run to them. Shift-to-shift differences shrink, and so does variation in quality. Compliance is measured, not assumed. The standard is consistent, but it shows where the plant has run, not where it costs least.</p><h4>How you know you are here</h4><ul><li>Centerlines exist for each grade or product.</li><li>Compliance is reported by shift and by tag.</li><li>Targets come from history, not from cost.</li></ul><p class="mc-trap"><b>The trap:</b> A standard exists on paper and nobody runs to it.</p><p class="ms-next"><b>Next step:</b> Test the standard against cost. <b>Smart Centerlines cost studies</b> move targets to the lowest-cost point inside the specification, and compliance holds them there.</p></div><div class="ms-card" data-i="3"><span class="mc-k">LEVEL 4</span><h3>Optimized</h3><p class="ms-tagl">You know the best way, not just a consistent way.</p><p>Targets come from cost and quality analysis, not only from history. Chemicals, energy and fiber are set at the lowest-cost point that holds specification. Cost studies and variation studies are routine, and each target has a dollar reason behind it.</p><h4>How you know you are here</h4><ul><li>Every key target has a cost reason behind it.</li><li>Savings potential is tracked and reviewed.</li><li>Trade-offs between areas are made on purpose.</li></ul><p class="mc-trap"><b>The trap:</b> Optimizing one area at the expense of the whole plant.</p><p class="ms-next"><b>Next step:</b> Capture what each event teaches. <b>Envoy Intelligence</b> keeps that knowledge and puts it in front of your team when they need it.</p></div><div class="ms-card" data-i="4"><span class="mc-k">LEVEL 5</span><h3>Adaptive</h3><p class="ms-tagl">What you learn gets baked back in.</p><p>Every investigation ends in a changed standard. When raw materials, products or equipment change, targets change with them. Knowledge stays when people retire or move on. When a problem returns, the second investigation costs less than the first.</p><h4>How you know you are here</h4><ul><li>Investigations close with an updated standard.</li><li>New engineers get answers from plant history, not only from veterans.</li><li>Improvement continues without a special project.</li></ul><p class="mc-trap"><b>The trap:</b> Confusing adaptation with automation.</p><p class="ms-next"><b>Next step:</b> Keep the loop running. Stop learning and the plant slides back down the steps.</p></div></div>
+    </div>
+  </div></section>
+
+  <section class="dark-diagram section mg-sec"><div class="container">
+    <div class="section-intro fade-in"><p class="eyebrow">Why This Matters</p><h2>Most industrial AI fails because it is sold at the wrong stage.</h2>
+      <p>You cannot centerline a process that is broken. You cannot optimize a process that is not repeatable. Vendors sell optimization into unstable plants, it fails, and the organization concludes that AI does not work in manufacturing. The conclusion is wrong. The sequencing was.</p></div>
+    <div class="mg-chain" id="mgchain"><div class="mg-step" style="--i:0"><div class="mg-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="mg-sh" d="M8,11 V8 a4,4 0 0,1 8,0 V11"/></svg></div><b>Stable before repeatable</b><span>A process that breaks unpredictably cannot be standardized. Fix first.</span></div><div class="mg-step" style="--i:1"><div class="mg-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="mg-sh" d="M8,11 V8 a4,4 0 0,1 8,0 V11"/></svg></div><b>Repeatable before optimized</b><span>Three crews, three ways to run: there is no single point to optimize.</span></div><div class="mg-step" style="--i:2"><div class="mg-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="mg-sh" d="M8,11 V8 a4,4 0 0,1 8,0 V11"/></svg></div><b>Optimized before adaptive</b><span>Learning compounds only when there is a standard for it to update.</span></div><div class="mg-step" style="--i:3"><div class="mg-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path class="mg-sh" d="M8,11 V8 a4,4 0 0,1 8,0 V11"/></svg></div><b>Adaptive keeps it all</b><span>Stop learning and the plant slides back down the curve.</span></div></div>
+  </div></section>
+
+  <section class="section mu-sec"><div class="container"><div class="mu-split">
+    <div class="fade-in"><p class="eyebrow">Moving Up</p><h2>What actually has to change.</h2><p>Each step up the curve is a change in how the plant works, not a change in what it owns.</p></div>
+    <ol class="mu-list" id="mulist"><li style="--i:0"><span class="mu-n">1<i></i>2</span><div><b>Unstable to Stable</b><p>Someone reviews the operation every day, and every finding has a name on it. Not a dashboard somebody could look at.</p></div></li><li style="--i:1"><span class="mu-n">2<i></i>3</span><div><b>Stable to Repeatable</b><p>The best-known way to run is written down by product and rate, and crews run to it. Most plants skip this step.</p></div></li><li style="--i:2"><span class="mu-n">3<i></i>4</span><div><b>Repeatable to Optimized</b><p>The standard gets tested against cost, not just against consistency. Consistent and expensive is still expensive.</p></div></li><li style="--i:3"><span class="mu-n">4<i></i>5</span><div><b>Optimized to Adaptive</b><p>What each event teaches is written back into the standard. When a problem returns, the second investigation costs less.</p></div></li></ol>
+  </div></div></section>
+
+  <section class="section mh-sec" style="background:var(--green-50);"><div class="container"><div class="mh-split">
+    <div class="fade-in"><p class="eyebrow">Where Are You?</p><h2>A plant is rarely at one level.</h2>
+      <p>Most operations are further along on some decisions than others. That is why the assessment scores each of the six decisions against these five levels, instead of giving the plant one grade.</p>
+      <p class="mh-sent">“Repeatable on how fast we run, unstable on when we intervene. Start there.”</p>
+      <div class="btn-group"><a class="btn btn-primary" href="assessment.html">Take the assessment</a><a class="btn btn-outline" href="five-decisions.html">The six decisions</a></div></div>
+    <div class="mh-card"><div class="mh-head">EXAMPLE PROFILE</div><div class="mh-grid"><span class="mh-corner"></span><b style="grid-column:2">Unstable</b><b style="grid-column:3">Stable</b><b style="grid-column:4">Repeatable</b><b style="grid-column:5">Optimized</b><b style="grid-column:6">Adaptive</b><span style="grid-row:2">What to run, and when</span><span style="grid-row:3">How fast to run</span><span style="grid-row:4">Where everything else is set</span><span style="grid-row:5">When to intervene</span><span style="grid-row:6">What to fix first</span><span style="grid-row:7">What we learn</span><div class="mh-c" style="--i:0"></div><div class="mh-c" style="--i:1"></div><div class="mh-c on" style="--i:2"></div><div class="mh-c" style="--i:3"></div><div class="mh-c" style="--i:4"></div><div class="mh-c" style="--i:5"></div><div class="mh-c on" style="--i:6"></div><div class="mh-c" style="--i:7"></div><div class="mh-c" style="--i:8"></div><div class="mh-c" style="--i:9"></div><div class="mh-c" style="--i:10"></div><div class="mh-c" style="--i:11"></div><div class="mh-c on" style="--i:12"></div><div class="mh-c" style="--i:13"></div><div class="mh-c" style="--i:14"></div><div class="mh-c on" style="--i:15"></div><div class="mh-c" style="--i:16"></div><div class="mh-c" style="--i:17"></div><div class="mh-c" style="--i:18"></div><div class="mh-c" style="--i:19"></div><div class="mh-c" style="--i:20"></div><div class="mh-c on" style="--i:21"></div><div class="mh-c" style="--i:22"></div><div class="mh-c" style="--i:23"></div><div class="mh-c" style="--i:24"></div><div class="mh-c" style="--i:25"></div><div class="mh-c on" style="--i:26"></div><div class="mh-c" style="--i:27"></div><div class="mh-c" style="--i:28"></div><div class="mh-c" style="--i:29"></div></div></div>
+  </div></div></section>
+  </main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining AI agents, engineering expertise, and practical guidance. Founded in 2003.</p></div>
+      <div class="footer-col"><h5>Platform</h5><ul><li><a href="solutions.html">Platform Overview</a></li><li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li><li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li><li><a href="envoy-intelligence.html">Envoy Intelligence</a></li></ul></div><div class="footer-col"><h5>Industries</h5><ul><li><a href="industries.html">Industries Overview</a></li><li><a href="pulp-and-paper.html">Pulp &amp; Paper</a></li><li><a href="food.html">Food</a></li><li><a href="specialty-chemicals.html">Specialty Chemicals</a></li></ul></div><div class="footer-col"><h5>The Intelligent Factory</h5><ul><li><a href="intelligent-factory.html">Start Here</a></li><li><a href="five-decisions.html">The Six Decisions</a></li><li><a href="maturity-model.html">The Maturity Model</a></li><li><a href="assessment.html">The Assessment</a></li><li><a href="book.html">The Book</a></li><li><a href="seven-disciplines.html">The Seven Disciplines</a></li><li><a href="technology-stack.html">The Intelligent Factory Stack</a></li><li><a href="articles.html">Articles</a></li><li><a href="research.html">Research</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Envoy</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    </div><hr class="footer-divider" /><div class="footer-bottom"><span>&copy; 2026 Envoy Development, LLC. All rights reserved.</span><a href="contact.html">Request a Demo</a></div></div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/v3.js"></script>
+<script>
+(function () {
+  var DEC = [["What should we run, and when?", "PLAN IT", "#f5b942"], ["How fast should we run?", "RUN IT", "#4eca8a"], ["Where should everything else be set?", "RUN IT", "#4eca8a"], ["When should we intervene?", "REACT TO IT", "#ff9b7a"], ["What should we fix first?", "REACT TO IT", "#ff9b7a"], ["What can we learn from yesterday?", "LEARN FROM IT", "#9fd8ff"]], SHORT = ["What to run, and when", "How fast to run", "Where everything else is set", "When to intervene", "What to fix first", "What we learn"], LEVELS = ["Unstable", "Stable", "Repeatable", "Optimized", "Adaptive"], MOVES = ["Start a daily review with a name on every finding. Process Reliability Reporting does this for you.", "Write down the best-known way to run each product and rate, and run to it. Smart Centerlines holds the standard.", "Test the standard against cost, not just consistency. A quarterly cost study shows where total cost is lowest.", "Write every lesson back into the standard. Envoy Intelligence keeps what the plant learns where the next shift can find it.", "Keep the loop running. Your weakest decision is the next place to look."];
+  // ---- decision wheels (start page "sw", decisions page "dw")
+  ['sw', 'dw'].forEach(function (id) {
+    var svg = document.getElementById(id); if (!svg) return;
+    var segs = svg.querySelectorAll('.' + id + '-seg'), k = document.getElementById(id + 'k'), q = document.getElementById(id + 'q'),
+        list = document.getElementById('dllist'), items = list && id === 'dw' ? list.querySelectorAll('.dl-item') : [], cur = 0, t, hov = false;
+    function show(i) {
+      cur = i;
+      segs.forEach(function (s, j) { s.classList.toggle('on', j === i); });
+      Array.prototype.forEach.call(items, function (s, j) { s.classList.toggle('on', j === i); });
+      k.textContent = 'DECISION 0' + (i + 1) + ' · ' + DEC[i][1]; k.style.fill = DEC[i][2];
+      q.textContent = DEC[i][0];
+    }
+    function tick() { if (!hov) show((cur + 1) % 6); t = setTimeout(tick, 3200); }
+    function bind(els) { Array.prototype.forEach.call(els, function (s) {
+      s.addEventListener('mouseenter', function () { hov = true; show(+s.dataset.i); });
+      s.addEventListener('mouseleave', function () { hov = false; });
+    }); }
+    bind(segs); bind(items);
+    show(0); t = setTimeout(tick, 3200);
+  });
+
+  // ---- maturity staircase: climb the levels
+  var ms = document.getElementById('mswrap');
+  if (ms) {
+    var st = ms.querySelectorAll('.ms-step'), cd = ms.querySelectorAll('.ms-card'), bars = ms.querySelectorAll('.ms-bar'), mi = 0, mt, held = false;
+    function lvl(i) {
+      mi = i;
+      st.forEach(function (p, j) { p.classList.toggle('on', j === i); p.classList.toggle('done', j < i); p.setAttribute('aria-pressed', j === i); });
+      cd.forEach(function (c, j) { c.classList.toggle('on', j === i); });
+      bars.forEach(function (b) { b.classList.toggle('on', b.dataset.l.split(',').indexOf(String(i)) > -1); });
+      clearTimeout(mt); if (!held) mt = setTimeout(function () { ms.matches(':hover') ? lvl(mi) : lvl((mi + 1) % 5); }, 6000);
+    }
+    st.forEach(function (p, j) {
+      p.addEventListener('mouseenter', function () { lvl(j); });
+      p.addEventListener('click', function () { held = true; lvl(j); });
+      p.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); held = true; lvl(j); } });
+    });
+    lvl(0);
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function start() { ms.classList.remove('pre'); ms.classList.add('grow'); setTimeout(function () { ms.classList.remove('grow'); ms.classList.add('live'); }, 1400); }
+    if (reduce || !('IntersectionObserver' in window)) { ms.classList.remove('pre'); ms.classList.add('live'); }
+    else new IntersectionObserver(function (es, ob) { es.forEach(function (en) { if (en.isIntersecting) { ob.disconnect(); start(); } }); }, { threshold: .12 }).observe(ms.querySelector(".ms-steps"));
+  }
+
+  // ---- reveal on scroll for chains and lists
+  ['mgchain', 'mulist', 'ifppath'].forEach(function (id) {
+    var el = document.getElementById(id); if (!el) return;
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es, ob) { es.forEach(function (e) { if (e.isIntersecting) { el.classList.add('go'); ob.disconnect(); } }); }, { threshold: .3 }).observe(el);
+    else el.classList.add('go');
+  });
+
+  // ---- assessment
+  var rows = document.getElementById('asxrows');
+  if (rows) {
+    var ans = [null, null, null, null, null, null];
+    try { var saved = JSON.parse(localStorage.getItem('envoy-assessment') || 'null'); if (saved && saved.length === 6) ans = saved; } catch (e) {}
+    var cells = document.querySelectorAll('.ag-c'), sent = document.getElementById('asxsent'), move = document.getElementById('asxmove'),
+        bar = document.getElementById('asxbar'), count = document.getElementById('asxcount'), mail = document.getElementById('asxmail');
+    function low(s) { return s.charAt(0).toLowerCase() + s.slice(1); }
+    function render() {
+      rows.querySelectorAll('.as-opt').forEach(function (b) { b.classList.toggle('on', ans[+b.dataset.d] === +b.dataset.l); });
+      rows.querySelectorAll('.as-row').forEach(function (r) { r.classList.toggle('done', ans[+r.dataset.d] !== null); });
+      cells.forEach(function (c) { c.classList.toggle('on', ans[+c.dataset.d] === +c.dataset.l); });
+      var n = ans.filter(function (a) { return a !== null; }).length;
+      bar.style.width = (n / 6 * 100) + '%'; count.textContent = n + ' of 6 answered';
+      if (n < 6) { sent.textContent = n ? 'Keep going. ' + (6 - n) + ' to go.' : 'Answer the six decisions to see where to start.'; move.textContent = ''; mail.href = 'contact.html'; return; }
+      var hi = 0, lo = 0;
+      ans.forEach(function (a, i) { if (a > ans[hi]) hi = i; if (a < ans[lo]) lo = i; });
+      var s;
+      if (ans[hi] === ans[lo]) s = LEVELS[ans[lo]] + ' across all six decisions. Start with ' + low(SHORT[0]) + ', since the plan sets the losses for everything after it.';
+      else s = LEVELS[ans[hi]] + ' on ' + low(SHORT[hi]) + ', ' + LEVELS[ans[lo]].toLowerCase() + ' on ' + low(SHORT[lo]) + '. Start there.';
+      sent.textContent = s;
+      move.innerHTML = '<b>First step:</b> ' + MOVES[Math.min(ans[lo], 4)];
+      var body = 'My Intelligent Factory assessment:%0D%0A' + ans.map(function (a, i) { return encodeURIComponent(SHORT[i] + ': ' + LEVELS[a]); }).join('%0D%0A') + '%0D%0A%0D%0A' + encodeURIComponent(s);
+      mail.href = 'contact.html?assessment=' + encodeURIComponent(ans.join(''));
+      mail.setAttribute('data-summary', decodeURIComponent(body));
+    }
+    rows.addEventListener('click', function (e) {
+      var b = e.target.closest('.as-opt'); if (!b) return;
+      ans[+b.dataset.d] = +b.dataset.l;
+      try { localStorage.setItem('envoy-assessment', JSON.stringify(ans)); } catch (e2) {}
+      render();
+      var next = rows.querySelector('.as-row[data-d="' + (+b.dataset.d + 1) + '"]');
+      if (next && ans[+b.dataset.d + 1] === null && window.innerWidth > 1024) next.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    document.getElementById('asxreset').addEventListener('click', function () { ans = [null, null, null, null, null, null]; try { localStorage.removeItem('envoy-assessment'); } catch (e) {} render(); });
+    render();
+  }
+})();
+</script>
+
+</body>
+</html>

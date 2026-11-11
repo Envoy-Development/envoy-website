@@ -35,6 +35,13 @@ Intelligent Factory
   and 2, Smart Centerlines for 3 and 4, Envoy Intelligence for 5). Selecting a
   step opens a fuller panel: what the level looks like, how you know you are
   there, the trap, and the next step. New stylesheet `maturity-steps.css`.
+- Book pages (November 11): rebuilt to Outline B (reliability, quality, cost;
+  five parts). New Chapter 3 (What AI can and cannot do), Chapter 5 (Fix the
+  right thing first) and Chapter 6 (Find the source of the swing), each with new
+  figures. The old Chapter 6 (lime kiln) is now Chapter 8, "Where it costs
+  least". The old Chapter 7's 30-day scan is now Chapter 4, and its headbox
+  example moved to the new Chapter 6. `book-ch7.html` is no longer linked.
+  Generator: `Website 3.0/Book Web Pages/book_pages_gen_v2.py`.
 
 About
 - Added Todd Fytczyk (Process Engineer, Pulp and Recaust). Removed David Kammerdeiner.

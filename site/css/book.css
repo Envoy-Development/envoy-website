@@ -65,3 +65,15 @@
 }
 .bk-ol, .bk-q ol { list-style: decimal; }
 .bk-ol li::marker, .bk-q li::marker { color: var(--green-600); font-weight: 800; }
+
+/* Chapter 12 scorecard and call to action */
+.bk-h2 { font-size: 1.75rem; color: var(--green-900); margin-bottom: 1.2rem; }
+.bk-table-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); }
+.bk-table { width: 100%; min-width: 880px; border-collapse: collapse; font-size: .88rem; line-height: 1.45; }
+.bk-table th, .bk-table td { border-bottom: 1px solid var(--gray-200); border-right: 1px solid var(--gray-100); padding: .7rem .8rem; text-align: left; vertical-align: top; color: var(--gray-700); }
+.bk-table thead th { font: 800 11px Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--green-700); border-bottom: 2px solid var(--green-600); }
+.bk-table tbody th { font-weight: 800; color: var(--green-900); width: 17%; }
+.bk-table tr:last-child th, .bk-table tr:last-child td { border-bottom: 0; }
+.bk-box { display: block; width: 14px; height: 14px; border: 1.5px solid var(--gray-400); border-radius: 3px; margin-bottom: .4rem; }
+.bk-cap { font-size: .85rem; color: var(--gray-500); margin-top: .9rem; }
+.bk-cta { margin-top: 1.2rem; }

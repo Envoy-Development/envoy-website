@@ -1,13 +1,11 @@
-8
+9
 
-Version 8 - Interactive pages and home page refresh
-Updated November 9, 2026
+Version 9 - Launch preparation
+Updated November 18, 2026
 
-This revision replaces stale text tiles across the site with animated,
-interactive visuals, refreshes the home page, rebuilds the platform,
-industry and Intelligent Factory pages, and updates the About team.
+Wording consistency fixes, contact form connected to Netlify Forms, Privacy Notice
+and Terms of Use pages, footer links, and redirects from the current public site.
 
-Working folder moved to C:\Apps\EnvoyWebsite3\envoy-website on November 9, 2026.
+Working folder: C:\Apps\EnvoyWebsite3\envoy-website
 
-Suggested release tag once reviewed: v8.0
-Next enhancement: Version 9, unless Gordon specifies another version.
+Next enhancement: Version 10, unless Gordon specifies another version.

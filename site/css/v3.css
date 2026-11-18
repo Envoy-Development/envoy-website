@@ -40,3 +40,10 @@
 @media(max-width:800px) {.home-v3 .hero-inner {grid-template-columns:1fr;}.home-v3 .hero-content h1 {font-size:clamp(2rem,6.3vw,3.3rem);}.home-v3 .hero-image {justify-content:center;}.home-v3 .hero-image img {max-height:360px;}.home-industry-grid {grid-template-columns:1fr;}.industry-section-heading {display:block;}.industry-section-heading .text-link {margin-top:1.5rem;}.home-industry-card {padding:1.75rem;}}
 @media(max-width:480px) {.home-v3 .hero-content h1 {font-size:clamp(1.6rem,7vw,2.05rem);line-height:1.35;}.home-v3 .hero-content h1 .boxed {padding:.08em .2em .13em;}.site-footer .footer-grid {gap:1.75rem 1rem;}.pipeline-note {text-align:left;}.heritage-section .stats-grid {gap:2rem 1rem;}}
 @media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto;}*,*::before,*::after {animation:none!important;transition:none!important;}.fade-in {opacity:1!important;transform:none!important;}}
+/* Footer legal links and legal pages (2026-11-18) */
+.footer-legal {display:flex;gap:1.25rem;flex-wrap:wrap;justify-content:flex-end;}
+.legal {max-width:760px;margin:0 auto;}
+.legal h2 {font-size:1.2rem;margin:2rem 0 .5rem;}
+.legal p, .legal li {color:var(--gray-700);line-height:1.65;margin-bottom:.75rem;}
+.legal ol {padding-left:1.4rem;margin-bottom:1rem;list-style:decimal;}
+.legal a {color:var(--green-800);text-decoration:underline;}

@@ -85,3 +85,4 @@
   .tc-band *, .rc-screen * { animation: none !important; transition: none !important; }
   .rx-draw, .rc-draw { stroke-dashoffset: 0; } .rx-pop, .rc-seg, .rc-hw, .tc-flag { opacity: 1; } .tc-scan { display: none; }
 }
+@media (hover: none) { .tc-hover-hint { display: none; } }

@@ -1,5 +1,28 @@
 # Change log
 
+## Version 9 - Launch preparation · November 18, 2026
+
+Wording and consistency
+- Six Decisions: the three "In practice" lines now name Envoy Intelligence only
+  (Engineering Intelligence and Operational Intelligence are retired as product names).
+- Reliability page label and the home page button now say Process Reliability Reporting.
+- Smart Centerlines: the two study figures ($270,000 and $154,000) are written in the
+  page; the count-up animation is unchanged.
+- "Hover" hints: hidden on touch screens (reliability page), reworded (Platform Overview).
+- Spelling: "dialed", "Agree on the process area".
+
+Launch readiness
+- Contact form connected to Netlify Forms (form name "contact", honeypot field,
+  thank-you.html). The notification address is set in the Netlify dashboard.
+- New pages: privacy.html, terms.html (effective November 20, 2026), thank-you.html.
+- Footer on every page: Privacy Notice and Terms of Use links.
+- site/_redirects: old envoydevelopment.com addresses to the new pages.
+- Pre-change copies are in backups/2026-11-18 and backups/2026-11-18b, outside site/.
+
+Not yet done
+- Every page still carries the noindex tag. Remove it at launch.
+- Backup, preview and option files from earlier revisions are still inside site/.
+
 ## Version 8 - Interactive pages and home page refresh · November 7 to 9, 2026
 
 Home page

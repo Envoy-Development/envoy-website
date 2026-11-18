@@ -1,10 +1,10 @@
 # Project state
 
-Updated November 9, 2026. Owner: Gordon Jones, Envoy Development.
+Updated November 18, 2026. Owner: Gordon Jones, Envoy Development.
 
 ## Current work
 
-- Version 8 (November 7 to 9, 2026) is the current revision. See `CHANGELOG.md`.
+- Version 9 (November 18, 2026) is the current revision. See `CHANGELOG.md`.
 - Local working copy: `C:\Apps\EnvoyWebsite3\envoy-website` (moved from
   `C:\Apps\EnvoyWebsite\envoy-website` on November 9, 2026). It is a Git
   repository; Gordon commits to `main`.
@@ -29,7 +29,12 @@ Updated November 9, 2026. Owner: Gordon Jones, Envoy Development.
   November 9, 2026. David Kammerdeiner was removed.
 - Home page figures supplied by Gordon (November 9, 2026): 600+ plant
   processes, 97% client renewal rate.
-- The contact form is a preview and does not send messages. Assessment and
+- The contact form posts to Netlify Forms (November 18, 2026). Submissions go to
+  sales@envoydevelopment.com once the notification is set in the Netlify dashboard.
+  Netlify Web Analytics is the chosen analytics (no cookies).
+- Privacy Notice and Terms of Use pages exist (effective November 20, 2026).
+- Envoy Intelligence is the only name for the intelligence product.
+- Assessment and
   resource pages retain their existing in-progress content.
 - Every later enhancement increments the review version and change log.
 

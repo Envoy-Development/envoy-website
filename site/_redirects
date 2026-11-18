@@ -1,0 +1,9 @@
+# Old envoydevelopment.com addresses to the new pages
+/solutions    /solutions.html    301
+/about        /about.html        301
+/careers      /careers.html      301
+/contact      /contact.html      301
+/scheduling   /contact.html      301
+/smart-centerlines-run-the-apex-for-basis-weight-savings/*   /smart-centerlines.html   301
+/blog/*       /intelligent-factory.html   301
+/sample-page/*   /   301

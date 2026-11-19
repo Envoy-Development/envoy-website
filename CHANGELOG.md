@@ -11,6 +11,32 @@ Wording and consistency
 - "Hover" hints: hidden on touch screens (reliability page), reworded (Platform Overview).
 - Spelling: "dialed", "Agree on the process area".
 
+Names and buttons
+- "Envoy Process Reliability Reporting" in the menu, footer, industry page rows, home
+  card label and the reliability page label.
+- "Request a Demo" replaces "Talk With Envoy", "Talk About Your Process" and
+  "Talk With Our Team" (industry pages and About).
+- "Take the 2-Minute Assessment" on the Intelligent Factory and Maturity Model pages.
+- Pre-change copies in backups/2026-11-18c.
+
+AI wording and "plant"
+- "AI" replaces "Agentic AI" and "AI agents" site wide, including the footer line.
+  The home hero now says "artificial intelligence".
+- Six Decisions: nine general statements say "plant" instead of "mill". Paper mill
+  examples are unchanged.
+- Home numbers band: "Years of Plant Experience". Careers description: "plant experience".
+- Pre-change copies in backups/2026-11-18d.
+
+Envoy Intelligence page, menu and book (November 19)
+- Envoy Intelligence step 03 now reads "The answer is checked a second time" and says
+  the second AI check looks for evidence for and against each cause.
+- Page labels: "Envoy Intelligence" and "Envoy Smart Centerlines" (module prefixes removed).
+- "Start Here" is now "Overview" in the menu, footer, page title and back links.
+- Menu descriptions for Food and Specialty Chemicals rewritten.
+- Book: "Draft for review" tags removed from the contents page and all 12 chapters;
+  contents rows say "Available". The Book stays in the menu.
+- Pre-change copies in backups/2026-11-19.
+
 Launch readiness
 - Contact form connected to Netlify Forms (form name "contact", honeypot field,
   thank-you.html). The notification address is set in the Netlify dashboard.

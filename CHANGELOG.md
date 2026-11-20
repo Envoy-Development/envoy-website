@@ -2,6 +2,12 @@
 
 ## Version 9 - Launch preparation · November 18, 2026
 
+Envoy Finance pages (November 20)
+- New pages envoy-finance-eula.html and envoy-finance-privacy-policy.html, required for
+  the QuickBooks registration of the internal Envoy Finance app. Copy supplied by Sarah.
+- Both carry a noindex, nofollow meta tag. Keep them out of the menu, footer and
+  sitemap.xml, and do not add a robots.txt Disallow line for them.
+
 Wording and consistency
 - Six Decisions: the three "In practice" lines now name Envoy Intelligence only
   (Engineering Intelligence and Operational Intelligence are retired as product names).

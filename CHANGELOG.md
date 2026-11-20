@@ -37,6 +37,12 @@ Envoy Intelligence page, menu and book (November 19)
   contents rows say "Available". The Book stays in the menu.
 - Pre-change copies in backups/2026-11-19.
 
+Demo booking (November 20)
+- Every "Request a Demo" button and "Book a Time" now opens the Microsoft Bookings page
+  in a new tab. The contact form stays for messages, sales and support.
+- /scheduling redirects to the booking page. Privacy Notice names Microsoft Bookings.
+- Pre-change copies in backups/2026-11-20.
+
 Launch readiness
 - Contact form connected to Netlify Forms (form name "contact", honeypot field,
   thank-you.html). The notification address is set in the Netlify dashboard.

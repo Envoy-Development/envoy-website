@@ -7,3 +7,5 @@
 /smart-centerlines-run-the-apex-for-basis-weight-savings/*   /smart-centerlines.html   301
 /blog/*       /intelligent-factory.html   301
 /sample-page/*   /   301
+/category/*   /   301
+/author/*     /about.html   301

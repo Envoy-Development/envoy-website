@@ -268,7 +268,7 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .pain-points {
   background:
     linear-gradient(to right, rgba(26,92,56,0.74) 0%, rgba(13,61,34,0.92) 100%),
-    url('../paper-machine-bg.png') center / cover no-repeat;
+    url('../paper-machine-bg.webp') center / cover no-repeat;
 }
 .pain-points .section-intro h2 { color: var(--white); }
 .pain-points .section-intro p  { color: var(--gray-300); }
@@ -365,7 +365,7 @@ p  { line-height: 1.75; color: var(--gray-600); }
   /* Digester photo under a left-to-right dark-green wash */
   background:
     linear-gradient(to right, rgba(26,92,56,0.74) 0%, rgba(13,61,34,0.92) 100%),
-    url('../digester-bg.png')
+    url('../digester-bg.webp')
     center / cover no-repeat;
 }
 .data-pipeline .section-intro h2 { color: var(--white); }
@@ -392,7 +392,7 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .stats-section {
   background:
     linear-gradient(to right, rgba(30,107,67,0.72) 0%, rgba(13,61,34,0.90) 100%),
-    url('../yankee-dryer-bg.png')
+    url('../yankee-dryer-bg.webp')
     center / cover no-repeat;
   padding: 80px 0;
 }
@@ -416,7 +416,7 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .cta-section { background: linear-gradient(to right, var(--green-800), var(--dark-green)); padding: 96px 0; position: relative; overflow: hidden; }
 .cta-bg-img {
   position: absolute; inset: 0;
-  background-image: url('../recovery-boiler-bg.png');
+  background-image: url('../recovery-boiler-bg.webp');
   background-size: cover; background-position: center; opacity: 0.32;
 }
 .cta-inner    { position: relative; z-index: 1; text-align: center; max-width: 700px; margin: 0 auto; padding: 0 1.5rem; }

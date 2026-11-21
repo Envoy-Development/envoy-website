@@ -1,5 +1,20 @@
 # Change log
 
+## Version 10 - Monthly reports on the reliability page · November 21, 2026
+
+- Envoy Process Reliability Reporting page: new "Every Month" section between
+  "Reliability Across the Process" and "Root Cause Investigations". It shows the two
+  standard monthly reports side by side: the Control Loop Health Report and the
+  Monthly Maintenance Report. Each card has an inline SVG graphic and five points.
+- A three-step strip in the section reads: every morning, every month, when a problem
+  persists.
+- Both graphics are generalized from Envoy reports and captioned "Demo data". No
+  customer, mill or tag names. Maintenance counts match the book's 30-day tag scan;
+  "Stopped reporting: 3" and the loop grid split are illustrative.
+- Styles added at the end of css/reliability.css (classes start with "mr-").
+- Section source kept in drafts/monthly_reports_section_v1.html and .css.
+- Pre-change copies in backups/2026-11-21.
+
 ## Version 9 - Launch preparation · November 18, 2026
 
 Envoy Finance pages (November 20)

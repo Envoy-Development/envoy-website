@@ -1,0 +1,11 @@
+9
+
+Version 9 - Launch preparation
+Updated November 18, 2026
+
+Wording consistency fixes, contact form connected to Netlify Forms, Privacy Notice
+and Terms of Use pages, footer links, and redirects from the current public site.
+
+Working folder: C:\Apps\EnvoyWebsite3\envoy-website
+
+Next enhancement: Version 10, unless Gordon specifies another version.

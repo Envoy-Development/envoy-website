@@ -1,11 +1,11 @@
-9
+10
 
-Version 9 - Launch preparation
-Updated November 18, 2026
+Version 10 - Monthly reports on the reliability page
+Updated November 21, 2026
 
-Wording consistency fixes, contact form connected to Netlify Forms, Privacy Notice
-and Terms of Use pages, footer links, and redirects from the current public site.
+New "Every Month" section on the Envoy Process Reliability Reporting page: the
+Control Loop Health Report and the Monthly Maintenance Report, side by side.
 
 Working folder: C:\Apps\EnvoyWebsite3\envoy-website
 
-Next enhancement: Version 10, unless Gordon specifies another version.
+Next enhancement: Version 11, unless Gordon specifies another version.

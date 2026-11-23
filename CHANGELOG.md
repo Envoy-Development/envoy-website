@@ -1,5 +1,16 @@
 # Change log
 
+## Version 11 - Titles-only header drop-downs · November 23, 2026
+
+- Header drop-downs (Platform, Industries, The Intelligent Factory, Company) now show
+  the page title only. The 16 subtext lines are removed from the header on all 39
+  pages in site/. Review feedback was that the subtext made the menus big and long.
+- css/main.css: drop-down rows are tighter, titles stay on one line, and each menu
+  is as wide as its longest title (the 270px minimum width is removed).
+- The phone menu already showed titles only and is unchanged.
+- Preview used for sign-off kept in drafts/nav-titles-only-preview-v1.html.
+- Pre-change copies in backups/2026-11-23.
+
 ## Version 10 - Monthly reports on the reliability page · November 21, 2026
 
 - Envoy Process Reliability Reporting page: new "Every Month" section between

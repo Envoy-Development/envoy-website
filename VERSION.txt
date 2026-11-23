@@ -1,11 +1,10 @@
-10
+Version 11 - Titles-only header drop-downs
+Updated November 23, 2026
 
-Version 10 - Monthly reports on the reliability page
-Updated November 21, 2026
-
-New "Every Month" section on the Envoy Process Reliability Reporting page: the
-Control Loop Health Report and the Monthly Maintenance Report, side by side.
+The Platform, Industries, The Intelligent Factory and Company drop-downs in the
+header now show page titles only. The subtext under each title is removed and the
+menus are tighter. Applies to every page.
 
 Working folder: C:\Apps\EnvoyWebsite3\envoy-website
 
-Next enhancement: Version 11, unless Gordon specifies another version.
+Next enhancement: Version 12, unless Gordon specifies another version.

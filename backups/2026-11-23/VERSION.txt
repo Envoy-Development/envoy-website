@@ -1,0 +1,11 @@
+10
+
+Version 10 - Monthly reports on the reliability page
+Updated November 21, 2026
+
+New "Every Month" section on the Envoy Process Reliability Reporting page: the
+Control Loop Health Report and the Monthly Maintenance Report, side by side.
+
+Working folder: C:\Apps\EnvoyWebsite3\envoy-website
+
+Next enhancement: Version 11, unless Gordon specifies another version.

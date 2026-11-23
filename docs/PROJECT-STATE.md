@@ -1,10 +1,10 @@
 # Project state
 
-Updated November 18, 2026. Owner: Gordon Jones, Envoy Development.
+Updated November 23, 2026. Owner: Gordon Jones, Envoy Development.
 
 ## Current work
 
-- Version 10 (November 21, 2026) is the current revision. See `CHANGELOG.md`.
+- Version 11 (November 23, 2026) is the current revision. See `CHANGELOG.md`.
 - Local working copy: `C:\Apps\EnvoyWebsite3\envoy-website` (moved from
   `C:\Apps\EnvoyWebsite\envoy-website` on November 9, 2026). It is a Git
   repository; Gordon commits to `main`.

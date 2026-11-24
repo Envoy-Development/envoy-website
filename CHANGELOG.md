@@ -11,6 +11,9 @@
   a visitor chooses to book. A note under the calendar says so and links to the
   Privacy Notice, with an open-in-a-new-tab link, email and the contact form as
   fallbacks.
+- Calendar panel is 600px wide (Bookings draws a narrow column on a gray page) and
+  the frame is 1400px tall so the details form fits without a second scrollbar.
+  The heading now says demos are 45 minutes, matching the Bookings service.
 - The "How It Works" steps section is removed; its wording moved into the heading
   and the calendar panel. "What We Cover" now sits below the calendar.
 - privacy.html (effective November 24, 2026): section 3 now says our own pages set

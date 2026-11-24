@@ -1,10 +1,10 @@
 # Project state
 
-Updated November 23, 2026. Owner: Gordon Jones, Envoy Development.
+Updated November 24, 2026. Owner: Gordon Jones, Envoy Development.
 
 ## Current work
 
-- Version 11 (November 23, 2026) is the current revision. See `CHANGELOG.md`.
+- Version 12 (November 24, 2026) is the current revision. See `CHANGELOG.md`.
 - Local working copy: `C:\Apps\EnvoyWebsite3\envoy-website` (moved from
   `C:\Apps\EnvoyWebsite\envoy-website` on November 9, 2026). It is a Git
   repository; Gordon commits to `main`.
@@ -33,6 +33,9 @@ Updated November 23, 2026. Owner: Gordon Jones, Envoy Development.
   sales@envoydevelopment.com once the notification is set in the Netlify dashboard.
   Netlify Web Analytics is the chosen analytics (no cookies).
 - Privacy Notice and Terms of Use pages exist (effective November 20, 2026).
+- Request a Demo buttons go to demo.html, which links out to Microsoft Bookings.
+  Do not embed Bookings in an iframe without first updating the Privacy Notice:
+  the frame sets Microsoft cookies.
 - Envoy Intelligence is the only name for the intelligence product.
 - Assessment and
   resource pages retain their existing in-progress content.

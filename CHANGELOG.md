@@ -1,5 +1,25 @@
 # Change log
 
+## Version 13 - Booking calendar on the demo page · November 24, 2026
+
+- demo.html: the booking calendar now opens on the page, directly under the heading.
+  Show Available Times loads Microsoft Bookings in a frame in place. Review feedback on
+  Version 12 was that Pick a Time scrolled to the bottom of the page and then opened
+  a plain Bookings page in a new tab, so the page added a step without keeping
+  visitors on the site.
+- The calendar loads only after the click, so Microsoft's cookies are set only when
+  a visitor chooses to book. A note under the calendar says so and links to the
+  Privacy Notice, with an open-in-a-new-tab link, email and the contact form as
+  fallbacks.
+- Calendar panel is 600px wide (Bookings draws a narrow column on a gray page) and
+  the frame is 1400px tall so the details form fits without a second scrollbar.
+  The heading now says demos are 45 minutes, matching the Bookings service.
+- The "How It Works" steps section is removed; its wording moved into the heading
+  and the calendar panel. "What We Cover" now sits below the calendar.
+- privacy.html (effective November 24, 2026): section 3 now says our own pages set
+  no cookies, with the Bookings calendar as the one exception; section 2 notes the
+  calendar is served by Microsoft and loads only when opened.
+
 ## Version 12 - Request a Demo page · November 24, 2026
 
 - New page demo.html: what a demo covers (the three products), how booking works in

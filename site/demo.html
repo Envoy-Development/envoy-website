@@ -34,10 +34,16 @@
     }
     .demo-card h4 { color: var(--navy); margin-bottom: 0.4rem; }
     .demo-card p { font-size: 0.9rem; margin-bottom: 0; }
-    .demo-steps { max-width: 680px; margin: 0 auto; padding-left: 1.25rem; }
-    .demo-steps li { margin-bottom: 0.9rem; }
-    .demo-book { text-align: center; margin-top: 2.25rem; }
-    .demo-book .form-note { font-size: 0.82rem; color: var(--gray-500); margin-top: 0.9rem; }
+    .demo-panel {
+      max-width: 600px; margin: 0 auto; background: var(--white);
+      border: 1px solid var(--gray-200); border-top: 3px solid var(--green-600);
+      border-radius: var(--radius); overflow: hidden;
+    }
+    .demo-start { text-align: center; padding: 3rem 1.5rem; }
+    .demo-start h2 { margin-bottom: 0.5rem; }
+    .demo-start p { max-width: 560px; margin: 0 auto 1.5rem; }
+    .demo-frame { display: block; width: 100%; height: 1400px; border: 0; }
+    .demo-note { text-align: center; font-size: 0.82rem; color: var(--gray-500); margin-top: 1rem; }
     @media (max-width: 860px) { .demo-grid { grid-template-columns: 1fr; } }
   </style>
   <link rel="stylesheet" href="css/v3.css" />
@@ -63,9 +69,23 @@
       <div class="product-hero-content">
         <p class="eyebrow">Company:&nbsp;&nbsp;&nbsp;Request a Demo</p>
         <h1>See Envoy on your process.</h1>
-        <p class="hero-sub">A demo is a conversation with our team about your operation and the questions you want answered. Pick a time below and we will take it from there.</p>
-        <p style="margin-top:1.5rem;"><a class="btn btn-primary" href="#book">Pick a Time</a></p>
+        <p class="hero-sub">A demo is a 45-minute conversation with our team about your operation and the questions you want answered. Pick a time below. You get a confirmation email with the meeting details.</p>
       </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ BOOKING CALENDAR ═══ -->
+  <section class="section" id="book" style="background:var(--white); padding-top:2.5rem;">
+    <div class="container">
+      <div class="demo-panel" id="demo-panel">
+        <div class="demo-start">
+          <h2>Pick a time.</h2>
+          <p>Choose a slot on our calendar and enter your name, email and a little about your operation.</p>
+          <button type="button" class="btn btn-primary" id="demo-load">Show Available Times</button>
+        </div>
+      </div>
+      <p class="demo-note">The calendar is provided by Microsoft Bookings and loads only when you open it. Microsoft may set its own cookies. See our <a href="privacy.html">Privacy Notice</a>.<br>Calendar not showing? <a href="https://bookings.cloud.microsoft/book/Scheduling@envoydevelopment.com/?ismsaljsauthenabled" target="_blank" rel="noopener">Open it in a new tab</a>, email <a href="mailto:sales@envoydevelopment.com">sales@envoydevelopment.com</a> or <a href="contact.html#message">send us a message</a>.</p>
     </div>
   </section>
 
@@ -95,26 +115,6 @@
   </section>
 
 
-  <!-- ═══ HOW IT WORKS ═══ -->
-  <section class="section" id="book" style="background:var(--white);">
-    <div class="container">
-      <div class="section-intro fade-in" style="text-align:center; max-width:680px; margin-left:auto; margin-right:auto;">
-        <p class="eyebrow">How It Works</p>
-        <h2>Three steps.</h2>
-      </div>
-      <ol class="demo-steps fade-in">
-        <li><strong>Pick a time.</strong> Choose a slot on our calendar and enter your name, email and a little about your operation.</li>
-        <li><strong>Get your invite.</strong> You receive a confirmation email with the meeting details.</li>
-        <li><strong>Meet our team.</strong> We talk through your process and show you Envoy on the questions you care about.</li>
-      </ol>
-      <div class="demo-book fade-in">
-        <a class="btn btn-primary" href="https://bookings.cloud.microsoft/book/Scheduling@envoydevelopment.com/?ismsaljsauthenabled" target="_blank" rel="noopener">Pick a Time</a>
-        <p class="form-note">Opens our Microsoft Bookings calendar in a new tab. See our <a href="privacy.html">Privacy Notice</a>.<br>Prefer email? Write to <a href="mailto:sales@envoydevelopment.com">sales@envoydevelopment.com</a> or <a href="contact.html#message">send us a message</a>.</p>
-      </div>
-    </div>
-  </section>
-
-
   </main>
 <footer class="site-footer"><div class="container"><div class="footer-grid">
       <div class="footer-brand"><img src="external-assets/static.showit.co/7b20a75b07-envoy_logo_primary_colors.png" alt="Envoy Development" /><p>Operational intelligence for process industries, combining AI, engineering expertise, and practical guidance. Founded in 2003.</p></div>
@@ -123,5 +123,16 @@
 
   <script src="js/main.js"></script>
   <script src="js/v3.js"></script>
+  <script>
+    document.getElementById('demo-load').addEventListener('click', function () {
+      var panel = document.getElementById('demo-panel');
+      var frame = document.createElement('iframe');
+      frame.className = 'demo-frame';
+      frame.src = 'https://bookings.cloud.microsoft/book/Scheduling@envoydevelopment.com/';
+      frame.title = 'Envoy demo booking calendar (Microsoft Bookings)';
+      panel.replaceChildren(frame);
+      frame.focus();
+    });
+  </script>
 </body>
 </html>

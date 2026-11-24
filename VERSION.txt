@@ -1,10 +1,9 @@
-Version 11 - Titles-only header drop-downs
-Updated November 23, 2026
+Version 12 - Home page hero image, white area made transparent
+Updated November 24, 2026
 
-The Platform, Industries, The Intelligent Factory and Company drop-downs in the
-header now show page titles only. The subtext under each title is removed and the
-menus are tighter. Applies to every page.
+The white haze and white base in the home page hero photo are now transparent, so
+the swoosh lines behind the image show through. Home page only.
 
 Working folder: C:\Apps\EnvoyWebsite3\envoy-website
 
-Next enhancement: Version 12, unless Gordon specifies another version.
+Next enhancement: Version 13, unless Gordon specifies another version.

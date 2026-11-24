@@ -1,0 +1,10 @@
+Version 11 - Titles-only header drop-downs
+Updated November 23, 2026
+
+The Platform, Industries, The Intelligent Factory and Company drop-downs in the
+header now show page titles only. The subtext under each title is removed and the
+menus are tighter. Applies to every page.
+
+Working folder: C:\Apps\EnvoyWebsite3\envoy-website
+
+Next enhancement: Version 12, unless Gordon specifies another version.

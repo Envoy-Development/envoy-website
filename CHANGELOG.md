@@ -1,5 +1,15 @@
 # Change log
 
+## Version 12 - Home page hero image, white area made transparent · November 24, 2026
+
+- Home page hero: the photo of the man had a white haze and a white base baked into
+  the image, which covered the swoosh lines behind it. The white is now transparent,
+  so the swoosh lines run behind and through the figure.
+- New image file: site/external-assets/static.showit.co/2588ea688b-envoy_homepage_man_v2.webp
+  (same 800 x 620 size). The original file is kept beside it, unchanged.
+- site/index.html points to the new file. No other page uses this image.
+- Pre-change copies in backups/2026-11-24.
+
 ## Version 11 - Titles-only header drop-downs · November 23, 2026
 
 - Header drop-downs (Platform, Industries, The Intelligent Factory, Company) now show

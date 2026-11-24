@@ -1,10 +1,10 @@
-Version 12 - Request a Demo page
+Version 13 - Booking calendar on the demo page
 Updated November 24, 2026
 
-Every Request a Demo button now opens a new Envoy page, demo.html, in the same tab
-instead of a new tab on Microsoft Bookings. The page explains what a demo covers and
-how booking works, then its Pick a Time button opens Bookings. Applies to every page.
+The Request a Demo page now shows the Microsoft Bookings calendar on the page itself,
+right under the heading, after one click on Show Available Times. Visitors no longer
+leave the site or open a new tab to book. The Privacy Notice is updated to match.
 
 Working folder: C:\Apps\EnvoyWebsite3\envoy-website
 
-Next enhancement: Version 13, unless Gordon specifies another version.
+Next enhancement: Version 14, unless Gordon specifies another version.

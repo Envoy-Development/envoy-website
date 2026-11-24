@@ -1,5 +1,19 @@
 # Change log
 
+## Version 12 - Request a Demo page · November 24, 2026
+
+- New page demo.html: what a demo covers (the three products), how booking works in
+  three steps, and a Pick a Time button that opens Microsoft Bookings in a new tab.
+  Email and the contact form are offered as alternatives.
+- Every Request a Demo button (header, page bodies, footer) and the Contact page's
+  Book a Time card now go to demo.html in the same tab: 137 links on 39 pages.
+  Before, they opened a bare Microsoft Bookings page in a new tab with no Envoy branding.
+- Bookings is linked, not embedded. An embedded Bookings frame would set Microsoft
+  cookies on our pages, which the Privacy Notice says we do not do, and Safari and
+  Firefox block the sign-in it relies on inside a frame.
+- demo.html added to sitemap.xml. The /scheduling redirect still goes straight to
+  Bookings for old links.
+
 ## Version 11 - Titles-only header drop-downs · November 23, 2026
 
 - Header drop-downs (Platform, Industries, The Intelligent Factory, Company) now show
